@@ -20,7 +20,7 @@
 # import from stata, SPSS
 require( foreign )
 require( Hmisc ) 
-requirehttp://www.britishelectionstudy.com/data-object/british-election-study-combined-wave-1-9-internet-panel/( plyr ) # rename
+require( plyr ) # rename
 # not used yet require( survey )
 
 # TODO use optparse or something so we can pass file locations in 
