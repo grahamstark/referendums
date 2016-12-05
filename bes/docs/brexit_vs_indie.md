@@ -110,16 +110,18 @@ vote 'yes'. Conventional politics and religion mattered in interesting ways.
 Next, the Brexit vote. We're modelling a "Leave" vote, so Up-Arrows mean "more likely to vote 'Leave'. Column 2 uses
 data from the whole UK; column 3 just uses people living in Scotland. For the all-UK case I'm going to add in variables
 showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed 'Scottish Effect' in the Brexit vote that
-can't be explained by Londoners and Scots having income, education [^FNREG].
+can't be explained by Londoners and Scots having different levels of education, income, and so on[^FNREG].
 
-Reading down column 2 shows a very different pattern than for the Indie ref. The unqualified were much more likely to
-vote "Leave", " whilst political affiliations work in reverse from the IndieRef. "Leave" rises steadily with age. The
-more open minded you are, the less likely to vote "Leave". The regional effects are interesting: , once we've controlled
-for the other factors, there is no evidence of a distinct "London effect" for Remain, or a North East of England effect
-for Leave [^FNLON].But there *are* a Scottish and Welsh
-effect (for Remain).
+Reading down column 2 shows a very different pattern than for the Indie ref, one which does seem consistent with the
+Populist,or even reactionary, interpretation that many have put on the vote. There is a strong link between education
+and a 'Leave' vote: those with degrees or 'A-levels' were much more likely to vote "Remain". Political affiliations work
+in reverse from the IndieRef, with Conservatives much more likely to vote Leave and Socialists, Liberals and
+Nationalists much more likely to vote 'Remain'. "Leave" rises steadily with age. The more open minded you are, the less
+likely to vote "Leave". The regional effects are interesting: , once we've controlled for the other factors, there is no
+real evidence of a distinct "London effect" for Remain, or a North East of England effect for Leave [^FNLON]. But there
+*are* a Scottish and Welsh effect (for Remain).
 
-That was for the whole GB; column (3) runs this analysis for Scotland only. The drivers for 'Leave' are very similar,
+Column (3) runs the same analysis for Scotland only. The drivers for 'Leave' are very similar,
 but weaker, than for GB as a whole. 
 
 ### Table 1 ###
