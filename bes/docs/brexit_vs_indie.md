@@ -57,14 +57,14 @@ now, in summary:
   and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
 
 [Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge
-amount of information my computer program spits out. I hope it makes sense; the full data I've condensed this down from
-is available in [a companion paper][TECHNOTE]. Each column summarises one of our models that explain the votes. The
-first column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2)
-uses data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the
-effect of one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
-class='positive_med'>&#x2191;</span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
-significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down
-arrows '<span class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
+amount of information my computer program spits out. I hope it makes sense; the full data is in [the companion
+paper][TECHNOTE]. Each column summarises one of our models that explain the votes. The first column (1) is our model of
+the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses data for Great Britain as a
+whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of one variable on the vote.
+The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
+'<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significan *positive* effect on a 'Yes' (or
+'Exit'), vote, from the strongest to the weakest. Likewise the red down arrows '<span
+class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
 class='negative_weak'>&#x21e3;</span>' signify negative effects [^FNSIG]. Variables that don't appear significant are
 indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
 varied by income, age, sex and so on, they of course don't explain everything - you could posess all the indicators that
@@ -332,6 +332,10 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 </tr>
 </table>
 
+It's customary to end notes like this with "more research is required". And it is: there are certainly many things that
+could be done better, or at least differently. If anyone is interested in taking this on, [most of what you'll need is
+available][TECHNOTE]. But I'm confident that the key findings here are robust: empirically, IndieRef and the Brexit vote
+were very different things.
 
 [Graham Stark](mailto:graham.stark@virtual-worlds-research.com)
 
