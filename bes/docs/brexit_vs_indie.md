@@ -277,7 +277,7 @@ were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 </tr>
 </table>
 
-Let's look at IndyRef first. That's column (1). 
+Let's look at IndyRef first. That's column (1): 
 
 * The first cell summarises the influence of income on the Scottish Independence
   vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
