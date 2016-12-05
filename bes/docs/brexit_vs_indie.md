@@ -8,9 +8,11 @@ to be part of a new and disturbing Populist wave. Was the Scottish Independence 
 been portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
 accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
 
-[Sentence or two about Indieref feeling different from Brexit]. 
+The Indie and EU Referredums certainly ~felt~ very differentto me, and the Scottish Independence movement seems a very
+different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
+the big picture can be very different.
 
-The [Wings Study][WINGS] makes a case for the IndieRef being different using some opinion poll data. That's useful, I'd
+The [Wings blogpost][WINGS] makes a case for the IndieRef being different using some opinion poll data. That's useful, I'd
 like to look at this in a slighty more systematic and precise way, using techniques from my day-job doing economic modelling.
 
 There are now some good empirical studies of the type I have in mind, trying to explain the Brexit vote:
@@ -310,14 +312,15 @@ Let's look at IndyRef first. That's column (1).
  adventure, unusual ideas, imagination, curiosity, and variety of experience". "Openness in this sense is strongly
  associated with a "Yes" vote.
  
-In sum, the picture that emerges is that yes was in most respects the progressive, optimistic, vote. Yes votes were associated
-with lower incomes, but people of all education levels voted both ways, and open-minded and the young, were more likely to
-vote 'yes'. Conventional politics and religion mattered in interesting ways.
+In sum, the picture that emerges is that Yes was in most respects the progressive, optimistic, Left-leaning vote. Yes
+votes were associated with lower incomes, but people of all education levels voted both ways, and open-minded and the
+young, were more likely to vote 'yes'. Conventional politics and religion mattered in interesting ways.
 
 Next, the Brexit vote. We're modelling a "Leave" vote, so Up-Arrows mean "more likely to vote 'Leave'. Column 2 uses
 data from the whole UK; column 3 just uses people living in Scotland. For the all-UK case I'm going to add in variables
-showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed 'Scottish Effect' in the Brexit vote that
-can't be explained by Londoners and Scots having different levels of education, income, and so on[^FNREG].
+showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed
+'Scottish Effect' in the Brexit vote that can't be explained by Londoners and Scots having different levels of
+education, income, and so on[^FNREG].
 
 Reading down column 2 shows a very different pattern than for the Indie ref, one which does seem consistent with the
 Populist,or even reactionary, interpretation that many have put on the vote. There is a strong link between education
@@ -326,11 +329,12 @@ in reverse from the IndieRef, with Conservatives much more likely to vote Leave 
 Nationalists much more likely to vote 'Remain'. "Leave" rises steadily with age. The more open minded you are, the less
 likely to vote "Leave". The regional effects are interesting: , once we've controlled for the other factors, there is no
 real evidence of a distinct "London effect" for Remain, or a North East of England effect for Leave [^FNLON]. But there
-*are* a Scottish and Welsh effect (for Remain).
+*are* pro-Remain Scottish and Welsh effects - although Wales voted for Brexit, in this model the Leave vote was *lower*
+than you'd expect given incomes, education and age.
 
-Column (3) runs the same analysis for Scotland only. For Scottish voters, you see some of the patterns of the UK-Wide
+Column (3) runs the same analysis for Scottish voters only. Here, you see some of the patterns of the UK-Wide
 Brexit vote coming though, notably the negative effects education, income, and age, and political affilliatons are
-similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland. 
+similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland.  
 
 It's customary to end notes like this with "more research is required". And it is: there are certainly many things that
 could be done better, or at least differently. If anyone is interested in taking this on, [most of what you'll need is
@@ -350,9 +354,11 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN3]: Strictly speaking, there is no London effect relative to the "ommited dummy", - the Midlands - the [technical note][TECHNOTE] explains this in more detail; 
 
-[^FN4]: It's 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
+[^FN4]: 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
 
-[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit of a simplification - see the [Technical Note][TECHNOTE] for more detail.
+[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit of a simplification - 'Yes' is modelled
+to rise till about age 28 and fall thereafter, whereas 'Leave' rises steadily at all ages. See the [Technical
+Note][TECHNOTE] for more detail.
 
 [^FN6]: These are the parties people *identify* with; they needn't be members of them.
 
