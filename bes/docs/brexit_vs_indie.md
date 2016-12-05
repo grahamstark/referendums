@@ -8,7 +8,7 @@ to be part of a new and disturbing Populist wave. Was the Scottish Independence 
 been portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
 accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
 
-The Indie and EU Referredums certainly ~felt~ very differentto me, and the Scottish Independence movement seems a very
+The Indie and EU Referredums certainly *felt* very differentto me, and the Scottish Independence movement seems a very
 different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
 the big picture can be very different.
 
