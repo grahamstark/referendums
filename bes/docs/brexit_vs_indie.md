@@ -309,12 +309,6 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 <td class='negative_strong'>&#x21ca;</td>
 <td></td>
 </tr>
-<tr>
-<th class='row_header'>Constant</th>
-<td class='nonsig'>&#x25CF;</td>
-<td class='positive_strong'>&#x21c8;</td>
-<td class='nonsig'>&#x25CF;</td>
-</tr>
 </tbody>
 </table>
 
