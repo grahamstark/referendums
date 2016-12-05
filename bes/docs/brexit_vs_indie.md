@@ -307,7 +307,7 @@ but weaker, than for GB as a whole.
 </table>
 
 #### Key ####
-<table class='easytable'>
+<table class='easytable' width='150px'>
 <tr><th>Positive Association</th>
 <td class='positive_strong'>&#x21c8; Strong </td>
 <td class='positive_med'>&#x2191; Medium</td>
