@@ -56,11 +56,12 @@ now, in summary:
 * I'm going to use the same set of factors (income, age, gender and so on) to explain *both* the Scottish Independence
   and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
 
-[Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge amount of
-information the computer program spits out. Each column summarises one of our models that explain the votes. The first
-column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses
-data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of
-one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
+[Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge
+amount of information my computer program spits out. I hope it makes sense; the full data I've condensed this down from
+is available in [a companion paper][TECHNOTE]. Each column summarises one of our models that explain the votes. The
+first column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2)
+uses data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the
+effect of one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
 class='positive_med'>&#x2191;</span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
 significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down
 arrows '<span class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
