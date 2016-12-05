@@ -169,7 +169,7 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 <th class='row_header'>Age</th>
 <td class='negative_strong'>&#x21ca;</td>
 <td class='positive_strong'>&#x21c8;</td>
-<td class='positive_weak'>&#x21e1;</td>
+<td class='positive_med'>&#x2191;</td>
 </tr>
 <tr>
 <th class='row_header'>Female</th>
@@ -191,21 +191,21 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 </tr>
 <tr>
 <th class='row_header'>Highest Education: Degree or Equivalent</th>
-<td class='positive_weak'>&#x21e1;</td>
+<td class='nonsig'>&#x25CF;</td>
 <td class='negative_strong'>&#x21ca;</td>
 <td class='negative_strong'>&#x21ca;</td>
 </tr>
 <tr>
 <th class='row_header'>Ethnic Minority</th>
 <td class='nonsig'>&#x25CF;</td>
-<td class='nonsig'>&#x25CF;</td>
+<td class='negative_weak'>&#x21e3;</td>
 <td class='nonsig'>&#x25CF;</td>
 </tr>
 <tr>
 <th class='row_header'>Has Children</th>
 <td class='nonsig'>&#x25CF;</td>
 <td class='positive_strong'>&#x21c8;</td>
-<td class='positive_strong'>&#x21c8;</td>
+<td class='positive_med'>&#x2191;</td>
 </tr>
 <tr>
 <th class='row_header'>Has a Partner</th>
@@ -308,6 +308,12 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 <td></td>
 <td class='negative_strong'>&#x21ca;</td>
 <td></td>
+</tr>
+<tr>
+<th class='row_header'>Constant</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='positive_strong'>&#x21c8;</td>
+<td class='nonsig'>&#x25CF;</td>
 </tr>
 </tbody>
 </table>
