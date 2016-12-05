@@ -32,7 +32,7 @@ There are now some good empirical studies of the type I have in mind, trying to 
 
 What I'm going to do here is build a statistical model in a similar vein to these, using a later version of the same
 data as the LSE and Rowntree study. Like this studies, my model uses a variety of factors ("explanatory variables", in
-the jargon) to explain how people voted in the European Referendum. But I also then apply the model to the Scottish Part
+the jargon) to explain how people voted in the European Referendum. But I also then apply the model to the Scottish[^FNSCOT] part
 of the BES data, to explain the IndieRef vote [^FNMODEL]. I'll show that the model explains both votes well, but the
 factors (age, sex, etc.) often work very differently in the two cases - sometimes working in the opposite way, sometimes
 working strongly in one case but not the other.
@@ -307,10 +307,10 @@ Let's look at IndyRef first. That's column (1).
 * Practising Protestants were significantly more likely to vote 'No' (and Catholics slightly more
   likely to vote Yes)..
   
-* Finally, in the spirit of the LSE study, we include a measure of how openness to new experiences influences the vote.
- (https://en.wikipedia.org/wiki/Big_Five_personality_traits). "Openness is a general appreciation for art, emotion,
- adventure, unusual ideas, imagination, curiosity, and variety of experience". "Openness in this sense is strongly
- associated with a "Yes" vote.
+* Finally, in the spirit of the LSE study, we include a measure of how voting is influenced by a person's [openness to
+  new experiences](https://en.wikipedia.org/wiki/Big_Five_personality_traits). "Openness" is defined as: "a general
+  appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience". Openness in
+  this sense is strongly associated with a "Yes" vote.
  
 In sum, the picture that emerges is that Yes was in most respects the progressive, optimistic, Left-leaning vote. Yes
 votes were associated with lower incomes, but people of all education levels voted both ways, and open-minded and the
@@ -371,7 +371,9 @@ dropped out of the survey between the Indie and Brexit votes.
 
 [^FNREG]: in the [Technical Note][TECHNOTE] I report a version of the model without these regional dummies, showing that
 adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
-still comparable with the Indie ref one even though it has more variables]
+still comparable with the Indie ref one even though it has more variables.
+
+[^FNSCOT] 'Scottish', as is customary, simply means people living (or at least interviewed) in Scotland. Adding country of birth as an explanatory variable would be interesting.
 
 [^FNLON]: The [Resolution Foundation study][Resolution] finds this, too.
 
