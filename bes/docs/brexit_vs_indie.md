@@ -91,7 +91,7 @@ levels of education were equally likely to vote for Independence;
   which way people voted - perhaps some people really do follow the lead of their parties. Modelling this interaction fully
   would be an interesting exercise.
   
-* Perhaps unsurprisingly, practising Protestants were significantly less likely to vote yes (and Catholics slightly more
+* Practising Protestants were significantly more likely to vote 'No' (and Catholics slightly more
   likely to vote Yes)..
   
 * Finally, in the spirit of the LSE study, we include a measure of how openness to new experiences influences the vote.
@@ -104,10 +104,9 @@ with lower incomes, but people of all education levels voted both ways, and open
 vote 'yes'. Conventional politics and religion mattered in interesting ways.
 
 Next, the Brexit vote. We're modelling a "Leave" vote, so Up-Arrows mean "more likely to vote 'Leave'. Column 2 uses
-data from the whole UK; column 3 just uses Scottish cases. For the all-UK case I'm also going to capture regional
-effects - was there really a 'London Effect', or indeed 'Scottish Effect' that can't be explained by Londoners and Scots
-having income, education [FN we report the model without these [below][], showing that adding these doesn't affect our
-other conclusions, so this model is still comparable with the Indie ref one even though it has more variables].
+data from the whole UK; column 3 just uses people living in Scotland. For the all-UK case I'm going to add in variables
+showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed 'Scottish Effect' in the Brexit vote that
+can't be explained by Londoners and Scots having income, education [^FNREG].
 
 Reading down column 2 shows a very different pattern than for the Indie ref. The unqualified were much more likely to
 vote "Leave", " whilst political affiliations work in reverse from the IndieRef. "Leave" rises steadily with age. The
@@ -341,8 +340,13 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN6]: these are the parties people *identify* with; they needn't be members.
 
-[^FNSIG]: technical note: I'm using statistical significance for this (the p-values) rather than, for example, effect
-size. So a small but certain influence is given more weight than a large effect with a large uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+[^FNSIG]: A technical aside: I'm using statistical significance for this (the p-values) rather than, for example, effect
+size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
+more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+
+[^FNREG]: in the [Technical Note][TECHNOTE] we report a version ofthe model without these regional dummies
+showing that adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is still comparable with the Indie ref one
+even though it has more variables]
 
 [Resolution]: http://www.resolutionfoundation.org/media/blog/why-did-we-vote-to-leave-what-an-analysis-of-place-can-tell-us-about-brexit/ "Clarke, Stephen. Why Did We Vote to Leave? What an Analysis of Place Can Tell Us about Brexit. Resolution Foundation, 15 July 2016."
 [Wings]: http://wingsoverscotland.com/spotting-the-differences/ "Campbell, Stuart ‘Spotting the Differences’. Wings Over Scotland, 10 November 2016."
@@ -351,4 +355,3 @@ size. So a small but certain influence is given more weight than a large effect 
 [TECHNOTE]: http://virtual-worlds-research.com/scot/brexit_model_discussion.html "Stark, Graham: Brexit vs Indie: Model Notes and Links"
 [BES]: http://www.britishelectionstudy.com/ "The British Election Study"
 [ASA]: http://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108 "Wasserstein, Ronald L., and Nicole A. Lazar. ‘The ASA’s Statement on P-Values: Context, Process, and Purpose’. The American Statistician 70, no. 2 (2 April 2016): 129–33. doi:10.1080/00031305.2016.1154108."
-
