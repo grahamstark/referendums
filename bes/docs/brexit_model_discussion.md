@@ -280,7 +280,9 @@ regressors, plus (Eqn. 9) regional dummies
 
 Equations 10-13 are the same as 5-8, but for the Scottish subsample only.
 
-Finally, 14 and 15 use vote in Indie Ref [ ]
+Finally, 14 and 15 use vote in Indie Ref as a predictor. With all the other variables in, it's not a good predictor
+since the variables we use themselves predict the indieref vote. Using the indieref without the full variable set 
+is a good predictor.
 
 
 Code and Further Reading
