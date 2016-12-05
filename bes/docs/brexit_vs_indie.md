@@ -5,15 +5,15 @@ Date: 4th December 2016
 
 Brexit, the US Presidential election, the rise of far-right parties in France, Holland, Austria and elsewhere all seem
 to be part of a new and disturbing Populist wave. Was the Scottish Independence referendum part of that? It's certainly
-been portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
+been portrayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
 accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
 
-The Indie and EU Referredums certainly *felt* very different to me, and the Scottish Independence movement seems a very
+The Indie and EU Referendums certainly *felt* very different to me, and the Scottish Independence movement seems a very
 different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
 the big picture can be very different.
 
 The [Wings blogpost][WINGS] makes a case for the IndieRef being different using some opinion poll data. That's useful, I'd
-like to look at this in a slighty more systematic and precise way, using techniques from my day-job doing economic modelling.
+like to look at this in a slightly more systematic and precise way, using techniques from my day-job doing economic modelling.
 
 There are now some good empirical studies of the type I have in mind, trying to explain the Brexit vote:
 
@@ -41,7 +41,7 @@ working strongly in one case but not the other.
 extend my model, discussions of the choices I've made, and full results for several different model variants. But, for
 now, in summary:
 
-* I'm building a statistical model that shows how the vote in both referenda was influenced by various factors such as
+* I'm building a statistical model that shows how the vote in both referendums was influenced by various factors such as
   education, age, income and political allegiance;
 
 * I'm using a more recent version of the same BES data as the Rowntree and LSE studies. The data in those studies
@@ -64,12 +64,12 @@ paper][TECHNOTE]. Each column summarises one of our models that explain the vote
 the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses data for Great Britain as a
 whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of one variable on the vote.
 The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
-'<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significan *positive* effect on a 'Yes' (or
+'<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significant *positive* effect on a 'Yes' (or
 'Exit'), vote, from the strongest to the weakest. Likewise the red down arrows '<span
 class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
 class='negative_weak'>&#x21e3;</span>' signify negative effects [^FNSIG]. Variables that don't appear significant are
 indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
-varied by income, age, sex and so on, they of course don't explain everything - you could posess all the indicators that
+varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 
 ### Table 1 ###
@@ -333,7 +333,7 @@ real evidence of a distinct "London effect" for Remain, or a North East of Engla
 than you'd expect given incomes, education and age.
 
 Column (3) runs the same analysis for Scottish voters only. Here, you see some of the patterns of the UK-Wide
-Brexit vote coming though, notably the negative effects education, income, and age, and political affilliatons are
+Brexit vote coming though, notably the negative effects education, income, and age, and political affiliations are
 similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland.  
 
 It's customary to end notes like this with "more research is required". And it is: there are certainly many things that
