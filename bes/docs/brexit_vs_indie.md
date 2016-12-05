@@ -3,6 +3,8 @@ Author: Graham Stark
 Address: 
 Date: 4th December 2016
 
+# #
+
 Brexit, the US Presidential election, the rise of far-right parties in France,
 Holland, Austria and elsewhere all seem to be part of a new and disturbing
 Populist wave. Was the Scottish Independence referendum part of that? It's
@@ -76,7 +78,7 @@ indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a g
 varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 
-### Table 1 ###
+**Table 1**
 
 <table class='easytable'>
 <thead>
@@ -347,7 +349,7 @@ were very different things.
 
 [Graham Stark](mailto:graham.stark@virtual-worlds-research.com)
 
-####Notes#####
+**Notes**
 
 [^FN1]: The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
 had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
