@@ -78,20 +78,20 @@ Let's look at IndyRef first. That's column (1).
   the less likely to vote 'yes' [^FN5];
    
 * You interpret '<span class='negative_strong'>&#x21ca;'</span> in the next row "Gender - Female" as meaning that women
-were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
+  were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
 
 * The next three lines show the effect of increasing levels of education. There's essentially no effect. People of all
-levels of education were equally likely to vote for Independence;
+  levels of education were equally likely to vote for Independence;
 
 * Likewise, family circumstances seem to matter little;
 
 * Political affiliation does matter [^FN6]. The results go the expected ways, though it's tricky to interpret this -
   whilst it's quite plausible that liking the SNP would make someone more likely to vote 'yes', it could just as easily be
   that that people identify with the SNP because they want independence. Likewise, in reverse, for the Conservative (and
-  Unionist) party. We might need a more sophisticated model to capture what's really going on there. For Labour, the
-  Greens and the Liberal Democrats it's perhaps more plausible that the effects we see run from identification with the party to
-  which way people voted - perhaps some people really do follow the lead of their parties. Modelling this interaction fully
-  would be an interesting exercise.
+  Unionist) party. We might need a more sophisticated model to capture what's really going on there; that would be an
+  interesting exercise. For Labour, the Greens and the Liberal Democrats it's perhaps more plausible that the effects we
+  see run from identification with the party to which way people voted - perhaps some people really do follow the lead of
+  their parties.
   
 * Practising Protestants were significantly more likely to vote 'No' (and Catholics slightly more
   likely to vote Yes)..
@@ -114,7 +114,7 @@ Reading down column 2 shows a very different pattern than for the Indie ref. The
 vote "Leave", " whilst political affiliations work in reverse from the IndieRef. "Leave" rises steadily with age. The
 more open minded you are, the less likely to vote "Leave". The regional effects are interesting: , once we've controlled
 for the other factors, there is no evidence of a distinct "London effect" for Remain, or a North East of England effect
-for Leave [^FN3] FN: Resolution Foundation finds this, too].But there *are* a Scottish and Welsh
+for Leave [^FNLON].But there *are* a Scottish and Welsh
 effect (for Remain).
 
 That was for the whole GB; column (3) runs this analysis for Scotland only. The drivers for 'Leave' are very similar,
@@ -349,6 +349,8 @@ more uncertainty attached to it. [The American Statistical Association has a goo
 [^FNREG]: in the [Technical Note][TECHNOTE] we report a version ofthe model without these regional dummies, showing that
 adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
 still comparable with the Indie ref one even though it has more variables]
+
+[^FNLON]: The [Resolution Foundation study][Resolution] finds this, too.
 
 [Resolution]: http://www.resolutionfoundation.org/media/blog/why-did-we-vote-to-leave-what-an-analysis-of-place-can-tell-us-about-brexit/ "Clarke, Stephen. Why Did We Vote to Leave? What an Analysis of Place Can Tell Us about Brexit. Resolution Foundation, 15 July 2016."
 [Wings]: http://wingsoverscotland.com/spotting-the-differences/ "Campbell, Stuart ‘Spotting the Differences’. Wings Over Scotland, 10 November 2016."
