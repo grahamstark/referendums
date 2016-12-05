@@ -311,12 +311,12 @@ but weaker, than for GB as a whole.
 <tr><th>Positive Association</th>
 <td class='positive_strong'>&#x21c8; Strong </td>
 <td class='positive_med'>&#x2191; Medium</td>
-<td class='positive_weak'>&#x21e1;</td>
+<td class='positive_weak'>&#x21e1; Weak</td>
 </tr>
 <tr><th>Negative Association</th>
-<td class='negative_strong'>Strong &#x21ca;</td>
-<td class='negative_med'>Medium &#x2193;</td>
-<td class='negative_weak'>Weak &#x21e3;</td>
+<td class='negative_strong'>&#x21ca; Strong</td>
+<td class='negative_med'>&#x2193; Medium </td>
+<td class='negative_weak'>&#x21e3; Weak</td>
 </tr>
 <tr><th>No Significant Association</th>
 <td class='nonsig'>&#x25CF;</td>
