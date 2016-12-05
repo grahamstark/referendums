@@ -12,8 +12,10 @@ The Indie and EU Referendums certainly *felt* very different to me, and the Scot
 different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
 the big picture can be very different.
 
-The [Wings blogpost][WINGS] makes a case for the IndieRef being different using some opinion poll data. That's useful, I'd
-like to look at this in a slightly more systematic and precise way, using techniques from my day-job doing economic modelling.
+The [Wings blogpost][WINGS] uses some opinion poll data to make a case for the
+IndieRef being different. That's useful, but I'd like to look at this in a
+slightly more systematic and precise way, using techniques from my day-job doing
+economic modelling.
 
 There are now some good empirical studies of the type I have in mind, trying to explain the Brexit vote:
 
