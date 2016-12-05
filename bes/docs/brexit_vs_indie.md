@@ -342,7 +342,7 @@ Column (3) runs the same analysis for Scottish voters only. Here, you see some o
 Brexit vote coming though, notably the negative effects education, income, and age, and political affiliations are
 similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland.  
 
-It's customary to end notes like this with "more research is required". And it is: there are certainly many things that
+It's customary to end work like this with "more research is required". And it is: there are certainly many things that
 could be done better, or at least differently. If anyone is interested in taking this on, [most of what you'll need is
 available][TECHNOTE]. But I'm confident that the key findings here are robust: empirically, IndieRef and the Brexit vote
 were very different things.
