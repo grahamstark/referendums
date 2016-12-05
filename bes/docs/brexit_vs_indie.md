@@ -373,7 +373,7 @@ dropped out of the survey between the Indie and Brexit votes.
 adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
 still comparable with the Indie ref one even though it has more variables.
 
-[^FNSCOT] 'Scottish', as is customary, simply means people living (or at least interviewed) in Scotland. Adding country of birth as an explanatory variable would be interesting.
+[^FNSCOT]: 'Scottish', as is customary, simply means people living (or at least interviewed) in Scotland. Adding country of birth as an explanatory variable would be interesting.
 
 [^FNLON]: The [Resolution Foundation study][Resolution] finds this, too.
 
