@@ -3,10 +3,12 @@ Author: Graham Stark
 Address: 
 Date: 4th December 2016
 
-Brexit, the US Presidential election, the rise of far-right parties in France, Holland, Austria and elsewhere all seem
-to be part of a new and disturbing Populist wave. Was the Scottish Independence referendum part of that? It's certainly
-been portrayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
-accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
+Brexit, the US Presidential election, the rise of far-right parties in France,
+Holland, Austria and elsewhere all seem to be part of a new and disturbing
+Populist wave. Was the Scottish Independence referendum part of that? It's
+certainly been portrayed in that way: Wings Over Scotland - not everyone's cup
+of tea, but usually careful and accurate - has [a compendium of claims on this
+from the Twittersphere][WINGS].
 
 The Indie and EU Referendums certainly *felt* very different to me, and the Scottish Independence movement seems a very
 different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
