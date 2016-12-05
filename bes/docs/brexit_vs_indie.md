@@ -339,6 +339,8 @@ were very different things.
 
 [Graham Stark](mailto:graham.stark@virtual-worlds-research.com)
 
+####Notes#####
+
 [^FN1]: The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
 had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
 perfect correlate with actual vote. I'm using the version (9) of the BES with the actual vote in it.
