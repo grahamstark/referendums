@@ -293,23 +293,21 @@ economics literature (age and age-squared, log of household income..). [Referenc
 
 More on the techniques used here:
 
-* [Probit Handouts]()
-* [Khan Academy]()
-* [Examples of Use]()
-
-This is preliminary (though an improvement in many ways on 
-[recent JRE analysis](https://www.jrf.org.uk/report/brexit-vote-explained-poverty-low-skills-and-lack-opportunities).
+* The [Khan Academy](https://www.khanacademy.org/math/statistics-probability) is a good place to start if
+  you want to brush up on statistics; 
+* The Probit model we use is well discussed in [this presentation](https://www3.nd.edu/~rwilliam/xsoc73994/Margins02.pdf);
+* [A good online course on using our R program for economic modelling](http://www.urfie.net/).
 
 
-Regressions were done in [R](https://www.r-project.org/).
+Regressions were done in [R](https://www.r-project.org/). 
 
-* [Code for variable creation](data_creation.R)
-* [Code for Probit binary regressions](regressions.R)
-* [Complete output from all regressions, plus summary stats](regressions.R.log).
+All the code and full output are available on the [GitHub code sharing site](https://github.com/grahamstark/referendums/).
+
+* [Code for variable creation](https://github.com/grahamstark/referendums/blob/master/bes/scripts/data_creation.R)
+* [Code for Probit binary regressions](https://github.com/grahamstark/referendums/blob/master/bes/scripts/regressions.R)
+* [Complete output from all regressions, plus summary stats](https://github.com/grahamstark/referendums/tree/master/bes/outputs).
 
 Please refer to these for data construction. 
-
-Reference old Gretl version?
 
 TODO (at least).
 ==================
