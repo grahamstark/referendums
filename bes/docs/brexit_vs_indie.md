@@ -55,7 +55,7 @@ now, in summary:
 * I'm going to use the same set of factors (income, age, gender and so on) to explain *both* the Scottish Independence
   and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
 
-[Table 1](#table-1) summarises the main findings. This is the simplest way I can find to boil down the huge amount of
+[Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge amount of
 information the computer program spits out. Each column summarises one of our models that explain the votes. The first
 column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses
 data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of
@@ -64,13 +64,15 @@ class='positive_med'>&#x2191;</span>' and '<span class='positive_weak'>&#x21e1;<
 significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down
 arrows '<span class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
 class='negative_weak'>&#x21e3;</span>' signify negative effects [^FNSIG]. Variables that don't appear significant are
-indicated with '<span class='nonsig'>&#x25CF;</span>'.
+indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
+varied by income, age, sex and so on, they of course don't explain everything - you could posess all the indicators that
+were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 
 Let's look at IndyRef first. That's column (1). 
 
 * The first cell summarises the influence of income on the Scottish Independence
   vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
-  significant *negative* effect on the likelihood of voting "Yes" in the indyRef - 
+  significant *negative* effect on the likelihood of voting "Yes" in the IndyRef - 
   the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
   can be confident this effect is real;
 
@@ -338,7 +340,7 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN4]: It's 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
 
-[^FN5]: in the IndieRef case, this is actually a bit of a simplification - see the [Technical Note][TECHNOTE] for more detail.
+[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit of a simplification - see the [Technical Note][TECHNOTE] for more detail.
 
 [^FN6]: These are the parties people *identify* with; they needn't be members of them.
 
@@ -346,7 +348,7 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
 more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
 
-[^FNREG]: in the [Technical Note][TECHNOTE] we report a version ofthe model without these regional dummies, showing that
+[^FNREG]: in the [Technical Note][TECHNOTE] I report a version of the model without these regional dummies, showing that
 adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
 still comparable with the Indie ref one even though it has more variables]
 
