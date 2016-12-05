@@ -70,63 +70,6 @@ indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a g
 varied by income, age, sex and so on, they of course don't explain everything - you could posess all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 
-Let's look at IndyRef first. That's column (1). 
-
-* The first cell summarises the influence of income on the Scottish Independence
-  vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
-  significant *negative* effect on the likelihood of voting "Yes" in the IndyRef - 
-  the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
-  can be confident this effect is real;
-
-* Next we have age - this is also significantly negative - the older you are,
-  the less likely to vote 'yes' [^FN5];
-   
-* You interpret '<span class='negative_strong'>&#x21ca;'</span> in the next row "Gender - Female" as meaning that women
-  were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
-
-* The next three lines show the effect of increasing levels of education. There's essentially no effect. People of all
-  levels of education were equally likely to vote for Independence;
-
-* Likewise, family circumstances seem to matter little;
-
-* Political affiliation does matter [^FN6]. The results go the expected ways, though it's tricky to interpret this -
-  whilst it's quite plausible that liking the SNP would make someone more likely to vote 'yes', it could just as easily be
-  that that people identify with the SNP because they want independence. Likewise, in reverse, for the Conservative (and
-  Unionist) party. We might need a more sophisticated model to capture what's really going on there; that would be an
-  interesting exercise. For Labour, the Greens and the Liberal Democrats it's perhaps more plausible that the effects we
-  see run from identification with the party to which way people voted - perhaps some people really do follow the lead of
-  their parties.
-  
-* Practising Protestants were significantly more likely to vote 'No' (and Catholics slightly more
-  likely to vote Yes)..
-  
-* Finally, in the spirit of the LSE study, we include a measure of how openness to new experiences influences the vote.
- (https://en.wikipedia.org/wiki/Big_Five_personality_traits). "Openness is a general appreciation for art, emotion,
- adventure, unusual ideas, imagination, curiosity, and variety of experience". "Openness in this sense is strongly
- associated with a "Yes" vote.
- 
-In sum, the picture that emerges is that yes was in most respects the progressive, optimistic, vote. Yes votes were associated
-with lower incomes, but people of all education levels voted both ways, and open-minded and the young, were more likely to
-vote 'yes'. Conventional politics and religion mattered in interesting ways.
-
-Next, the Brexit vote. We're modelling a "Leave" vote, so Up-Arrows mean "more likely to vote 'Leave'. Column 2 uses
-data from the whole UK; column 3 just uses people living in Scotland. For the all-UK case I'm going to add in variables
-showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed 'Scottish Effect' in the Brexit vote that
-can't be explained by Londoners and Scots having different levels of education, income, and so on[^FNREG].
-
-Reading down column 2 shows a very different pattern than for the Indie ref, one which does seem consistent with the
-Populist,or even reactionary, interpretation that many have put on the vote. There is a strong link between education
-and a 'Leave' vote: those with degrees or 'A-levels' were much more likely to vote "Remain". Political affiliations work
-in reverse from the IndieRef, with Conservatives much more likely to vote Leave and Socialists, Liberals and
-Nationalists much more likely to vote 'Remain'. "Leave" rises steadily with age. The more open minded you are, the less
-likely to vote "Leave". The regional effects are interesting: , once we've controlled for the other factors, there is no
-real evidence of a distinct "London effect" for Remain, or a North East of England effect for Leave [^FNLON]. But there
-*are* a Scottish and Welsh effect (for Remain).
-
-Column (3) runs the same analysis for Scotland only. For Scottish voters, you see some of the patterns of the UK-Wide
-Brexit vote coming though, notably the negative effects education, income, and age, and political affilliatons are
-similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland. 
-
 ### Table 1 ###
 
 <table class='easytable'>
@@ -331,6 +274,63 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 <td colspan='2'>
 </tr>
 </table>
+
+Let's look at IndyRef first. That's column (1). 
+
+* The first cell summarises the influence of income on the Scottish Independence
+  vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
+  significant *negative* effect on the likelihood of voting "Yes" in the IndyRef - 
+  the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
+  can be confident this effect is real;
+
+* Next we have age - this is also significantly negative - the older you are,
+  the less likely to vote 'yes' [^FN5];
+   
+* You interpret '<span class='negative_strong'>&#x21ca;'</span> in the next row "Gender - Female" as meaning that women
+  were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
+
+* The next three lines show the effect of increasing levels of education. There's essentially no effect. People of all
+  levels of education were equally likely to vote for Independence;
+
+* Likewise, family circumstances seem to matter little;
+
+* Political affiliation does matter [^FN6]. The results go the expected ways, though it's tricky to interpret this -
+  whilst it's quite plausible that liking the SNP would make someone more likely to vote 'yes', it could just as easily be
+  that that people identify with the SNP because they want independence. Likewise, in reverse, for the Conservative (and
+  Unionist) party. We might need a more sophisticated model to capture what's really going on there; that would be an
+  interesting exercise. For Labour, the Greens and the Liberal Democrats it's perhaps more plausible that the effects we
+  see run from identification with the party to which way people voted - perhaps some people really do follow the lead of
+  their parties.
+  
+* Practising Protestants were significantly more likely to vote 'No' (and Catholics slightly more
+  likely to vote Yes)..
+  
+* Finally, in the spirit of the LSE study, we include a measure of how openness to new experiences influences the vote.
+ (https://en.wikipedia.org/wiki/Big_Five_personality_traits). "Openness is a general appreciation for art, emotion,
+ adventure, unusual ideas, imagination, curiosity, and variety of experience". "Openness in this sense is strongly
+ associated with a "Yes" vote.
+ 
+In sum, the picture that emerges is that yes was in most respects the progressive, optimistic, vote. Yes votes were associated
+with lower incomes, but people of all education levels voted both ways, and open-minded and the young, were more likely to
+vote 'yes'. Conventional politics and religion mattered in interesting ways.
+
+Next, the Brexit vote. We're modelling a "Leave" vote, so Up-Arrows mean "more likely to vote 'Leave'. Column 2 uses
+data from the whole UK; column 3 just uses people living in Scotland. For the all-UK case I'm going to add in variables
+showing which region people lived in; this can tell us (broadly) whether there really was a 'London Effect', or indeed 'Scottish Effect' in the Brexit vote that
+can't be explained by Londoners and Scots having different levels of education, income, and so on[^FNREG].
+
+Reading down column 2 shows a very different pattern than for the Indie ref, one which does seem consistent with the
+Populist,or even reactionary, interpretation that many have put on the vote. There is a strong link between education
+and a 'Leave' vote: those with degrees or 'A-levels' were much more likely to vote "Remain". Political affiliations work
+in reverse from the IndieRef, with Conservatives much more likely to vote Leave and Socialists, Liberals and
+Nationalists much more likely to vote 'Remain'. "Leave" rises steadily with age. The more open minded you are, the less
+likely to vote "Leave". The regional effects are interesting: , once we've controlled for the other factors, there is no
+real evidence of a distinct "London effect" for Remain, or a North East of England effect for Leave [^FNLON]. But there
+*are* a Scottish and Welsh effect (for Remain).
+
+Column (3) runs the same analysis for Scotland only. For Scottish voters, you see some of the patterns of the UK-Wide
+Brexit vote coming though, notably the negative effects education, income, and age, and political affilliatons are
+similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland. 
 
 It's customary to end notes like this with "more research is required". And it is: there are certainly many things that
 could be done better, or at least differently. If anyone is interested in taking this on, [most of what you'll need is
