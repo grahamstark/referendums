@@ -55,20 +55,21 @@ now, in summary:
 * I'm going to use the same set of factors (income, age, gender and so on) to explain *both* the Scottish Independence
   and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
 
-[Table 1](#table-1) summarises the main findings.
-
-This is the simplest way I can find to boil down the huge amount of information the computer program spits out. Each
-column summarises one of our models that explain the votes. The first column (1) is our model of the Scottish
-Independence vote. The other (2 - 3) are models of the EU Referendum, one for Great Britain as a whole [^FN4], and one
-for Scotland. The rows summarise the effect of one variable on the vote. An up arrow ![<span
-class='negative_strong'>&#x1F883;'</span>] means that that thing has a strong positive influence on voting 'yes'; the
-thicker the arrow the stronger the influence, and vice-versa for the down arrows
+[Table 1](#table-1) summarises the main findings. This is the simplest way I can find to boil down the huge amount of
+information the computer program spits out. Each column summarises one of our models that explain the votes. The first
+column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses
+data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of
+one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
+class='positive_med'>&#x2191;/span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
+significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down arrows
+'<span class='negative_strong'>&#x21ca; Strong</span>', '<span class='negative_med'>&#x2193; Medium </span>' and
+'<span class='negative_weak'>&#x21e3; Weak</span>' signify negative effects[^FNSIG].
 
 Let's look at IndyRef first. That's column (1). 
 
 * The first cell summarises the influence of income on the Scottish Independence
   vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
-  significant *negative* effect on the likelihood of voting "Yes" in the indyRef[^FNSIG] - 
+  significant *negative* effect on the likelihood of voting "Yes" in the indyRef - 
   the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
   can be confident this effect is real;
 
@@ -334,11 +335,11 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN3]: Strictly speaking, there is no London effect relative to the "ommited dummy", - the Midlands - the [technical note][TECHNOTE] explains this in more detail; 
 
-[^FN4]: it's 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
+[^FN4]: It's 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
 
 [^FN5]: in the IndieRef case, this is actually a bit of a simplification - see the [Technical Note][TECHNOTE] for more detail.
 
-[^FN6]: these are the parties people *identify* with; they needn't be members.
+[^FN6]: These are the parties people *identify* with; they needn't be members of them.
 
 [^FNSIG]: A technical aside: I'm using statistical significance for this (the p-values) rather than, for example, effect
 size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
