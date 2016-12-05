@@ -68,7 +68,7 @@ Let's look at IndyRef first. That's column (1).
 
 * The first cell summarises the influence of income on the Scottish Independence
   vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
-  significant *negative* effect on the likelihood of voting "Yes" in the indyRef - 
+  significant *negative* effect on the likelihood of voting "Yes" in the indyRef[^FNSIG] - 
   the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
   can be confident this effect is real;
 
@@ -341,9 +341,14 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN6]: these are the parties people *identify* with; they needn't be members.
 
+[^FNSIG]: technical note: I'm using statistical significance for this (the p-values) rather than, for example, effect
+size. So a small but certain influence is given more weight than a large effect with a large uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+
 [Resolution]: http://www.resolutionfoundation.org/media/blog/why-did-we-vote-to-leave-what-an-analysis-of-place-can-tell-us-about-brexit/ "Clarke, Stephen. Why Did We Vote to Leave? What an Analysis of Place Can Tell Us about Brexit. Resolution Foundation, 15 July 2016."
 [Wings]: http://wingsoverscotland.com/spotting-the-differences/ "Campbell, Stuart ‘Spotting the Differences’. Wings Over Scotland, 10 November 2016."
 [Rowntree]: https://www.jrf.org.uk/report/brexit-vote-explained-poverty-low-skills-and-lack-opportunities "Goodwin, Matthew, and Oliver Heath. ‘Brexit Vote Explained: Poverty, Low Skills and Lack of Opportunities’. JRF, 26 August 2016."
 [LSE]: http://blogs.lse.ac.uk/politicsandpolicy/personal-values-brexit-vote/ "Kaufmann, Eric: ‘It’s NOT the Economy, Stupid: Brexit as a Story of Personal Values’. British Politics and Policy at LSE, 7 July 2016."
 [TECHNOTE]: http://virtual-worlds-research.com/scot/brexit_model_discussion.html "Stark, Graham: Brexit vs Indie: Model Notes and Links"
 [BES]: http://www.britishelectionstudy.com/ "The British Election Study"
+[ASA]: http://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108 "Wasserstein, Ronald L., and Nicole A. Lazar. ‘The ASA’s Statement on P-Values: Context, Process, and Purpose’. The American Statistician 70, no. 2 (2 April 2016): 129–33. doi:10.1080/00031305.2016.1154108."
+
