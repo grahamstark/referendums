@@ -36,7 +36,7 @@ sink( "/home/graham_s/VirtualWorlds/projects/scotland/BES/outputs/regressions.R.
 # local version: 
 is_local = FALSE;
 if( is_local ){
-        load( "/home/graham_s/VirtualWorlds/projects/scotland/BES/data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
+        load( "/home/graham_s/VirtualWorlds/projects/scotland/referendums/bes/data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 } else {
         load( "/mnt/data/bes/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 }

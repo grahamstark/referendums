@@ -31,24 +31,23 @@ some good scholarly, empirical studies of the Brexit vote:
 
 What I'm going to do here is build a statistical model in a similar vein to these, using a later version of the same
 data as the LSE and Rowntree study. I'll use the model to explain the Brexit vote but also apply it to the IndieRef
-vote, which is also recorded in the BES data. I'll show that the model explains both votes well, but the factors (age, sex, etc.)
-often work differently in the two vote - sometimes working in the opposite way, sometimes working strongly for one vote
-but not for the other.
+vote, which is also recorded in the BES data. I'll show that the model explains both votes well, but the factors (age,
+sex, etc.) often work differently in the two cases - sometimes working in the opposite way, sometimes working strongly
+for one vote but not for the other.
 
 [A companion note][TECHNOTE] discusses my model in a detail. There, you'll fine everything you'll need to replicate and
 extend my model, discussions of the choices I've made, and full results for several different model variants. But, for
 now, in summary:
 
 * I'm building a statistical model that shows how the vote in both referenda was influenced by various factors such as
-education, age, income and political allegiance;
+  education, age, income and political allegiance;
 
 * I'm using a more recent version of the same BES data as the Rowntree and LSE studies. The data in those studies
   doesn't actually have peoples Brexit vote in it, instead they used either intended votes (Rowntree) or attitudes to the
   EU (LSE). My version does have people's actual Brexit vote, as well as the IndieRef vote;
 
-* the model allows each factor to be isolated from the others - so, for example,
-  we can study the influence of education on voting, holding income and other
-  factors constant;
+* the model allows each factor to be isolated from the others - so, for example, we can study the influence of education
+  on voting, holding income and other factors constant;
 
 * my model is closest in spirit to the Rowntree study, though I do some things differently. There are also some ideas from
   the other studies thrown in;
@@ -56,12 +55,14 @@ education, age, income and political allegiance;
 * I'm going to use the same set of factors (income, age, gender and so on) to explain *both* the Scottish Independence
   and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
 
-[Table 1] summarises the main findings.
+[Table 1](#table-1) summarises the main findings.
 
-Each column summarises one of our models that explain the votes. The first column (1) is our model of the Scottish
-Independence vote. The other (2 - 3) are models of the EU Referendum, one for Great Britain as a whole [^FN4], and one for Scotland. The rows summarise the effect of one
-variable on the vote. An up arrow ![<span class='negative_strong'>&#x1F883;'</span>] means that that thing has a strong
-positive influence on voting 'yes'; the thicker the arrow the stronger the influence, and vice-versa for the down arrows
+This is the simplest way I can find to boil down the huge amount of information the computer program spits out. Each
+column summarises one of our models that explain the votes. The first column (1) is our model of the Scottish
+Independence vote. The other (2 - 3) are models of the EU Referendum, one for Great Britain as a whole [^FN4], and one
+for Scotland. The rows summarise the effect of one variable on the vote. An up arrow ![<span
+class='negative_strong'>&#x1F883;'</span>] means that that thing has a strong positive influence on voting 'yes'; the
+thicker the arrow the stronger the influence, and vice-versa for the down arrows
 
 Let's look at IndyRef first. That's column (1). 
 
@@ -117,6 +118,8 @@ effect (for Remain).
 
 That was for the whole GB; column (3) runs this analysis for Scotland only. The drivers for 'Leave' are very similar,
 but weaker, than for GB as a whole. 
+
+=== Table 1 ====
 
 <table class='easytable'>
 <thead>
