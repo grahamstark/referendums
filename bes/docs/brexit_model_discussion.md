@@ -272,6 +272,17 @@ Main Results
 <tr><td colspan="16" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="15" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
+Equations 1-4 show IndieRef estimates, based on Scottish Subsample, with
+regressors added progressively: basic regressors (age, sex, education, income), then: politics, religion, psychology.
+
+Equations 5-9 show Brexit estimates on the whole GB sample, using the same
+regressors, plus (Eqn. 9) regional dummies
+
+Equations 10-13 are the same as 5-8, but for the Scottish subsample only.
+
+Finally, 14 and 15 use vote in Indie Ref [ ]
+
+
 Code and Further Reading
 =============================================================================
 The regressions show how the probability of voting yes to Scottish Independence or Brexit varies with
@@ -300,47 +311,8 @@ Please refer to these for data construction.
 
 Reference old Gretl version?
 
-Brexit vs IndieRef Vote
------------------------
-
-Asks about both votes of
-
-<pre>
-               IndieRef
-  +------+-----------+---------
-         |    No     | Yes
-  Remain | 0.5257854 | 0.6254072
-  Leave  | 0.4742146 | 0.3745928
-  
-</pre>  
-  
-So 66% of 'yes' in this sample voted 'remain'.
-
-(Why this is dodgy; comparison with exit polls).
-
-Main Results
-------------
-
-Eqn 1 models the Indieref vote. Remainder the EURef. 2-3 are whole GB; 4-6 are on Scottish voters only.
-
-
-Discussion
-------------
-The upshot is:
-
-* Education (lack of?) was not a driver of Indieref voting choice, but strong driver of Brexit (discuss possible other measures of this e.g age left education);
-* Income: (Explain what and why of logs). Very strong negative association in Brexit vote. Negative, but less
-    significant in IndieRef;
-* Age: (explain squared term) in IndieRef, all else equal, probability of yes increases to about age
-     28, decreases thereafter. Probability of EU vote leave increases steadily with age (squared term much smaller);
-* Political affiliation matters, in obvious ways;
-* Religion - those identifying as Protestant much less likely to vote 'yes' in Indie, more likely to vote Brexit;
-* Discuss big 5 - open minded people voted yes Indie, Remain in EURef;
-* Regional dummies - note the Welsh are less likely to vote leave than other similarly poor areas (but still quite likely).
-
-Compare to Rowntree study.
-
 TODO (at least).
+==================
 
 * Better understanding of missing variables;
 * How to handle "Don't Vote" better;
@@ -352,21 +324,8 @@ TODO (at least).
 * Brexit regressions by Party/Region subsamples - e.g. did the Labour/North-East vote behave strangely?
 
 
-Full Results
-----------------
-
-Various formulations [..]()
-
-Equations 1-4 show IndieRef estimates, based on Scottish Subsample, with
-regressors added progressively: basic regressors (age, sex, education, income), then: politics, religion, psychology.
-
-Equations 5-9 show Brexit estimates on the whole GB sample, using the same
-regressors, plus (Eqn. 9) regional dummies
-
-Equations 10-13 are the same as 5-8, but for the Scottish subsample only.
-
-Finally, 14 and 15 use vote in Indie Ref [ ]
-
+Some Crude Summary Crosstabs
+==============================
 <pre>    
            Remain      Leave
   Con    0.36609426 0.63390574
