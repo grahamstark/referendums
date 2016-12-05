@@ -2,13 +2,18 @@ Title: Were the Scottish and EU Referendums driven by the same things - Brexit v
 Author: Graham Stark [graham.stark@virtual-worlds-research.com](mailto:graham.stark@virtual-worlds-research.com')
 Date: 28th November 2016
 
+This note accompanies [a short paper on Brexit vs IndieRefs]
+
 Data
 ----
-> The British Election Study (BES) is one of the longest running election
-studies world-wide and the longest running social science survey in the UK. It
-has made a major contribution to the understanding of political attitudes and
-behaviour over nearly sixty years. Surveys have taken place immediately after
-every general election since 1964.
+
+To quote [the BES website]():
+
+> "The British Election Study (BES) is one of the longest running election
+> studies world-wide and the longest running social science survey in the UK. It
+> has made a major contribution to the understanding of political attitudes and
+> behaviour over nearly sixty years. Surveys have taken place immediately after
+> every general election since 1964."
 
 We're going to use the [inter-election internet panel]() part of the study. The
 'panel' here indicates that the same group of people is contacted repeatedly.
@@ -96,8 +101,179 @@ forms, and of course anyone interested should be able to replicate the full resu
  
 See the [data creation script] for full details.  
  
- 
+Main Results
+=============================================================================
 
+[Table 1](#table-1) is the full table for the three main regressions summarised in the paper.
+
+[Table 2](#table-2) is the complete set of regressions, showing groups of variables being added progressively.
+
+
+###TABLE 1###
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Voted Yes in Scottish Referendum</td><td colspan="2">Voted Leave in EU Ref</td></tr>
+<tr><td style="text-align:left"></td><td>Scotland Only</td><td>All GB</td><td>Scotland Only</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.131<sup>***</sup></td><td>-0.214<sup>***</sup></td><td>-0.124<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age</td><td>0.059<sup>***</sup></td><td>0.048<sup>***</sup></td><td>0.034<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age Squared</td><td>-0.001<sup>***</sup></td><td>-0.0004<sup>***</sup></td><td>-0.0003</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Female</td><td>-0.207<sup>***</sup></td><td>-0.053<sup>*</sup></td><td>0.069</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>-0.019</td><td>-0.259<sup>***</sup></td><td>-0.348<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.126</td><td>-0.316<sup>***</sup></td><td>-0.390<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>0.136</td><td>-0.508<sup>***</sup></td><td>-0.701<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Ethnic Minority</td><td>0.276</td><td>-0.124<sup>*</sup></td><td>0.171</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has Children</td><td>0.075</td><td>0.104<sup>***</sup></td><td>0.215<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has a Partner</td><td>-0.053</td><td>0.099<sup>***</sup></td><td>0.015</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Conservative</td><td>-1.360<sup>***</sup></td><td>0.246<sup>***</sup></td><td>0.271<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Libdem</td><td>-0.883<sup>***</sup></td><td>-0.784<sup>***</sup></td><td>-0.829<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Labour</td><td>-0.506<sup>***</sup></td><td>-0.533<sup>***</sup></td><td>-0.478<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Green</td><td>0.789<sup>***</sup></td><td>-0.994<sup>***</sup></td><td>-0.801<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies UKIP</td><td>-0.700<sup>***</sup></td><td>2.003<sup>***</sup></td><td>5.625</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies SNP</td><td>1.890<sup>***</sup></td><td>-0.491<sup>***</sup></td><td>-0.456<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Catholic</td><td>0.193<sup>*</sup></td><td>0.058</td><td>-0.073</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Any Protestant</td><td>-0.238<sup>***</sup></td><td>0.168<sup>***</sup></td><td>0.289<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Big5: Openness</td><td>0.059<sup>***</sup></td><td>-0.016<sup>**</sup></td><td>0.029</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">North East</td><td></td><td>0.034</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">North West of England</td><td></td><td>-0.005</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Yorkshire and Humberside</td><td></td><td>0.067</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">London</td><td></td><td>-0.086<sup>*</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">South of England</td><td></td><td>-0.117<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Wales</td><td></td><td>-0.249<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Scotland</td><td></td><td>-0.302<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-0.313</td><td>1.213<sup>***</sup></td><td>0.135</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>2,256</td><td>10,540</td><td>1,553</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-866.535</td><td>-5,934.568</td><td>-855.068</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>1,773.070</td><td>11,923.140</td><td>1,750.136</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+###TABLE 2###
+
+<table style="text-align:center"><tr><td colspan="16" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="15"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="15" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="4">Voted Yes in Scottish Referendum</td><td colspan="11">Voted Leave in EU Ref</td></tr>
+<tr><td style="text-align:left"></td><td colspan="4">Scotland Only</td><td colspan="5">All GB</td><td colspan="6">Scotland Only</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td><td>(8)</td><td>(9)</td><td>(10)</td><td>(11)</td><td>(12)</td><td>(13)</td><td>(14)</td><td>(15)</td></tr>
+<tr><td colspan="16" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.225<sup>***</sup></td><td>-0.135<sup>***</sup></td><td>-0.124<sup>***</sup></td><td>-0.131<sup>***</sup></td><td>-0.128<sup>***</sup></td><td>-0.202<sup>***</sup></td><td>-0.201<sup>***</sup></td><td>-0.215<sup>***</sup></td><td>-0.214<sup>***</sup></td><td>-0.064</td><td>-0.116<sup>**</sup></td><td>-0.116<sup>**</sup></td><td>-0.124<sup>**</sup></td><td>-0.190<sup>***</sup></td><td>-0.170<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.036)</td><td>(0.046)</td><td>(0.048)</td><td>(0.048)</td><td>(0.017)</td><td>(0.019)</td><td>(0.019)</td><td>(0.020)</td><td>(0.020)</td><td>(0.046)</td><td>(0.050)</td><td>(0.050)</td><td>(0.051)</td><td>(0.049)</td><td>(0.045)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age</td><td>0.031<sup>***</sup></td><td>0.053<sup>***</sup></td><td>0.059<sup>***</sup></td><td>0.059<sup>***</sup></td><td>0.038<sup>***</sup></td><td>0.049<sup>***</sup></td><td>0.048<sup>***</sup></td><td>0.048<sup>***</sup></td><td>0.048<sup>***</sup></td><td>0.010</td><td>0.029<sup>*</sup></td><td>0.034<sup>**</sup></td><td>0.034<sup>**</sup></td><td>0.039<sup>**</sup></td><td>0.027<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.011)</td><td>(0.015)</td><td>(0.016)</td><td>(0.016)</td><td>(0.005)</td><td>(0.005)</td><td>(0.006)</td><td>(0.006)</td><td>(0.006)</td><td>(0.015)</td><td>(0.016)</td><td>(0.016)</td><td>(0.017)</td><td>(0.017)</td><td>(0.016)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age Squared</td><td>-0.0004<sup>***</sup></td><td>-0.001<sup>***</sup></td><td>-0.001<sup>***</sup></td><td>-0.001<sup>***</sup></td><td>-0.0003<sup>***</sup></td><td>-0.0004<sup>***</sup></td><td>-0.0004<sup>***</sup></td><td>-0.0004<sup>***</sup></td><td>-0.0004<sup>***</sup></td><td>-0.00001</td><td>-0.0002</td><td>-0.0003<sup>*</sup></td><td>-0.0003</td><td>-0.0003<sup>*</sup></td><td>-0.0002</td></tr>
+<tr><td style="text-align:left"></td><td>(0.0001)</td><td>(0.0002)</td><td>(0.0002)</td><td>(0.0002)</td><td>(0.00005)</td><td>(0.0001)</td><td>(0.0001)</td><td>(0.0001)</td><td>(0.0001)</td><td>(0.0001)</td><td>(0.0002)</td><td>(0.0002)</td><td>(0.0002)</td><td>(0.0002)</td><td>(0.0002)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Female</td><td>-0.210<sup>***</sup></td><td>-0.222<sup>***</sup></td><td>-0.193<sup>***</sup></td><td>-0.207<sup>***</sup></td><td>-0.043<sup>*</sup></td><td>-0.041</td><td>-0.050<sup>*</sup></td><td>-0.049<sup>*</sup></td><td>-0.053<sup>*</sup></td><td>-0.006</td><td>0.055</td><td>0.058</td><td>0.069</td><td>0.052</td><td>0.0002</td></tr>
+<tr><td style="text-align:left"></td><td>(0.052)</td><td>(0.068)</td><td>(0.069)</td><td>(0.070)</td><td>(0.024)</td><td>(0.026)</td><td>(0.026)</td><td>(0.027)</td><td>(0.027)</td><td>(0.066)</td><td>(0.070)</td><td>(0.070)</td><td>(0.071)</td><td>(0.067)</td><td>(0.063)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>0.044</td><td>0.041</td><td>-0.0003</td><td>-0.019</td><td>-0.352<sup>***</sup></td><td>-0.323<sup>***</sup></td><td>-0.308<sup>***</sup></td><td>-0.277<sup>***</sup></td><td>-0.259<sup>***</sup></td><td>-0.326<sup>***</sup></td><td>-0.410<sup>***</sup></td><td>-0.377<sup>***</sup></td><td>-0.348<sup>***</sup></td><td>-0.349<sup>***</sup></td><td>-0.338<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.081)</td><td>(0.106)</td><td>(0.110)</td><td>(0.110)</td><td>(0.037)</td><td>(0.040)</td><td>(0.040)</td><td>(0.042)</td><td>(0.042)</td><td>(0.096)</td><td>(0.102)</td><td>(0.103)</td><td>(0.105)</td><td>(0.103)</td><td>(0.097)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.016</td><td>0.164</td><td>0.149</td><td>0.126</td><td>-0.433<sup>***</sup></td><td>-0.372<sup>***</sup></td><td>-0.361<sup>***</sup></td><td>-0.331<sup>***</sup></td><td>-0.316<sup>***</sup></td><td>-0.384<sup>***</sup></td><td>-0.418<sup>***</sup></td><td>-0.397<sup>***</sup></td><td>-0.390<sup>***</sup></td><td>-0.390<sup>***</sup></td><td>-0.415<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.102)</td><td>(0.136)</td><td>(0.139)</td><td>(0.139)</td><td>(0.048)</td><td>(0.053)</td><td>(0.053)</td><td>(0.054)</td><td>(0.054)</td><td>(0.125)</td><td>(0.133)</td><td>(0.134)</td><td>(0.136)</td><td>(0.126)</td><td>(0.118)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>0.067</td><td>0.165<sup>*</sup></td><td>0.155<sup>*</sup></td><td>0.136</td><td>-0.653<sup>***</sup></td><td>-0.573<sup>***</sup></td><td>-0.556<sup>***</sup></td><td>-0.522<sup>***</sup></td><td>-0.508<sup>***</sup></td><td>-0.720<sup>***</sup></td><td>-0.719<sup>***</sup></td><td>-0.698<sup>***</sup></td><td>-0.701<sup>***</sup></td><td>-0.695<sup>***</sup></td><td>-0.728<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.067)</td><td>(0.089)</td><td>(0.090)</td><td>(0.091)</td><td>(0.029)</td><td>(0.031)</td><td>(0.032)</td><td>(0.033)</td><td>(0.033)</td><td>(0.082)</td><td>(0.087)</td><td>(0.088)</td><td>(0.090)</td><td>(0.082)</td><td>(0.076)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Ethnic Minority</td><td>0.409<sup>**</sup></td><td>0.287</td><td>0.267</td><td>0.276</td><td>-0.152<sup>**</sup></td><td>-0.149<sup>**</sup></td><td>-0.131<sup>**</sup></td><td>-0.114<sup>*</sup></td><td>-0.124<sup>*</sup></td><td>0.226</td><td>0.196</td><td>0.188</td><td>0.171</td><td>0.109</td><td>0.164</td></tr>
+<tr><td style="text-align:left"></td><td>(0.169)</td><td>(0.217)</td><td>(0.222)</td><td>(0.223)</td><td>(0.059)</td><td>(0.064)</td><td>(0.064)</td><td>(0.066)</td><td>(0.067)</td><td>(0.226)</td><td>(0.245)</td><td>(0.251)</td><td>(0.251)</td><td>(0.229)</td><td>(0.210)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has Children</td><td>0.020</td><td>0.076</td><td>0.067</td><td>0.075</td><td>0.110<sup>***</sup></td><td>0.120<sup>***</sup></td><td>0.108<sup>***</sup></td><td>0.103<sup>***</sup></td><td>0.104<sup>***</sup></td><td>0.202<sup>**</sup></td><td>0.229<sup>**</sup></td><td>0.203<sup>**</sup></td><td>0.215<sup>**</sup></td><td>0.199<sup>**</sup></td><td>0.200<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.066)</td><td>(0.083)</td><td>(0.086)</td><td>(0.087)</td><td>(0.031)</td><td>(0.034)</td><td>(0.034)</td><td>(0.035)</td><td>(0.035)</td><td>(0.086)</td><td>(0.091)</td><td>(0.092)</td><td>(0.094)</td><td>(0.092)</td><td>(0.086)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has a Partner</td><td>0.034</td><td>-0.025</td><td>-0.060</td><td>-0.053</td><td>0.081<sup>***</sup></td><td>0.091<sup>***</sup></td><td>0.087<sup>***</sup></td><td>0.107<sup>***</sup></td><td>0.099<sup>***</sup></td><td>-0.053</td><td>-0.026</td><td>-0.022</td><td>0.015</td><td>0.061</td><td>0.056</td></tr>
+<tr><td style="text-align:left"></td><td>(0.060)</td><td>(0.078)</td><td>(0.080)</td><td>(0.081)</td><td>(0.028)</td><td>(0.031)</td><td>(0.031)</td><td>(0.032)</td><td>(0.032)</td><td>(0.076)</td><td>(0.081)</td><td>(0.082)</td><td>(0.084)</td><td>(0.078)</td><td>(0.074)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Conservative</td><td></td><td>-1.453<sup>***</sup></td><td>-1.373<sup>***</sup></td><td>-1.360<sup>***</sup></td><td></td><td>0.320<sup>***</sup></td><td>0.291<sup>***</sup></td><td>0.274<sup>***</sup></td><td>0.246<sup>***</sup></td><td></td><td>0.320<sup>***</sup></td><td>0.269<sup>**</sup></td><td>0.271<sup>**</sup></td><td>0.228<sup>**</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.136)</td><td>(0.139)</td><td>(0.140)</td><td></td><td>(0.038)</td><td>(0.038)</td><td>(0.039)</td><td>(0.040)</td><td></td><td>(0.112)</td><td>(0.113)</td><td>(0.115)</td><td>(0.107)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Libdem</td><td></td><td>-0.901<sup>***</sup></td><td>-0.910<sup>***</sup></td><td>-0.883<sup>***</sup></td><td></td><td>-0.737<sup>***</sup></td><td>-0.753<sup>***</sup></td><td>-0.765<sup>***</sup></td><td>-0.784<sup>***</sup></td><td></td><td>-0.773<sup>***</sup></td><td>-0.825<sup>***</sup></td><td>-0.829<sup>***</sup></td><td>-0.973<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.170)</td><td>(0.174)</td><td>(0.176)</td><td></td><td>(0.056)</td><td>(0.057)</td><td>(0.058)</td><td>(0.058)</td><td></td><td>(0.179)</td><td>(0.180)</td><td>(0.181)</td><td>(0.183)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Labour</td><td></td><td>-0.497<sup>***</sup></td><td>-0.506<sup>***</sup></td><td>-0.506<sup>***</sup></td><td></td><td>-0.498<sup>***</sup></td><td>-0.500<sup>***</sup></td><td>-0.505<sup>***</sup></td><td>-0.533<sup>***</sup></td><td></td><td>-0.485<sup>***</sup></td><td>-0.482<sup>***</sup></td><td>-0.478<sup>***</sup></td><td>-0.611<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.087)</td><td>(0.089)</td><td>(0.090)</td><td></td><td>(0.037)</td><td>(0.037)</td><td>(0.038)</td><td>(0.039)</td><td></td><td>(0.106)</td><td>(0.107)</td><td>(0.109)</td><td>(0.102)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Green</td><td></td><td>0.887<sup>***</sup></td><td>0.803<sup>***</sup></td><td>0.789<sup>***</sup></td><td></td><td>-1.066<sup>***</sup></td><td>-1.033<sup>***</sup></td><td>-1.007<sup>***</sup></td><td>-0.994<sup>***</sup></td><td></td><td>-0.792<sup>***</sup></td><td>-0.790<sup>***</sup></td><td>-0.801<sup>***</sup></td><td>-0.860<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.157)</td><td>(0.164)</td><td>(0.164)</td><td></td><td>(0.109)</td><td>(0.109)</td><td>(0.112)</td><td>(0.112)</td><td></td><td>(0.257)</td><td>(0.259)</td><td>(0.263)</td><td>(0.248)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies UKIP</td><td></td><td>-0.700<sup>***</sup></td><td>-0.718<sup>***</sup></td><td>-0.700<sup>***</sup></td><td></td><td>2.005<sup>***</sup></td><td>1.992<sup>***</sup></td><td>2.011<sup>***</sup></td><td>2.003<sup>***</sup></td><td></td><td>5.587</td><td>5.580</td><td>5.625</td><td>5.382</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.195)</td><td>(0.202)</td><td>(0.202)</td><td></td><td>(0.130)</td><td>(0.131)</td><td>(0.137)</td><td>(0.139)</td><td></td><td>(58.378)</td><td>(58.377)</td><td>(58.622)</td><td>(58.183)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies SNP</td><td></td><td>1.862<sup>***</sup></td><td>1.895<sup>***</sup></td><td>1.890<sup>***</sup></td><td></td><td>-0.684<sup>***</sup></td><td>-0.680<sup>***</sup></td><td>-0.687<sup>***</sup></td><td>-0.491<sup>***</sup></td><td></td><td>-0.445<sup>***</sup></td><td>-0.439<sup>***</sup></td><td>-0.456<sup>***</sup></td><td>-0.506<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.101)</td><td>(0.105)</td><td>(0.106)</td><td></td><td>(0.068)</td><td>(0.069)</td><td>(0.070)</td><td>(0.080)</td><td></td><td>(0.099)</td><td>(0.099)</td><td>(0.102)</td><td>(0.102)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Catholic</td><td></td><td></td><td>0.170</td><td>0.193<sup>*</sup></td><td></td><td></td><td>0.080<sup>*</sup></td><td>0.069</td><td>0.058</td><td></td><td></td><td>-0.008</td><td>-0.073</td><td>0.151</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.115)</td><td>(0.116)</td><td></td><td></td><td>(0.049)</td><td>(0.050)</td><td>(0.050)</td><td></td><td></td><td>(0.125)</td><td>(0.131)</td><td>(0.117)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Any Protestant</td><td></td><td></td><td>-0.260<sup>***</sup></td><td>-0.238<sup>***</sup></td><td></td><td></td><td>0.180<sup>***</sup></td><td>0.177<sup>***</sup></td><td>0.168<sup>***</sup></td><td></td><td></td><td>0.263<sup>***</sup></td><td>0.289<sup>***</sup></td><td>0.186<sup>**</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.079)</td><td>(0.080)</td><td></td><td></td><td>(0.029)</td><td>(0.030)</td><td>(0.030)</td><td></td><td></td><td>(0.079)</td><td>(0.080)</td><td>(0.074)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Big5: Openness</td><td></td><td></td><td></td><td>0.059<sup>***</sup></td><td></td><td></td><td></td><td>-0.017<sup>**</sup></td><td>-0.016<sup>**</sup></td><td></td><td></td><td></td><td>0.029</td><td>-0.002</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td>(0.020)</td><td></td><td></td><td></td><td>(0.008)</td><td>(0.008)</td><td></td><td></td><td></td><td>(0.021)</td><td>(0.019)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">North East</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0.034</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.070)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">North West of England</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.005</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.051)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Yorkshire and Humberside</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0.067</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.054)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">London</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.086<sup>*</sup></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.051)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">South of England</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.117<sup>***</sup></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.041)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Wales</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.249<sup>***</sup></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.053)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Scotland</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.302<sup>***</sup></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.050)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Voted Yes in IndieRef</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.036</td><td>-0.281<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.092)</td><td>(0.063)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>1.860<sup>***</sup></td><td>0.186</td><td>-0.015</td><td>-0.313</td><td>0.400<sup>**</sup></td><td>0.975<sup>***</sup></td><td>0.943<sup>***</sup></td><td>1.146<sup>***</sup></td><td>1.213<sup>***</sup></td><td>0.181</td><td>0.415</td><td>0.254</td><td>0.135</td><td>0.882</td><td>0.866</td></tr>
+<tr><td style="text-align:left"></td><td>(0.432)</td><td>(0.552)</td><td>(0.577)</td><td>(0.594)</td><td>(0.203)</td><td>(0.225)</td><td>(0.227)</td><td>(0.244)</td><td>(0.247)</td><td>(0.552)</td><td>(0.596)</td><td>(0.612)</td><td>(0.658)</td><td>(0.654)</td><td>(0.600)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="16" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>2,457</td><td>2,374</td><td>2,281</td><td>2,256</td><td>11,649</td><td>11,190</td><td>11,143</td><td>10,540</td><td>10,540</td><td>1,656</td><td>1,614</td><td>1,608</td><td>1,553</td><td>1,896</td><td>1,948</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-1,656.315</td><td>-925.873</td><td>-878.954</td><td>-866.535</td><td>-7,499.412</td><td>-6,319.826</td><td>-6,279.390</td><td>-5,968.492</td><td>-5,934.568</td><td>-1,013.896</td><td>-898.282</td><td>-887.847</td><td>-855.068</td><td>-1,020.807</td><td>-1,149.595</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>3,334.630</td><td>1,885.745</td><td>1,795.908</td><td>1,773.070</td><td>15,020.830</td><td>12,673.650</td><td>12,596.780</td><td>11,976.990</td><td>11,923.140</td><td>2,049.793</td><td>1,830.564</td><td>1,813.694</td><td>1,750.136</td><td>2,083.614</td><td>2,323.190</td></tr>
+<tr><td colspan="16" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="15" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+Code and Further Reading
+=============================================================================
 The regressions show how the probability of voting yes to Scottish Independence or Brexit varies with
 age, income, gender, political and religious affiliation, holding all else constant.
 
