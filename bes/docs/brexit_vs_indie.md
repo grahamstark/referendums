@@ -8,13 +8,12 @@ to be part of a new and disturbing Populist wave. Was the Scottish Independence 
 been portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
 accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
 
-Subjectively, the IndieRef and the indenpendence movement generally doesn't doesn't seem right to me. I was living in England during the Independence Referendum, but  movement  
+[Sentence or two about Indieref feeling different from Brexit]. 
 
-There has been, of course, lots of good journalism on all this.  (I particularly like [John
-Harris](https://www.theguardian.com/profile/johnharris) and [Chris
-Arnade](https://www.theguardian.com/profile/chris-arnade). 
+The [Wings Study][WINGS] makes a case for the IndieRef being different using some opinion poll data. That's useful, I'd
+like to look at this in a slighty more systematic and precise way, using techniques from my day-job doing economic modelling.
 
-The Wings But there are also now some good scholarly, empirical studies of the Brexit vote:
+There are now some good empirical studies of the type I have in mind, trying to explain the Brexit vote:
 
 * [A recent study by Matthew Goodwin and Oliver Heath for the Rowntree Foundation][Rowntree] uses data on 19,000
   individual voters from the [British Election Survey][BES] (BES). Goodwin and Heath build a statistical model which links
