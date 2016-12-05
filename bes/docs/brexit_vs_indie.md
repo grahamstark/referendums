@@ -3,19 +3,23 @@ Author: Graham Stark
 Address: 
 Date: 28th November 2016
 
-A wave of Populism is sweeping the West. Brexit and the US Presidential, Marine Le Pen and, as I write, the Italian
-referendum all seem to be part of that. Was the Scottish Independence referendum part of that? It's certainly been
-portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and accurate - has [a summary of     
+Brexit, the US Presidential election, the rise of far-right parties in France, Holland, Austria and elsewhere all seem
+to be part of a new and disturbing Populist wave. Was the Scottish Independence referendum part of that? It's certainly
+been portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and
+accurate - has [a compendium of claims on this from the Twittersphere][WINGS].
 
-[Wings of Scotland][Wings] has a 
+Subjectively, the IndieRef and the indenpendence movement generally doesn't doesn't seem right to me. I was living in England during the Independence Referendum, but  movement  
 
-There has been, of course, lots of good journalism on Brexit and its aftermath (I particularly like [John Harris]() and
-[Chris Arnade](). But there are also now some good scholarly, empirical studies of the Brexit vote:
+There has been, of course, lots of good journalism on all this.  (I particularly like [John
+Harris](https://www.theguardian.com/profile/johnharris) and [Chris
+Arnade](https://www.theguardian.com/profile/chris-arnade). 
+
+The Wings But there are also now some good scholarly, empirical studies of the Brexit vote:
 
 * [A recent study by Matthew Goodwin and Oliver Heath for the Rowntree Foundation][Rowntree] uses data on 19,000
-  individual voters from the [British Election Survey][BES] (BES). Goodwin and Heath build a statistical model (a 'binomial
-  logit regression') which links the Brexit vote[^FN1] chiefly to economic factors - poverty, low skills, deprivation, and
-  as well as demographic factors such as age and gender.
+  individual voters from the [British Election Survey][BES] (BES). Goodwin and Heath build a statistical model which links
+  the Brexit vote[^FN1] chiefly to economic factors - poverty, low skills, deprivation, and as well as demographic factors
+  such as age and gender.
 
 * by contrast, [Eric Kaufmann of the London School of Economics][LSE] also uses the BES dataset but argues *against* the
   primacy of economic factors in the Brexit Vote [^FN2].Instead he argues for authoritarian and conformist attitudes as
@@ -26,10 +30,11 @@ There has been, of course, lots of good journalism on Brexit and its aftermath (
   they find high recent immigration a driver.
 
 What I'm going to do here is build a statistical model in a similar vein to these, using a later version of the same
-data as the LSE and Rowntree study. I'll use the model to explain the Brexit vote but also apply it to the IndieRef
-vote, which is also recorded in the BES data. I'll show that the model explains both votes well, but the factors (age,
-sex, etc.) often work differently in the two cases - sometimes working in the opposite way, sometimes working strongly
-for one vote but not for the other.
+data as the LSE and Rowntree study. Like this studies, my model uses a variety of factors ("explanatory variables", in
+the jargon) to explain how people voted in the European Referendum. But I also then apply the model to the Scottish Part
+of the BES data, to explain the IndieRef vote [^FNMODEL]. I'll show that the model explains both votes well, but the
+factors (age, sex, etc.) often work very differently in the two cases - sometimes working in the opposite way, sometimes
+working strongly in one case but not the other.
 
 [A companion note][TECHNOTE] discusses my model in a detail. There, you'll fine everything you'll need to replicate and
 extend my model, discussions of the choices I've made, and full results for several different model variants. But, for
@@ -43,7 +48,8 @@ now, in summary:
   EU (LSE). My version does have people's actual Brexit vote, as well as the IndieRef vote;
 
 * the model allows each factor to be isolated from the others - so, for example, we can study the influence of education
-  on voting, holding income and other factors constant;
+  on voting, holding income and other factors constant. This is important as our explanatory variables are often correlated with each
+  other - better education usually leads to higher incomes, earnings increases (up to a point) with age, and so on;
 
 * my model is closest in spirit to the Rowntree study, though I do some things differently. There are also some ideas from
   the other studies thrown in;
@@ -347,6 +353,9 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 [^FNSIG]: A technical aside: I'm using statistical significance for this (the p-values) rather than, for example, effect
 size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
 more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+
+[^FNMODEL]: See the [Technical Note][TECHNOTE] for more on all this; there is in particular a tricky issue here that many people have
+dropped out of the survey between the Indie and Brexit votes.
 
 [^FNREG]: in the [Technical Note][TECHNOTE] I report a version of the model without these regional dummies, showing that
 adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
