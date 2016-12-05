@@ -1,3 +1,5 @@
 bes/scripts/build
 bes/data/*
 bes/tmp
+bes/scripts/*.inp
+bes/scripts/*.html
