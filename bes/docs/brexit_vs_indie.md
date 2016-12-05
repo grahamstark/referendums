@@ -306,7 +306,7 @@ but weaker, than for GB as a whole.
 </table>
 
 #### Key ####
-<table class='easytable' width='150px'>
+<table>
 <tr><th>Positive Association</th>
 <td class='positive_strong'>&#x21c8; Strong </td>
 <td class='positive_med'>&#x2191; Medium</td>
@@ -344,9 +344,9 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
 more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
 
-[^FNREG]: in the [Technical Note][TECHNOTE] we report a version ofthe model without these regional dummies
-showing that adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is still comparable with the Indie ref one
-even though it has more variables]
+[^FNREG]: in the [Technical Note][TECHNOTE] we report a version ofthe model without these regional dummies, showing that
+adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
+still comparable with the Indie ref one even though it has more variables]
 
 [Resolution]: http://www.resolutionfoundation.org/media/blog/why-did-we-vote-to-leave-what-an-analysis-of-place-can-tell-us-about-brexit/ "Clarke, Stephen. Why Did We Vote to Leave? What an Analysis of Place Can Tell Us about Brexit. Resolution Foundation, 15 July 2016."
 [Wings]: http://wingsoverscotland.com/spotting-the-differences/ "Campbell, Stuart ‘Spotting the Differences’. Wings Over Scotland, 10 November 2016."
