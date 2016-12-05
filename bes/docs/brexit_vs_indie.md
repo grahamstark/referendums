@@ -1,20 +1,16 @@
-Title: Were the Scottish and EU Referendums driven by the same things?
+Title: The Scottish IndieRef and Brexit: how similar were they? Some empirical evidence.
 Author: Graham Stark 
 Address: 
 Date: 28th November 2016
 
-Brexit and the US Presidential, Marine Le Pen []. Is the independence movement part of that? 
-Didn't feel like that to me. But the link has been made. David Torrance, for example [wrote]
-
-> Of course all these things aren’t true, not that that really matters, and just because one of those nationalisms is
-admirably pro-immigration and the other anti- doesn’t mean there is some fundamental difference between the two, just
-that it manifests itself in different ways.
+A wave of Populism is sweeping the West. Brexit and the US Presidential, Marine Le Pen and, as I write, the Italian
+referendum all seem to be part of that. Was the Scottish Independence referendum part of that? It's certainly been
+portayed in that way: Wings Over Scotland - partisan, sometimes annoying but in my experience usually careful and accurate - has [a summary of     
 
 [Wings of Scotland][Wings] has a 
 
-There has been, of course, lots of good journalism on Brexit and its aftermath
-(I particularly like [John Harris]() and [Chris Arnade](). But there are also now
-some good scholarly, empirical studies of the Brexit vote:
+There has been, of course, lots of good journalism on Brexit and its aftermath (I particularly like [John Harris]() and
+[Chris Arnade](). But there are also now some good scholarly, empirical studies of the Brexit vote:
 
 * [A recent study by Matthew Goodwin and Oliver Heath for the Rowntree Foundation][Rowntree] uses data on 19,000
   individual voters from the [British Election Survey][BES] (BES). Goodwin and Heath build a statistical model (a 'binomial
@@ -333,8 +329,9 @@ similar, but other things (openness, gender) that mattered GB-wide were not sign
 
 [Graham Stark](mailto:graham.stark@virtual-worlds-research.com)
 
-[^FN1]: The study was completed after the vote but before an edition of the BES with the vote data had been released;
-instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not perfect correlate with actual vote.
+[^FN1]: The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
+had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
+perfect correlate with actual vote. I'm using the version (9) of the BES with the actual vote in it.
 
 [^FN2]: Kaufmann's study was carried out even earlier, before the actual Brexit vote: instead of explaining the vote he is modelling the
 extent to which people disapprove of the EU, which, too, is a good predictor of the final vote.
