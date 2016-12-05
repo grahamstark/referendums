@@ -2,7 +2,8 @@ Title: Were the Scottish and EU Referendums driven by the same things - Brexit v
 Author: Graham Stark [graham.stark@virtual-worlds-research.com](mailto:graham.stark@virtual-worlds-research.com')
 Date: 28th November 2016
 
-This note accompanies [a short paper on Brexit vs IndieRefs]
+This note accompanies [a short paper on Brexit vs IndieRefs](http://virtual-worlds.biz/scot/brexit_vs_indie.html). This
+is *incomplete* but should contain all the relevant links to code and data.
 
 Data
 ----
