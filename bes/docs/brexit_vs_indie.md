@@ -62,8 +62,8 @@ data for Great Britain as a whole [^FN4], and (3) just uses people living in Sco
 one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
 class='positive_med'>&#x2191;</span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
 significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down arrows
-'<span class='negative_strong'>&#x21ca; Strong</span>', '<span class='negative_med'>&#x2193; Medium </span>' and
-'<span class='negative_weak'>&#x21e3; Weak</span>' signify negative effects[^FNSIG].
+'<span class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and
+'<span class='negative_weak'>&#x21e3;</span>' signify negative effects[^FNSIG].
 
 Let's look at IndyRef first. That's column (1). 
 
