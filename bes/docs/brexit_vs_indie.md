@@ -121,8 +121,9 @@ likely to vote "Leave". The regional effects are interesting: , once we've contr
 real evidence of a distinct "London effect" for Remain, or a North East of England effect for Leave [^FNLON]. But there
 *are* a Scottish and Welsh effect (for Remain).
 
-Column (3) runs the same analysis for Scotland only. The drivers for 'Leave' are very similar,
-but weaker, than for GB as a whole. 
+Column (3) runs the same analysis for Scotland only. For Scottish voters, you see some of the patterns of the UK-Wide
+Brexit vote coming though, notably the negative effects education, income, and age, and political affilliatons are
+similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland. 
 
 ### Table 1 ###
 
