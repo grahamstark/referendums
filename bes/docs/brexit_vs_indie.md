@@ -67,7 +67,7 @@ thicker the arrow the stronger the influence, and vice-versa for the down arrows
 Let's look at IndyRef first. That's column (1). 
 
 * The first cell summarises the influence of income on the Scottish Independence
-  vote. The '<span class='negative_strong'>&#x1F883;'</span> in that cell indicates that income has a strongly
+  vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
   significant *negative* effect on the likelihood of voting "Yes" in the indyRef - 
   the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
   can be confident this effect is real;
@@ -75,7 +75,7 @@ Let's look at IndyRef first. That's column (1).
 * Next we have age - this is also significantly negative - the older you are,
   the less likely to vote 'yes' [^FN5];
    
-* You interpret <span class='negative_strong'>&#x1F883;'</span> in the next row "Gender - Female" as meaning that women
+* You interpret '<span class='negative_strong'>&#x21ca;'</span> in the next row "Gender - Female" as meaning that women
 were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
 
 * The next three lines show the effect of increasing levels of education. There's essentially no effect. People of all
@@ -305,6 +305,25 @@ but weaker, than for GB as a whole.
 </tr>
 </tbody>
 </table>
+
+#### Key ####
+<table class='easytable'>
+<tr><th>Positive Association</th>
+<td class='positive_strong'>&#x21c8; Strong </td>
+<td class='positive_med'>&#x2191; Medium</td>
+<td class='positive_weak'>&#x21e1;</td>
+</tr>
+<tr><th>Negative Association</th>
+<td class='negative_strong'>Strong &#x21ca;</td>
+<td class='negative_med'>Medium &#x2193;</td>
+<td class='negative_weak'>Weak &#x21e3;</td>
+</tr>
+<tr><th>No Significant Association</th>
+<td class='nonsig'>&#x25CF;</td>
+<td colspan='2'>
+</tr>
+</table>
+
 
 [Graham Stark](mailto:graham.stark@virtual-worlds-research.com)
 
