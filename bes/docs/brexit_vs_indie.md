@@ -60,7 +60,7 @@ information the computer program spits out. Each column summarises one of our mo
 column (1) is our model of the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses
 data for Great Britain as a whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of
 one variable on the vote. The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span
-class='positive_med'>&#x2191;/span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
+class='positive_med'>&#x2191;</span>' and '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a
 significan *positive* effect on a 'Yes' (or 'Exit'), vote, from the strongest to the weakest. Likewise the red down arrows
 '<span class='negative_strong'>&#x21ca; Strong</span>', '<span class='negative_med'>&#x2193; Medium </span>' and
 '<span class='negative_weak'>&#x21e3; Weak</span>' signify negative effects[^FNSIG].
