@@ -17,7 +17,7 @@ require( stargazer )
 # support for binary regression diagnostics
 # require( aod )
 # Tufte style plots
-# require( ggplot2 )
+require( ggplot2 )
 #
 # to install, for example, weights for 1st time, do: install.package( 'weights' ) 
 #
@@ -29,14 +29,14 @@ rm(list = ls(all = TRUE));
 #
 # start an output file somewhere
 #
-sink( "/home/graham_s/VirtualWorlds/projects/scotland/BES/outputs/regressions.R.log" );
+sink( "outputs/regressions.R.log" );
 #
 # the converted dataset
 #
 # local version: 
 is_local = FALSE;
 if( is_local ){
-        load( "/home/graham_s/VirtualWorlds/projects/scotland/referendums/bes/data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
+        load( "data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 } else {
         load( "/mnt/data/bes/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 }
@@ -629,4 +629,134 @@ stargazer( besScotW9, type='text' )
 print("GB Sample; W9 Core")
 stargazer( besFullW9, type='text' )
 
-sink()  # end diversion of output
+#
+# ========== calculations for example people
+# 1) scotref
+scotCoeffs = probit.scotref_4$coefficients
+scotBrexitCoeffs = probit.euref_scot_only_4$coefficients
+euCoeffs = probit.euref_5$coefficients
+#
+# set up a sample person: 30 yo female with below degree education
+#
+mean_inc_scot   = mean(besScotW3$v_hhinc[! is.na( besScotW3$v_hhinc )])
+median_inc_scot   = median(besScotW3$v_hhinc[! is.na( besScotW3$v_hhinc )])
+age                = 30
+female             = 1
+a_level_equiv      = 0
+other_higher_ed    = 1
+degree_equiv       = 0
+is_ethnic_minority = 0
+has_children       = 0
+is_partnered       = 1
+conservative       = 0
+libdem             = 0
+labour             = 0
+green              = 0
+ukip               = 0
+scot_nat           = 0
+catholic           = 0
+protestant         = 0
+big5_openness      =  mean(besScotW3$big5_openness[! is.na( besScotW3$big5_openness )])
+north_east         = 0  
+north_west         = 0
+yorkshire          = 0
+london             = 0
+south              = 0
+wales              = 0
+scotland           = 0
+
+
+# prob of that person voting 'Yes' in indieref
+#
+# female, average hhld income, all else off by default
+#
+
+
+scotProbsIndie <- data.frame(
+        ages <- rep( seq( 16, 80 , by = 1 ), 6 ),
+        cases <- c( rep( "Female", 65 ), rep( "Male", 65 ), rep( "SNP", 65 ), rep( "Conservative", 65 ), rep( "Labour", 65 ), rep( "Protestant", 65 )),
+        probYes <- rep( 0.0, 65*6 ))
+scotProbsBrexit <- data.frame(
+        ages <- rep( seq( 16, 80 , by = 1 ), 6 ),
+        cases <- c( rep( "Female", 65 ), rep( "Male", 65 ), rep( "SNP", 65 ), rep( "Conservative", 65 ), rep( "Labour", 65 ), rep( "Protestant", 65 )),
+        probLeave <- rep( 0.0, 65*6 ))
+
+j = 0
+for( case in seq( 1 , 6, by = 1 )){
+        female             = 1
+        conservative       = 0
+        libdem             = 0
+        labour             = 0
+        scot_nat           = 0
+        protestant         = 0
+        if( case == 1 ){
+                ;
+        } else if( case == 2 ){
+                female = 0
+        } else if( case == 3 ){
+                scot_nat = 1;
+        } else if( case == 4 ){
+                conservative = 1;
+        } else if( case == 5 ){
+                labour = 1;
+        } else if( case == 6 ){
+                protestant = 1;
+        }
+        for( age in seq( 16, 80 , by = 1 )){
+                j = j + 1
+                person = c( 
+                        1, 
+                        log(median_inc_scot), 
+                        age, 
+                        age**2,  
+                        female,
+                        a_level_equiv,
+                        other_higher_ed,
+                        degree_equiv,
+                        is_ethnic_minority,
+                        has_children,
+                        is_partnered,
+                        conservative,
+                        libdem,
+                        labour,
+                        green,
+                        ukip,
+                        scot_nat,
+                        catholic,
+                        protestant,
+                        big5_openness
+                        );
+              scotProbsIndie$probYes[j] = pnorm( sum( scotCoeffs*person ))*100.0
+              scotProbsBrexit$probLeave[j] = pnorm( sum( scotBrexitCoeffs*person ))*100.0
+              if(( age %% 10 ) == 0 ){
+                    print( sprintf( "age %d case %d prob Indie %f12.2  prob Brexit %f12.2 ", age, case, 
+                    scotProbsIndie$probYes[j], scotProbsBrexit$probLeave[j]));               
+              }
+              
+        }
+}
+
+#
+# a wee GGPlot of probs by age
+#
+cbPalette <- c("#FF9999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+age_vs_yes_indie = ggplot( scotProbsIndie, aes(x = ages, y = probYes )) +
+  geom_line( aes( color = cases ) ) + 
+  scale_x_continuous(name = "Age In Years") +
+  scale_y_continuous(name = "Probability of 'Yes' (%)")+
+  scale_colour_manual(values=cbPalette) +
+  ggtitle("IndieRef: Yes vote by age") 
+
+ggsave( filename='outputs/yes_vs_age.png', age_vs_yes_indie )
+ggsave( filename='outputs/yes_vs_age.svg', age_vs_yes_indie )
+
+age_vs_leave_scot = ggplot( scotProbsBrexit, aes(x = ages, y = probLeave )) +
+  geom_line( aes( color = cases ) ) + 
+  scale_x_continuous(name = "Age In Years") +
+  scale_y_continuous(name = "Probability of 'Leave' (%)")+
+  scale_colour_manual(values=cbPalette) +
+  ggtitle("IndieRef: Yes vote by age: Scotlabd") 
+
+ggsave( filename='outputs/age_vs_leave_scot.png', age_vs_leave_scot )
+ggsave( filename='outputs/age_vs_leave_scot.svg', age_vs_leave_scot )

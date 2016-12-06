@@ -47,8 +47,9 @@ working strongly in one case but not the other.
 extend my model, discussions of the choices I've made, and full results for several different model variants. But, for
 now, in summary:
 
-* I'm building a statistical model (a "binomial Probit regression", in the jargon) that shows how the vote in both referendums was influenced by various factors such as
-  education, age, income and political allegiance;
+* I'm building a statistical model (a "binomial Probit regression", in the
+  jargon) that shows how the vote in both referendums was influenced by various
+  factors such as education, age, income and political allegiance;
 
 * I'm using a more recent version of the same BES data as the Rowntree and LSE studies. The data in those studies
   doesn't actually have peoples' Brexit vote in it; instead they used either intended votes (Rowntree) or attitudes to the
