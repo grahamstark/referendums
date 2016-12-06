@@ -37,9 +37,9 @@ There are now some good empirical studies of the type I have in mind, trying to 
   they find high recent immigration a driver.
 
 What I'm going to do here is build a statistical model in a similar vein to these, using a later version of the same
-data as the LSE and Rowntree study. Like this studies, my model uses a variety of factors ("explanatory variables", in
-the jargon) to explain how people voted in the European Referendum. But I also then apply the model to the Scottish[^FNSCOT] part
-of the BES data, to explain the IndieRef vote [^FNMODEL]. I'll show that the model explains both votes well, but the
+data as the LSE and Rowntree study. Like those studies, my model uses a variety of factors ("explanatory variables", in
+the jargon) to explain how people voted in the European Referendum. I'll then apply the model to the Scottish[^FNSCOT] part
+of the BES data, to explain the IndieRef vote [^FNMODEL]. I show that the model explains both votes well, but the
 factors (age, sex, etc.) often work very differently in the two cases - sometimes working in the opposite way, sometimes
 working strongly in one case but not the other.
 
