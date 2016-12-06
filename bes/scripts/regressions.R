@@ -634,7 +634,7 @@ stargazer( besFullW9, type='text' )
 # 1) scotref
 scotCoeffs = probit.scotref_4$coefficients
 scotBrexitCoeffs = probit.euref_scot_only_4$coefficients
-euCoeffs = probit.euref_5$coefficients
+brexitCoeffs = probit.euref_5$coefficients
 #
 # set up a sample person: 30 yo female with below degree education
 #
@@ -680,8 +680,14 @@ scotProbsBrexit <- data.frame(
         ages <- rep( seq( 16, 80 , by = 1 ), 6 ),
         cases <- c( rep( "Female", 65 ), rep( "Male", 65 ), rep( "SNP", 65 ), rep( "Conservative", 65 ), rep( "Labour", 65 ), rep( "Protestant", 65 )),
         probLeave <- rep( 0.0, 65*6 ))
+probsBrexit <- data.frame(
+        ages <- rep( seq( 16, 80 , by = 1 ), 6 ),
+        cases <- c( rep( "Female", 65 ), rep( "Male", 65 ), rep( "SNP", 65 ), rep( "Conservative", 65 ), rep( "Labour", 65 ), rep( "Protestant", 65 )),
+        probLeave <- rep( 0.0, 65*6 ))
 
 j = 0
+
+print( "age,case,prob_scotref,prob_brexit_scot,prob_brexit " )
 for( case in seq( 1 , 6, by = 1 )){
         female             = 1
         conservative       = 0
@@ -724,13 +730,22 @@ for( case in seq( 1 , 6, by = 1 )){
                         scot_nat,
                         catholic,
                         protestant,
-                        big5_openness
+                        big5_openness,
+                        north_east,   
+                        north_west,   
+                        yorkshire,    
+                        london,       
+                        south,        
+                        wales,        
+                        scotland     
                         );
-              scotProbsIndie$probYes[j] = pnorm( sum( scotCoeffs*person ))*100.0
-              scotProbsBrexit$probLeave[j] = pnorm( sum( scotBrexitCoeffs*person ))*100.0
+              scotProbsIndie$probYes[j] = pnorm( sum( scotCoeffs*person[1:length(scotCoeffs)] ))*100.0
+              scotProbsBrexit$probLeave[j] = pnorm( sum( scotBrexitCoeffs*person[1:length(scotCoeffs)] ))*100.0
+              probsBrexit$probLeave[j] = pnorm( sum( brexitCoeffs*person ))*100.0
               if(( age %% 10 ) == 0 ){
-                    print( sprintf( "age %d case %d prob Indie %f12.2  prob Brexit %f12.2 ", age, case, 
-                    scotProbsIndie$probYes[j], scotProbsBrexit$probLeave[j]));               
+                    print( sprintf( "%d,%d,%f12.2,%f12.2,%f12.2", age, case, 
+                    scotProbsIndie$probYes[j], scotProbsBrexit$probLeave[j],
+                    probsBrexit$probLeave[j] ));               
               }
               
         }
@@ -756,7 +771,17 @@ age_vs_leave_scot = ggplot( scotProbsBrexit, aes(x = ages, y = probLeave )) +
   scale_x_continuous(name = "Age In Years") +
   scale_y_continuous(name = "Probability of 'Leave' (%)")+
   scale_colour_manual(values=cbPalette) +
-  ggtitle("IndieRef: Yes vote by age: Scotlabd") 
+  ggtitle("IndieRef: Yes vote by age: Scotland") 
 
 ggsave( filename='outputs/age_vs_leave_scot.png', age_vs_leave_scot )
 ggsave( filename='outputs/age_vs_leave_scot.svg', age_vs_leave_scot )
+
+age_vs_leave = ggplot( probsBrexit, aes(x = ages, y = probLeave )) +
+  geom_line( aes( color = cases ) ) + 
+  scale_x_continuous(name = "Age In Years") +
+  scale_y_continuous(name = "Probability of 'Leave' (%)")+
+  scale_colour_manual(values=cbPalette) +
+  ggtitle("IndieRef: Yes vote by age: GB") 
+
+ggsave( filename='outputs/age_vs_leave.png', age_vs_leave )
+ggsave( filename='outputs/age_vs_leave.svg', age_vs_leave )
