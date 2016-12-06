@@ -67,13 +67,13 @@ now, in summary:
 [Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge
 amount of information my computer program spits out. I hope it makes sense; the full data is in [the companion
 paper][TECHNOTE]. Each column summarises one of our models that explain the votes. The first column (1) is our model of
-the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum, (2) uses data for Great Britain as a
-whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of one variable on the vote.
+the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum; (2) uses data for Great Britain as a
+whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of each variable on the vote.
 The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
 '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significant *positive* effect on a 'Yes' (or
-'Leave'), vote, from the strongest to the weakest. Likewise the red down arrows '<span
+'Leave'), vote, from the strongest to the weakest[^FNSIG]. Likewise the red down arrows '<span
 class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
-class='negative_weak'>&#x21e3;</span>' signify negative effects [^FNSIG]. Variables that don't appear significant are
+class='negative_weak'>&#x21e3;</span>' signify negative effects. Variables that don't appear significant are
 indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
 varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
