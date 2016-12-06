@@ -318,6 +318,14 @@ Let's look at IndyRef first. That's column (1):
   new experiences](https://en.wikipedia.org/wiki/Big_Five_personality_traits). "Openness" is defined as: "a general
   appreciation for art, emotion, adventure, unusual ideas, imagination, curiosity, and variety of experience". Openness in
   this sense is strongly associated with a "Yes" vote.
+  
+To make this a bit more concrete, imagine a 30 year old woman, politically
+neutral, on median houshold income (about £27,000 in this dataset), with an HND,
+and scoring averagely on our Openness scale. Our model gives her a 40% chance of
+having voted 'Yes' in the IndieRef. A man in the same position would be 7 points
+more likely to vote yes than this, whereas an otherwise similar woman aged 70 would be 9 points *less* likely.
+SNP supporters, reasonably enough were virtual certainties to vote yes, regardless of
+any other characteristic.
  
 In sum, the picture that emerges is that Yes was in most respects the progressive, optimistic, Left-leaning vote. Yes
 votes were associated with lower incomes, but people of all education levels voted both ways, and open-minded and the
@@ -343,6 +351,11 @@ Column (3) runs the same analysis for Scottish voters only. Here, you see some o
 Brexit vote coming though, notably the negative effects education, income, and age, and political affiliations are
 similar, but other things (openness, gender) that mattered GB-wide were not significant in Scotland.  
 
+To return to our example, our 30 year old woman would have had about a 30%
+chance of voting 'Leave' if she was living in Scotland; an otherwise similar
+woman from the Midlands of England would have had a 40% chance of voting leave
+Leave. At age 60, the chances of voting Leave would be about 12% higher.
+
 It's customary to end work like this with "more research is required". And it is: there are certainly many things that
 could be done better, or at least differently. If anyone is interested in taking this on, [most of what you'll need is
 available][TECHNOTE]. But I'm confident that the key findings here are robust: empirically, IndieRef and the Brexit vote
@@ -363,9 +376,12 @@ extent to which people disapprove of the EU, which, too, is a good predictor of 
 
 [^FN4]: 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
 
-[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit of a simplification - 'Yes' is modelled
-to rise till about age 28 and fall thereafter, whereas 'Leave' rises steadily at all ages. See the [Technical
-Note][TECHNOTE] for more detail.
+[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit
+of a simplification - 'Yes' is modelled to rise till about age 40 and fall
+thereafter, whereas 'Leave' rises steadily at all ages. This is 'all else
+equal', and of course incomes generally rise between those ages, which may
+explain why simple tabulations from polling data don't show quite this pattern.
+See the [Technical Note][TECHNOTE] for more detail.
 
 [^FN6]: These are the parties people *identify* with; they needn't be members of them.
 

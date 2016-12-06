@@ -743,7 +743,7 @@ for( case in seq( 1 , 6, by = 1 )){
               scotProbsBrexit$probLeave[j] = pnorm( sum( scotBrexitCoeffs*person[1:length(scotCoeffs)] ))*100.0
               probsBrexit$probLeave[j] = pnorm( sum( brexitCoeffs*person ))*100.0
               if(( age %% 10 ) == 0 ){
-                    print( sprintf( "%d,%d,%f12.2,%f12.2,%f12.2", age, case, 
+                    print( sprintf( "%d,%d,%6.2f,%6.2f,%6.2f", age, case, 
                     scotProbsIndie$probYes[j], scotProbsBrexit$probLeave[j],
                     probsBrexit$probLeave[j] ));               
               }
