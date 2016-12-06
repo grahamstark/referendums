@@ -51,7 +51,7 @@ now, in summary:
   education, age, income and political allegiance;
 
 * I'm using a more recent version of the same BES data as the Rowntree and LSE studies. The data in those studies
-  doesn't actually have peoples Brexit vote in it, instead they used either intended votes (Rowntree) or attitudes to the
+  doesn't actually have peoples' Brexit vote in it; instead they used either intended votes (Rowntree) or attitudes to the
   EU (LSE). My version does have people's actual Brexit vote, as well as the IndieRef vote;
 
 * the model allows each factor to be isolated from the others - so, for example, we can study the influence of education
