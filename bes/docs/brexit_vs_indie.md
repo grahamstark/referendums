@@ -3,8 +3,6 @@ Author: Graham Stark
 Address: 
 Date: 4th December 2016
 
-# #
-
 Brexit, the US Presidential election, the rise of far-right parties in France,
 Holland, Austria and elsewhere all seem to be part of a new and disturbing
 Populist wave. Was the Scottish Independence referendum part of that? It's
