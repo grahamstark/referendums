@@ -1,4 +1,4 @@
-Title: The Scottish IndieRef and Brexit: how similar were they? Some empirical evidence.
+Title: The Scottish IndieRef and Brexit: how similar were they? A look at the data.
 Author: Graham Stark 
 Address: 
 Date: 4th December 2016
