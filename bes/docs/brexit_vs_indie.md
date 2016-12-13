@@ -1,4 +1,4 @@
-Title: The Scottish IndieRef and Brexit: how similar were they? A look at the data.
+Title: 'Yes' in the IndyRef and 'Leave' in the EU Ref: did they have the same drivers? A look at the data.
 Author: Graham Stark 
 Address: 
 Date: 4th December 2016
