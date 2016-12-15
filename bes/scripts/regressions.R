@@ -215,6 +215,33 @@ probit.scotref_4 <- glm(
         big5_openness,        
     family=binomial(link='probit'), 
     data=besScotW3 );
+
+probit.scotref_5 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv+ 
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered +
+        conservative+
+        libdem+
+        labour+
+        green+
+        ukip+
+        scot_nat+
+        catholic+
+        protestant+
+        big5_openness+
+        bornEngland,        
+    family=binomial(link='probit'), 
+    data=besScotW3 );
+
+
 #
 # EU Ref regressions on the full w9 sample
 #
@@ -610,6 +637,8 @@ print( summary( probit.scotref_1 ));
 print( summary( probit.scotref_2 )); 
 print( summary( probit.scotref_3 ));
 print( summary( probit.scotref_4 ));
+print( summary( probit.scotref_5 ));
+
 print( summary( probit.euref_1 ));
 print( summary( probit.euref_2 ));
 print( summary( probit.euref_3 ));

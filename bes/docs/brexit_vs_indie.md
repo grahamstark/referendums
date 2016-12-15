@@ -1,4 +1,5 @@
-Title: 'Yes' in the IndyRef and 'Leave' in the EU Ref: did they have the same drivers? A look at the data.
+Title: 'Yes' in the IndyRef and 'Leave' in the EU Ref: did they have the same drivers? 
+Subtitle: A new look at the data.
 Author: Graham Stark 
 Address: 
 Date: 4th December 2016
@@ -14,9 +15,8 @@ The Indie and EU Referendums certainly *felt* very different to me, and the Scot
 different thing to Vote Leave. But that's just one person's impressions. Sometimes, you have to look at the numbers -
 the big picture can be very different.
 
-The [Wings blogpost][WINGS] uses some opinion poll data to make a case for the
-IndieRef being different. That's useful, but I'd like to look at this in a
-slightly more systematic and precise way, using techniques from my day-job doing
+The [Wings blogpost][WINGS] uses some opinion poll data to make a case for the IndieRef being different. That's useful,
+but I'd like to look at this in a slightly more systematic and precise way, using techniques from my day-job doing
 economic modelling.
 
 There are now some good empirical studies of the type I have in mind, trying to explain the Brexit vote:
@@ -37,17 +37,17 @@ There are now some good empirical studies of the type I have in mind, trying to 
 What I'm going to do here is build a statistical model in a similar vein to these, using a later version of the same
 data as the LSE and Rowntree study. Like those studies, my model uses a variety of factors ("explanatory variables", in
 the jargon) to explain how people voted in the European Referendum. I'll then apply the model to the Scottish[^FNSCOT] part
-of the BES data, to explain the IndieRef vote [^FNMODEL]. I show that the model explains both votes well, but the
+of the BES data, to explain the IndieRef vote[^FNMODEL]. I show that the model explains both votes well, but the
 factors (age, sex, etc.) often work very differently in the two cases - sometimes working in the opposite way, sometimes
 working strongly in one case but not the other.
 
-[A companion note][TECHNOTE] discusses my model in a detail. There, you'll fine everything you'll need to replicate and
-extend my model, discussions of the choices I've made, and full results for several different model variants. But, for
+[A companion note][TECHNOTE] gives more detail. There, you'll fine everything you'll need to replicate and
+extend the model, discussions of the choices I've made, and results for several different model variants. But, for
 now, in summary:
 
 * I'm building a statistical model (a "binomial Probit regression", in the
   jargon) that shows how the vote in both referendums was influenced by various
-  factors such as education, age, income and political allegiance;
+ factors such as education, age, income and political allegiance;
 
 * I'm using a more recent version of the same BES data as the Rowntree and LSE studies. The data in those studies
   doesn't actually have peoples' Brexit vote in it; instead they used either intended votes (Rowntree) or attitudes to the
@@ -61,7 +61,7 @@ now, in summary:
   the other studies thrown in;
 
 * I'm going to use the same set of factors (income, age, gender and so on) to explain *both* the Scottish Independence
-  and EU Referendum Votes. That puts a few constraints on what parts of the data I can use.
+  and EU Referendum Votes.
 
 [Table 1](#table-1) summarises the main findings. This table is the simplest way I can think of to boil down the huge
 amount of information my computer program spits out. I hope it makes sense; the full data is in [the companion
@@ -70,9 +70,9 @@ the Scottish Independence vote. Columns(2) and (3) are models of the EU Referend
 whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of each variable on the vote.
 The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
 '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significant *positive* effect on a 'Yes' (or
-'Leave'), vote, from the strongest to the weakest[^FNSIG]. Likewise the red down arrows '<span
+'Leave') vote, from the strongest to the weakest[^FNSIG]. Likewise, the red down arrows '<span
 class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
-class='negative_weak'>&#x21e3;</span>' signify negative effects. Variables that don't appear significant are
+class='negative_weak'>&#x21e3;</span>' signify negative effects, strongest to weakest. Variables that don't appear significant are
 indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
 varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
