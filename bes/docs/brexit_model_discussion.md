@@ -286,6 +286,42 @@ since the variables we use themselves predict the indieref vote. Using the indie
 is a good predictor.
 
 
+
+**Notes To The Article**
+
+The Commonspace CMS system unfortunately chopped out the articles footnotes, so I'll reproduce them here:
+
+*Matthew Goodwin and Oliver Heath Study* : The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
+had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
+perfect correlate with actual vote. I'm using the version (9) of the BES with the actual vote in it.
+
+*Kauffmann Study*: this was carried out even earlier, before the actual Brexit vote: instead of explaining the vote he is modelling the
+extent to which people disapprove of the EU, which, too, is a good predictor of the final vote.
+
+*Paragraph on 'Main Findings': We say 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
+
+*Relationship between age and voting*: in the IndieRef case (but not the Brexit vote), this is actually a bit
+of a simplification - 'Yes' is modelled to rise till about age 40 and fall
+thereafter, whereas 'Leave' rises steadily at all ages. This is 'all else
+equal', and of course incomes generally rise between those ages, which may
+explain why simple tabulations from polling data don't show quite this pattern.
+See the [Technical Note][TECHNOTE] for more detail.
+
+*Political Parties*: These are the parties people *identify* with; they needn't be members of them.
+
+*Strength of statistical relationships* : A technical aside: I'm using statistical significance for this (the p-values) rather than, for example, effect
+size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
+more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+
+*On Modelling Brexit*: I report above a version of the model without these regional dummies, showing that
+adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
+still comparable with the Indie ref one even though it has more variables.
+
+*Analysis of Scottish Voters*: 'Scottish', as is customary, simply means people living (or at least interviewed) in Scotland. Adding country of birth as an explanatory variable would be interesting.
+
+*London (non) Effect*: The [Resolution Foundation study][Resolution] finds this, too.
+
+
 Code and Further Reading
 =============================================================================
 The regressions show how the probability of voting yes to Scottish Independence or Brexit varies with
