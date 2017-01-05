@@ -80,28 +80,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 
 ![](http://virtual-worlds.biz/scot/images/main_table.png)
 
-<h3>Key</h3>
-
-<table>
-<tbody>
-<tr>
-<td>Positive Association:</td>
-<td class='positive_strong'>&#x1F881; Strong;&nbsp;</td>
-<td class='positive_med'>&#x1F871; Medium; &nbsp;</td>
-<td class='positive_weak'>&#x1F861; Weak; &nbsp; </td>
-</tr>
-<tr>
-<td>Negative Association:</td>
-<td class='negative_strong'>&#x1F883; Strong;&nbsp;</td>
-<td class='negative_med'>&#x1F873; Medium; &nbsp;</td>
-<td class='negative_weak'>&#x1F863; Weak; &nbsp;</td>
-</tr>
-<tr>
-<td>No Significant Association</td>
-<td class='nonsig'>&#x25CF;</td>
-</tr>
-</tbody>
-</table>
+![](http://virtual-worlds.biz/scot/images/key.png)
 
 Let's look at IndyRef first. That's column (1): 
 
