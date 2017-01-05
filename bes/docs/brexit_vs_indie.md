@@ -81,9 +81,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 ![](http://virtual-worlds.biz/scot/images/main_table.png)
 
 ** Key **
-
-<table class='easytable'>
-<thead/>
+<table>
 <tbody>
 <tr>
 <td>Positive Association:</td>
@@ -103,7 +101,6 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 </tr>
 </tbody>
 </table>
-
 
 Let's look at IndyRef first. That's column (1): 
 
