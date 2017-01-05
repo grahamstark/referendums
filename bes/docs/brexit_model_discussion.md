@@ -568,7 +568,7 @@ We make the pretty-ish arrows table in the article from [Table 1 above](#table-1
 </tbody>
 </table>
 
-
+<h2>Key</h2>
 <table class='easytable'>
 <thead/>
 <tbody>
