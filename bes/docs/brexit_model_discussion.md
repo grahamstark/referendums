@@ -285,6 +285,288 @@ Finally, 14 and 15 use vote in Indie Ref as a predictor. With all the other vari
 since the variables we use themselves predict the indieref vote. Using the indieref without the full variable set 
 is a good predictor.
 
+We make the pretty-ish arrows table in the article from [Table 1 above](#table-1) using a [little Ruby script](https://github.com/grahamstark/referendums/blob/master/bes/scripts/make_pretty_table.rb).
+
+<table class='easytable'>
+<thead>
+<tr>
+<td class='col_header' style='border-bottom: 1px solid black' colspan='7'></td>
+</tr>
+<tr>
+<td class='col_header' style='text-align:left'></td>
+<td class='col_header' colspan='6'></td>
+</tr>
+<tr>
+<td class='col_header'></td>
+<td class='col_header' style='border-bottom: 1px solid black' colspan='6'></td>
+</tr>
+<tr>
+<td class='col_header' style='text-align:left'></td>
+<td class='col_header'>Voted Yes in Scottish Referendum</td>
+<td class='col_header' colspan='5'>Voted Leave in EU Ref</td>
+</tr>
+<tr>
+<td class='col_header' style='text-align:left'></td>
+<td class='col_header'>Scotland Only</td>
+<td class='col_header' colspan='2'>All GB</td>
+<td class='col_header' colspan='3'>Scotland Only</td>
+</tr>
+<tr>
+<td class='col_header' style='text-align:left'></td>
+<td class='col_header'>(1)</td>
+<td class='col_header'>(2)</td>
+<td class='col_header'>(3)</td>
+<td class='col_header'>(4)</td>
+<td class='col_header'>(5)</td>
+<td class='col_header'>(6)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class='row_header'>Log of Household Gross Income (£p.a)</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_med'>&#x1F873;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+</tr>
+<tr>
+<th class='row_header'>Age</th>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_weak'>&#x1F861;</td>
+</tr>
+<tr>
+<th class='row_header'>Age Squared</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='nonsig'>&#x25CF;</td>
+</tr>
+<tr>
+<th class='row_header'>Female</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+</tr>
+<tr>
+<th class='row_header'>Highest Education: A Level/Higher Grade</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+</tr>
+<tr>
+<th class='row_header'>Highest Education: Non-Degree Further</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+</tr>
+<tr>
+<th class='row_header'>Highest Education: Degree or Equivalent</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+</tr>
+<tr>
+<th class='row_header'>Ethnic Minority</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+</tr>
+<tr>
+<th class='row_header'>Has Children</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_med'>&#x1F871;</td>
+</tr>
+<tr>
+<th class='row_header'>Has a Partner</th>
+<td class='nonsig'>&#x25CF;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+</tr>
+<tr>
+<th class='row_header'>Identifies Conservative</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Identifies Libdem</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Identifies Labour</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Identifies Green</th>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Identifies UKIP</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Identifies SNP</th>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Religion: Catholic</th>
+<td class='positive_weak'>&#x1F861;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Religion: Any Protestant</th>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Big5: Openness</th>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='negative_med'>&#x1F873;</td>
+<td class='negative_med'>&#x1F873;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>North East</th>
+<td></td>
+<td></td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>North West of England</th>
+<td></td>
+<td></td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Yorkshire and Humberside</th>
+<td></td>
+<td></td>
+<td class='nonsig'>&#x25CF;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>London</th>
+<td></td>
+<td></td>
+<td class='negative_weak'>&#x1F863;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>South of England</th>
+<td></td>
+<td></td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Wales</th>
+<td></td>
+<td></td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Scotland</th>
+<td></td>
+<td></td>
+<td class='negative_strong'>&#x1F883;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th class='row_header'>Voted Yes in IndieRef</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td class='nonsig'>&#x25CF;</td>
+<td class='negative_strong'>&#x1F883;</td>
+</tr>
+</tbody>
+</table>
 
 
 **Notes To The Article**
