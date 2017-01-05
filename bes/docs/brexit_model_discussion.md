@@ -581,6 +581,16 @@ We make the pretty-ish arrows table in the article from [Table 1 above](#table-1
 <td class='positive_weak'>&#x1F861;</td>
 <td class='nonsig'>&#x25CF;</td>
 </tr>
+<tr>
+<td class='negative_strong'>&#x1F883;</td>
+<td class='negative_med'>&#x1F873;</td>
+<td class='negative_weak'>&#x1F863;</td>
+<td class='positive_strong'>&#x1F881;</td>
+<td class='positive_med'>&#x1F871;</td>
+<td class='positive_weak'>&#x1F861;</td>
+<td class='nonsig'>&#x25CF;</td>
+</tr>
+
 </tbody>
 </table>
 

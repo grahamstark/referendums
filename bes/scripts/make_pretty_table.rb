@@ -185,6 +185,7 @@ if true then
         row.add_element( makeCell( "1", "" ))
         
         tbody.add_element( row )
+        tbody.add_element( row )
         
         keyTable.add_element( thead )
         keyTable.add_element( tbody )
