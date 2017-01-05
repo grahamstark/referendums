@@ -80,7 +80,8 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 
 ![](http://virtual-worlds.biz/scot/images/main_table.png)
 
-** Key **
+<h3>Key</key>
+
 <table>
 <tbody>
 <tr>
@@ -97,7 +98,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 </tr>
 <tr>
 <td>No Significant Association</td>
-<td class='nonsig' colspan='3'>&#x25CF;</td>
+<td class='nonsig' colspan='3' align='center'>&#x25CF;</td>
 </tr>
 </tbody>
 </table>
