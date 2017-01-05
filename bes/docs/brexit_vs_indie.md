@@ -80,6 +80,31 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 
 ![](http://virtual-worlds.biz/scot/images/main_table.png)
 
+** Key **
+
+<table class='easytable'>
+<thead/>
+<tbody>
+<tr>
+<td>Positive Association:</td>
+<td class='positive_strong'>&#x1F881; Strong;&nbsp;</td>
+<td class='positive_med'>&#x1F871; Medium; &nbsp;</td>
+<td class='positive_weak'>&#x1F861; Weak; </td>
+</tr>
+<tr>
+<td>Negative Association:</td>
+<td class='negative_strong'>&#x1F883; Strong;&nbsp;</td>
+<td class='negative_med'>&#x1F873; Medium; &nbsp;</td>
+<td class='negative_weak'>&#x1F863; Weak; &nbsp;</td>
+</tr>
+<tr>
+<td>No Significant Association</td>
+<td class='nonsig' colspan='3'>&#x25CF;</td>
+</tr>
+</tbody>
+</table>
+
+
 Let's look at IndyRef first. That's column (1): 
 
 * The first cell summarises the influence of income on the Scottish Independence
