@@ -78,7 +78,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 
 **Table 1**
 
-![Main Table](http://virtual-worlds.biz/scot/images/main_table.png)
+![](http://virtual-worlds.biz/scot/images/main_table.png)
 
 Let's look at IndyRef first. That's column (1): 
 
