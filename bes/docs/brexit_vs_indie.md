@@ -98,7 +98,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 </tr>
 <tr>
 <td>No Significant Association</td>
-<td class='nonsig' colspan='3' align='center'>&#x25CF;</td>
+<td class='nonsig' colspan='3' align='left'>&#x25CF;</td>
 </tr>
 </tbody>
 </table>
