@@ -111,7 +111,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 </thead>
 <tbody>
 <tr>
-<th class='row_header'>Log of Household Gross Income (£p.a)</th>
+<th class='row_header'>Income</th>
 <td class='negative_strong'>&#x1F883;</td>
 <td class='negative_strong'>&#x1F883;</td>
 <td class='negative_med'>&#x1F873;</td>
