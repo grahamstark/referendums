@@ -68,12 +68,13 @@ amount of information my computer program spits out. I hope it makes sense; the 
 paper][TECHNOTE]. Each column summarises one of our models that explain the votes. The first column (1) is our model of
 the Scottish Independence vote. Columns(2) and (3) are models of the EU Referendum; (2) uses data for Great Britain as a
 whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of each variable on the vote.
-The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
-'<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significant *positive* effect on a 'Yes' (or
-'Leave') vote, from the strongest to the weakest[^FNSIG]. Likewise, the red down arrows '![](images/down_strong.png)', '![](images/down_med.png)' and ![](images/down_weak.png) signify negative effects, strongest to weakest. Variables that don't appear significant are
-indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
-varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
-were associated with a 'Yes' note, but still have voted 'No', and vice versa.
+The green up-arrows '![](images/up_strong.png)',
+'![](images/up_med.png)' and ![](images/up_weak.png) indicate things that have a significant *positive* effect on a 'Yes' (or
+'Leave') vote, from the strongest to the weakest[^FNSIG]. Likewise, the red down arrows '![](images/down_strong.png)',
+'![](images/down_med.png)' and ![](images/down_weak.png) signify negative effects, strongest to weakest. Variables that
+don't appear significant are indicated with '![](images/nosig.png)'. Although my models do a good job of capturing how
+the votes varied by income, age, sex and so on, they of course don't explain everything - you could posses all the
+indicators that were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 
 **Table 1**
 
@@ -82,7 +83,7 @@ were associated with a 'Yes' note, but still have voted 'No', and vice versa.
 Let's look at IndyRef first. That's column (1): 
 
 * The first cell summarises the influence of income on the Scottish Independence
-  vote. The '<span class='negative_strong'>&#x21ca;</span>' in that cell indicates that income has a strongly
+  vote. The '![](images/down_strong.png)' in that cell indicates that income has a strongly
   significant *negative* effect on the likelihood of voting "Yes" in the IndyRef - 
   the higher your household's income, the less likely you were to vote 'yes', all else equal, and we
   can be confident this effect is real;
@@ -90,7 +91,7 @@ Let's look at IndyRef first. That's column (1):
 * Next we have age - this is also significantly negative - the older you are,
   the less likely to vote 'yes' [^FN5];
    
-* You interpret '<span class='negative_strong'>&#x21ca;'</span> in the next row "Gender - Female" as meaning that women
+* You interpret '![](images/down_strong.png)' in the next row "Gender - Female" as meaning that women
   were significantly less likely to vote 'yes' than men with the same level of income, qualifications, etc.;
 
 * The next three lines show the effect of increasing levels of education. There's essentially no effect. People of all
