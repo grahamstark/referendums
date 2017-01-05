@@ -289,7 +289,7 @@ is a good predictor.
 
 **Notes To The Article**
 
-The Commonspace CMS system unfortunately chopped out the articles footnotes, so I'll reproduce them here:
+The Commonspace CMS system unfortunately chopped out the article's footnotes, so I'll reproduce them here:
 
 *Matthew Goodwin and Oliver Heath Study* : The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
 had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
@@ -298,7 +298,7 @@ perfect correlate with actual vote. I'm using the version (9) of the BES with th
 *Kauffmann Study*: this was carried out even earlier, before the actual Brexit vote: instead of explaining the vote he is modelling the
 extent to which people disapprove of the EU, which, too, is a good predictor of the final vote.
 
-*Paragraph on 'Main Findings': We say 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
+*Paragraph on 'Main Findings'*: We say 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
 
 *Relationship between age and voting*: in the IndieRef case (but not the Brexit vote), this is actually a bit
 of a simplification - 'Yes' is modelled to rise till about age 40 and fall
