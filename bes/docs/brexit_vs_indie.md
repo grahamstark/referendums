@@ -70,9 +70,7 @@ the Scottish Independence vote. Columns(2) and (3) are models of the EU Referend
 whole [^FN4], and (3) just uses people living in Scotland. The rows summarise the effect of each variable on the vote.
 The green up-arrows '<span class='positive_strong'>&#x21c8; </span>', '<span class='positive_med'>&#x2191;</span>' and
 '<span class='positive_weak'>&#x21e1;</span>' indicate things that have a significant *positive* effect on a 'Yes' (or
-'Leave') vote, from the strongest to the weakest[^FNSIG]. Likewise, the red down arrows '<span
-class='negative_strong'>&#x21ca;</span>', '<span class='negative_med'>&#x2193;</span>' and '<span
-class='negative_weak'>&#x21e3;</span>' signify negative effects, strongest to weakest. Variables that don't appear significant are
+'Leave') vote, from the strongest to the weakest[^FNSIG]. Likewise, the red down arrows '![](images/down_strong.png)', '![](images/down_med.png)' and ![](images/down_weak.png) signify negative effects, strongest to weakest. Variables that don't appear significant are
 indicated with '<span class='nonsig'>&#x25CF;</span>'. Although my models do a good job of capturing how the votes
 varied by income, age, sex and so on, they of course don't explain everything - you could posses all the indicators that
 were associated with a 'Yes' note, but still have voted 'No', and vice versa.
