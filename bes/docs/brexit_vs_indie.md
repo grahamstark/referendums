@@ -80,7 +80,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 
 ![](http://virtual-worlds.biz/scot/images/main_table.png)
 
-<h3>Key</key>
+<h3>Key</h3>
 
 <table>
 <tbody>
@@ -88,7 +88,7 @@ indicators that were associated with a 'Yes' note, but still have voted 'No', an
 <td>Positive Association:</td>
 <td class='positive_strong'>&#x1F881; Strong;&nbsp;</td>
 <td class='positive_med'>&#x1F871; Medium; &nbsp;</td>
-<td class='positive_weak'>&#x1F861; Weak; </td>
+<td class='positive_weak'>&#x1F861; Weak; &nbsp; </td>
 </tr>
 <tr>
 <td>Negative Association:</td>
