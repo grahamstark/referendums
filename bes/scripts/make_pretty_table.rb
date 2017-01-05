@@ -164,3 +164,33 @@ formatter.write( newTable, s )
 # clean out overzealous escaping from the XML writer
 s.gsub!( "&amp;", "&" )
 puts( s )
+
+keyTable = REXML::Element.new( "table" )
+keyTable.add_attribute( "class", "easytable" )
+tbody = REXML::Element.new( "tbody" )
+thead = REXML::Element.new( "thead" )
+
+#
+# this just makes a little key thingy at the bottom
+# 
+if true then
+        row = REXML::Element.new( "tr" )
+        row.add_element( makeCell( "-1","***" ))
+        row.add_element( makeCell( "-1", "**" ))
+        row.add_element( makeCell( "-1", "*" ))
+        
+        row.add_element( makeCell( "1", "***" ))
+        row.add_element( makeCell( "1", "**" ))
+        row.add_element( makeCell( "1", "*" ))
+        row.add_element( makeCell( "1", "" ))
+        
+        tbody.add_element( row )
+        
+        keyTable.add_element( thead )
+        keyTable.add_element( tbody )
+        formatter.write( keyTable, s )
+        # clean out overzealous escaping from the XML writer
+        s.gsub!( "&amp;", "&" )
+        puts( s )
+end
+
