@@ -45,6 +45,7 @@ set_miss <- function ( v ){
 #
 # start an output file
 #
+setwd( "~/VirtualWorlds/projects/scotland/referendums/bes/")
 sink( "outputs/data_creation.R.log" );
 #
 #
@@ -108,6 +109,8 @@ label( bes$n_ireland) <- "Northern Ireland"
 bes$partyIdNW3 = factor( bes$partyIdW3 )
 bes$partyIdNW9 = factor( bes$partyIdW9 )
 
+summary( bes$scotReferendumTurnoutW1 )
+
 #
 # If you do vote in the referendum on Britain’s membership of the European Union, 
 # how do you think you will vote EULeave.. (actually, this is post-vote in W9)
@@ -117,7 +120,23 @@ bes$vote_leave_eu <- bes$euRefVoteW9 == 1;
 label( bes$vote_leave_eu) <- "EU Referendum: Voted Leave"
 
 bes$vote_yes_scot <- bes$scotReferendumVoteW3 == 1;
+# FIXME W3 (actual version) is missing
+bes$indyref_didnt_vote <- bes$scotReferendumTurnoutW2 == 2;
+
 label( bes$vote_yes_scot) <- "Scottish Referendum: Voted Yes"
+bes$vote_no_scot <- bes$scotReferendumVoteW3 == 0;
+label( bes$indyref_didnt_vote ) <- "Indyref: eligible but didn't vote"
+#
+# should be W3, but hey ho..
+# FIXME missing in data, but we have bes$scotReferendumTurnoutW1 == 5 means 'very likely'
+# bes$voted_scot <- bes$scotReferendumTurnoutW3 == 1;
+# bes$did_not_vote_scot <- bes$scotReferendumTurnoutW3 == 2; 
+# bes$ineligble_scot <- bes$scotReferendumTurnoutW3 > 2; 
+
+#
+# TODO turnout out of:
+#
+# head(bes$euRefTurnoutRetroW9,100)
 
 bes$male   <- bes$gender == 1;
 label( bes$male) <- "Male"
@@ -193,8 +212,10 @@ label( bes$age_cubed) <- "Age Cubed"
 
 bes$has_children <- bes$profile_household_children > 0;
 
-bes$is_house_owner <- bes$housing < 2;
-label( bes$is_house_owner) <- "Housing - Owned Outright or Mortaged" 
+bes$is_house_owner <- bes$housing <= 3;
+bes$is_renter <- ( bes$housing > 3 ) & ( bes$housing <= 7 );
+
+label( bes$is_house_owner) <- "Housing - Owned Outright, Mortaged, Shared Ownership" 
 bes$is_partnered <- bes$marital == 1 | bes$marital == 2 | bes$marital == 7;
 label( bes$is_partnered) <- "Has a partner" 
 
@@ -275,6 +296,97 @@ bes$bornUK        = bes$countryOfBirth <= 4;
 bes$bornOutsideUK = bes$countryOfBirth > 4;
 bes$bornEU        = bes$countryOfBirth == 8 | bes$countryOfBirth == 5;
 bes$bornOutsideEU = ! (bes$bornUK | bes$bornEU )
+
+# intention waves 4,6,7,9 only
+bes$yesW9 <- bes$scotReferendumIntentionW9 == 1;
+bes$yesW7 <- bes$scotReferendumIntentionW7 == 1;
+bes$yesW6 <- bes$scotReferendumIntentionW6 == 1;
+bes$yesW4 <- bes$scotReferendumIntentionW4 == 1;
+
+bes$noW9 <- bes$scotReferendumIntentionW9 == 0;
+bes$noW7 <- bes$scotReferendumIntentionW7 == 0;
+bes$noW6 <- bes$scotReferendumIntentionW6 == 0;
+bes$noW4 <- bes$scotReferendumIntentionW4 == 0;
+
+bes$notW9 <- bes$scotReferendumIntentionW9 == 2;
+bes$notW7 <- bes$scotReferendumIntentionW7 == 2;
+bes$notW6 <- bes$scotReferendumIntentionW6 == 2;
+bes$notW4 <- bes$scotReferendumIntentionW4 == 2;
+
+bes$dkW9 <- bes$scotReferendumIntentionW9 == 9999;
+bes$dkW7 <- bes$scotReferendumIntentionW7 == 9999;
+bes$dkW6 <- bes$scotReferendumIntentionW6 == 9999;
+bes$dkW4 <- bes$scotReferendumIntentionW4 == 9999;
+
+bes$indyref_dk_vote_post <- ( bes$dkW9 | bes$dkW7 | bes$dkW6 | bes$dkW4 )
+bes$indyref_not_vote_post <- ( bes$notW9 | bes$notW7 | bes$notW6 | bes$notW4 )
+
+bes$indyref_switch_yes_2_no <- bes$vote_yes_scot & ( bes$noW9 | bes$noW7 | bes$noW6 | bes$noW4 )
+bes$indyref_switch_no_2_yes <- bes$vote_no_scot & ( bes$yesW9 | bes$yesW7 | bes$yesW6 | bes$yesW4 )
+bes$indyref_switch_yes_2_other <- bes$indyref_switch_yes_2_no | bes$indyref_dk_vote_post | bes$indyref_not_vote_post;
+
+print( "yes 2 no" ); summary( bes$indyref_switch_yes_2_no )
+print( "yes 2 any other" ); summary( bes$indyref_switch_yes_2_other )
+print( "no 2 yes" ); summary( bes$indyref_switch_no_2_yes )
+
+#
+# Scottish cities, excl Stirling
+#
+bes$glasgow = bes$profile_oslaua == 164;
+bes$dundee  = bes$profile_oslaua == 156;
+bes$edinburgh = bes$profile_oslaua == 161;
+#
+# Scottish Councils
+#
+bes$scottish_city =  
+        # Glasgow City
+        bes$profile_oslaua == 164 |  
+        # Edinburgh, City of 
+        bes$profile_oslaua == 161 | 
+        # Dundee City  
+        bes$profile_oslaua == 156 |
+        # Aberdeen City                     
+        bes$profile_oslaua == 148;  
+           
+bes$scottish_urban = 
+        bes$scottish_city |
+        # Renfrewshire 
+        bes$profile_oslaua == 173 
+        # East Renfrewshire 
+        bes$profile_oslaua == 160                     
+        # North Lanarkshire 
+        bes$profile_oslaua == 170                     
+        # Falkirk  
+        bes$profile_oslaua == 162;  
+
+bes$scottish_highlands = 
+        # Eilean Siar (H)
+        bes$profile_oslaua == 179 | 
+        # Shetland Islands (H)            
+        bes$profile_oslaua ==  174 |             
+        # Perth & Kinross (H)        
+        bes$profile_oslaua ==  172 |           
+        # Orkney Islands (H) 
+        bes$profile_oslaua == 171 |         
+        # Highland (H)
+        bes$profile_oslaua == 165 |
+        # Moray (H)  
+        bes$profile_oslaua == 168 |     
+        #Argyll & Bute (H)
+        bes$profile_oslaua == 151 |
+        # Aberdeenshire (H) 
+        bes$profile_oslaua == 149 |
+        # Angus (H)   
+        bes$profile_oslaua == 150  |     
+        # Aberdeen City (HCU) 
+        bes$profile_oslaua == 148;
+
+bes$scottish_borders = 
+        # Dumfries & Galloway (B)
+        bes$profile_oslaua == 155 |
+        # Scottish Borders (B) 
+        bes$profile_oslaua == 152;                  
+               
 
 if( is_local ){
   save( bes, file="data/BES2015_W9_Panel_v1.0_with_added_vars.RData" )

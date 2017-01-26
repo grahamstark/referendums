@@ -43,6 +43,37 @@ if( is_local ){
 
 print( "dataset loaded" )
 print( "age,case,prob_scotref,prob_brexit_scot,prob_brexit " )
+stdLabels = c(         
+    "Log of Household Gross Income (£p.a)",
+    "Age",
+    "Age Squared",
+    "Female",
+    "Highest Education: A Level/Higher Grade",
+    "Highest Education: Non-Degree Further",
+    "Highest Education: Degree or Equivalent",
+    "Ethnic Minority",
+    "Has Children",
+    "Has a Partner",
+    "Identifies Conservative", 
+    "Identifies Libdem",
+    "Identifies Labour",
+    "Identifies Green",
+    "Identifies UKIP",
+    "Identifies SNP",
+    "Religion: Catholic",
+    "Religion: Any Protestant",
+    "Big5: Openness",
+    "North East",
+    "North West of England",
+    "Yorkshire and Humberside",
+    "London",
+    "South of England",
+    "Wales",
+    "Scotland",
+    "Voted Yes in IndieRef"
+)
+
+stdLabels_2 <- stdLabels[ -length( stdLabels )] # remove last indieref vote
 
 for( dtype in seq( 1 , 2, by = 1 )){
         ## CASE 1 - use core subsamples
@@ -73,37 +104,6 @@ for( dtype in seq( 1 , 2, by = 1 )){
         # note: possibly? weights=besScot$wt_full_W3 etc. (No - so much missing data that it probably 
         # makes things worse).
         #
-        stdLabels = c(         
-                "Log of Household Gross Income (£p.a)",
-                "Age",
-                "Age Squared",
-                "Female",
-                "Highest Education: A Level/Higher Grade",
-                "Highest Education: Non-Degree Further",
-                "Highest Education: Degree or Equivalent",
-                "Ethnic Minority",
-                "Has Children",
-                "Has a Partner",
-                "Identifies Conservative", 
-                "Identifies Libdem",
-                "Identifies Labour",
-                "Identifies Green",
-                "Identifies UKIP",
-                "Identifies SNP",
-                "Religion: Catholic",
-                "Religion: Any Protestant",
-                "Big5: Openness",
-                "North East",
-                "North West of England",
-                "Yorkshire and Humberside",
-                "London",
-                "South of England",
-                "Wales",
-                "Scotland",
-                "Voted Yes in IndieRef"
-                )
-                
-        stdLabels_2 <- stdLabels[ -length( stdLabels )] # remove last indieref vote
         #
         # for Indieref regressions, we need to 
         # map the w_3/w_9 parties. This is just to make the regression labelling using stargazer a bit easier
@@ -145,6 +145,8 @@ for( dtype in seq( 1 , 2, by = 1 )){
         
         besFullW9$age <- besFullW9$age+2;
         besFullW9$age_square <- besFullW9$age*besFullW9$age 
+        
+        
         
         # regression. Indieref first using the w3 scottish sample
         # indieref 
@@ -258,7 +260,77 @@ for( dtype in seq( 1 , 2, by = 1 )){
             family=binomial(link='probit'), 
             data=besScotW3 );
         
+        probit.scotswitch_yes_no_5 <- glm(
+            formula=indyref_switch_yes_2_no~
+                log_hh_inc+ 
+                age+ 
+                age_square+ 
+                female+ 
+                a_level_equiv+ 
+                other_higher_ed + 
+                degree_equiv +
+                is_ethnic_minority+ 
+                has_children+ 
+                is_partnered +
+                conservative+
+                libdem+
+                labour+
+                green+
+                ukip+
+                scot_nat+
+                catholic+
+                protestant+
+                big5_openness,        
+            family=binomial(link='probit'), 
+            data=besScotW3 );
         
+        probit.indyref_not_vote_post_5 <-glm(
+            formula=indyref_not_vote_post ~
+                log_hh_inc+ 
+                age+ 
+                age_square+ 
+                female+ 
+                a_level_equiv+ 
+                other_higher_ed + 
+                degree_equiv +
+                is_ethnic_minority+ 
+                has_children+ 
+                is_partnered +
+                conservative+
+                libdem+
+                labour+
+                green+
+                ukip+
+                scot_nat+
+                catholic+
+                protestant+
+                big5_openness,        
+            family=binomial(link='probit'), 
+            data=besScotW3 );
+        
+        probit.scotswitch_no_yes_5 <- glm(
+            formula=indyref_switch_no_2_yes~
+                log_hh_inc+ 
+                age+ 
+                age_square+ 
+                female+ 
+                a_level_equiv+ 
+                other_higher_ed + 
+                degree_equiv +
+                is_ethnic_minority+ 
+                has_children+ 
+                is_partnered +
+                conservative+
+                libdem+
+                labour+
+                green+
+                ukip+
+                scot_nat+
+                catholic+
+                protestant+
+                big5_openness,        
+            family=binomial(link='probit'), 
+            data=besScotW3 );
         #
         # EU Ref regressions on the full w9 sample
         #
@@ -619,7 +691,28 @@ for( dtype in seq( 1 , 2, by = 1 )){
                    column.labels   = c("Scotland Only", "All GB", "Scotland Only" ),
                    column.separate = c(1, 1, 1),
                    align=TRUE )
+        
+        stargazer( 
+            probit.scotswitch_yes_no_5,
+            probit.scotswitch_no_yes_5,
+            probit.indyref_not_vote_post_5,
+            covariate.labels = stdLabels, 
+            dep.var.labels = c("Yes->No","No->Yes", "Not Likely to vote" ),
+            type='html',
+            report = "vc*",
+            align=TRUE )
                    
+        stargazer( 
+            probit.scotswitch_yes_no_5,
+            probit.scotswitch_no_yes_5,
+            probit.indyref_not_vote_post_5,
+            covariate.labels = stdLabels, 
+            dep.var.labels = c("Yes->No","No->Yes", "Not Likely to vote" ),
+            type='text',
+            align=TRUE )
+        
+        
+                           
         # TODO some nice prediction charts, see           
         # http://www.ats.ucla.edu/stat/r/dae/probit.htm
         #
@@ -665,6 +758,10 @@ for( dtype in seq( 1 , 2, by = 1 )){
         print( summary( probit.euref_scot_only_2 ));
         print( summary( probit.euref_scot_only_3 ));
         print( summary( probit.euref_scot_only_4 ));
+        
+        print( summary( probit.scotswitch_yes_no_5 ));
+        print( summary( probit.scotswitch_no_yes_5 ));
+        print( summary( probit.indyref_not_vote_post_5 ));
         
         #
         # dump summaries of all the data

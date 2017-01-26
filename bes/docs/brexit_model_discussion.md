@@ -696,3 +696,49 @@ Other 0.002396645 0.018288700
 None  0.186938286 0.138471587
 
 </pre>
+
+
+**Notes**
+
+[^FN1]: The study was completed after the vote but before the edition of the BES with the actual data on the Brexit vote
+had been released; instead, Goodwin and Heath model *intention* to vote (6 months before), which is a good though not
+perfect correlate with actual vote. I'm using the version (9) of the BES with the actual vote in it.
+
+[^FN2]: Kaufmann's study was carried out even earlier, before the actual Brexit vote: instead of explaining the vote he is modelling the
+extent to which people disapprove of the EU, which, too, is a good predictor of the final vote.
+
+[^FN3]: Strictly speaking, there is no London effect relative to the "ommited dummy", - the Midlands - the [technical note][TECHNOTE] explains this in more detail; 
+
+[^FN4]: 'Great Britain' rather than 'United Kingdom' since Northern Ireland is not in the BES data.
+
+[^FN5]: in the IndieRef case (but not the Brexit vote), this is actually a bit
+of a simplification - 'Yes' is modelled to rise till about age 40 and fall
+thereafter, whereas 'Leave' rises steadily at all ages. This is 'all else
+equal', and of course incomes generally rise between those ages, which may
+explain why simple tabulations from polling data don't show quite this pattern.
+See the [Technical Note][TECHNOTE] for more detail.
+
+[^FN6]: These are the parties people *identify* with; they needn't be members of them.
+
+[^FNSIG]: A technical aside: I'm using statistical significance for this (the p-values) rather than, for example, effect
+size. So I give more weight in that table to a small but certain influence than to a potentially large effect which has
+more uncertainty attached to it. [The American Statistical Association has a good short paper on this][ASA]
+
+[^FNMODEL]: See the [Technical Note][TECHNOTE] for more on all this; there is in particular a tricky issue here that many people have
+dropped out of the survey between the Indie and Brexit votes.
+
+[^FNREG]: in the [Technical Note][TECHNOTE] I report a version of the model without these regional dummies, showing that
+adding or removing these variables doesn't affect our other conclusions in any major way. So model in column (2) is
+still comparable with the Indie ref one even though it has more variables.
+
+[^FNSCOT]: 'Scottish', as is customary, simply means people living (or at least interviewed) in Scotland. Adding country of birth as an explanatory variable would be interesting.
+
+[^FNLON]: The [Resolution Foundation study][Resolution] finds this, too.
+
+[Resolution]: http://www.resolutionfoundation.org/media/blog/why-did-we-vote-to-leave-what-an-analysis-of-place-can-tell-us-about-brexit/ "Clarke, Stephen. Why Did We Vote to Leave? What an Analysis of Place Can Tell Us about Brexit. Resolution Foundation, 15 July 2016."
+[Wings]: http://wingsoverscotland.com/spotting-the-differences/ "Campbell, Stuart ‘Spotting the Differences’. Wings Over Scotland, 10 November 2016."
+[Rowntree]: https://www.jrf.org.uk/report/brexit-vote-explained-poverty-low-skills-and-lack-opportunities "Goodwin, Matthew, and Oliver Heath. ‘Brexit Vote Explained: Poverty, Low Skills and Lack of Opportunities’. JRF, 26 August 2016."
+[LSE]: http://blogs.lse.ac.uk/politicsandpolicy/personal-values-brexit-vote/ "Kaufmann, Eric: ‘It’s NOT the Economy, Stupid: Brexit as a Story of Personal Values’. British Politics and Policy at LSE, 7 July 2016."
+[TECHNOTE]: http://virtual-worlds-research.com/scot/brexit_model_discussion.html "Stark, Graham: Brexit vs Indie: Model Notes and Links"
+[BES]: http://www.britishelectionstudy.com/ "The British Election Study"
+[ASA]: http://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108 "Wasserstein, Ronald L., and Nicole A. Lazar. ‘The ASA’s Statement on P-Values: Context, Process, and Purpose’. The American Statistician 70, no. 2 (2 April 2016): 129–33. doi:10.1080/00031305.2016.1154108."

@@ -613,6 +613,129 @@ Note:                                                                           
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Yes->No</td><td>No->Yes</td><td>Not Likely to vote</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.029</td><td>0.033</td><td>-0.213<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age</td><td>-0.038<sup>*</sup></td><td>-0.026</td><td>-0.072<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age Squared</td><td>0.0004<sup>*</sup></td><td>0.0002</td><td>0.001<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Female</td><td>-0.106</td><td>0.025</td><td>-0.235</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>-0.310<sup>*</sup></td><td>-0.028</td><td>0.214</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.114</td><td>-0.073</td><td>-0.386</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>-0.158</td><td>-0.025</td><td>-0.012</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Ethnic Minority</td><td>0.134</td><td>-4.579</td><td>-0.040</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has Children</td><td>0.077</td><td>0.064</td><td>0.162</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has a Partner</td><td>0.100</td><td>0.052</td><td>-0.168</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Conservative</td><td>-0.906<sup>***</sup></td><td>-0.181</td><td>-1.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Libdem</td><td>-0.224</td><td>0.722<sup>***</sup></td><td>-4.973</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Labour</td><td>0.049</td><td>0.400<sup>***</sup></td><td>-0.890<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Green</td><td>-0.080</td><td>-0.409</td><td>-4.941</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies UKIP</td><td>0.136</td><td>0.160</td><td>-0.309</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies SNP</td><td>0.587<sup>***</sup></td><td>-0.894<sup>***</sup></td><td>-0.906<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Catholic</td><td>-0.102</td><td>-0.095</td><td>0.090</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Any Protestant</td><td>-0.005</td><td>0.123</td><td>-0.149</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Big5: Openness</td><td>0.021</td><td>0.014</td><td>0.029</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">North East</td><td>-0.614</td><td>-0.895</td><td>2.756<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,662</td><td>1,615</td><td>909</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-350.518</td><td>-422.105</td><td>-126.119</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>741.036</td><td>884.209</td><td>292.237</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+==============================================================================
+                                                 Dependent variable:          
+                                        --------------------------------------
+                                         Yes->No   No->Yes  Not Likely to vote
+                                           (1)       (2)           (3)        
+------------------------------------------------------------------------------
+Log of Household Gross Income (£p.a)     -0.029     0.033        -0.213**     
+                                         (0.074)   (0.071)       (0.106)      
+                                                                              
+Age                                      -0.038*   -0.026        -0.072**     
+                                         (0.023)   (0.022)       (0.033)      
+                                                                              
+Age Squared                              0.0004*   0.0002        0.001**      
+                                        (0.0002)  (0.0002)       (0.0003)     
+                                                                              
+Female                                   -0.106     0.025         -0.235      
+                                         (0.106)   (0.098)       (0.179)      
+                                                                              
+Highest Education: A Level/Higher Grade  -0.310*   -0.028         0.214       
+                                         (0.170)   (0.152)       (0.242)      
+                                                                              
+Highest Education: Non-Degree Further     0.114    -0.073         -0.386      
+                                         (0.187)   (0.197)       (0.470)      
+                                                                              
+Highest Education: Degree or Equivalent  -0.158    -0.025         -0.012      
+                                         (0.131)   (0.124)       (0.218)      
+                                                                              
+Ethnic Minority                           0.134    -4.579         -0.040      
+                                         (0.314)  (130.267)      (0.453)      
+                                                                              
+Has Children                              0.077     0.064         0.162       
+                                         (0.140)   (0.123)       (0.230)      
+                                                                              
+Has a Partner                             0.100     0.052         -0.168      
+                                         (0.123)   (0.114)       (0.198)      
+                                                                              
+Identifies Conservative                 -0.906***  -0.181       -1.000***     
+                                         (0.293)   (0.183)       (0.334)      
+                                                                              
+Identifies Libdem                        -0.224   0.722***        -4.973      
+                                         (0.291)   (0.221)      (242.841)     
+                                                                              
+Identifies Labour                         0.049   0.400***      -0.890***     
+                                         (0.161)   (0.137)       (0.259)      
+                                                                              
+Identifies Green                         -0.080    -0.409         -4.941      
+                                         (0.343)   (0.270)      (261.752)     
+                                                                              
+Identifies UKIP                           0.136     0.160         -0.309      
+                                         (0.285)   (0.268)       (0.366)      
+                                                                              
+Identifies SNP                          0.587***  -0.894***     -0.906***     
+                                         (0.156)   (0.154)       (0.216)      
+                                                                              
+Religion: Catholic                       -0.102    -0.095         0.090       
+                                         (0.183)   (0.171)       (0.281)      
+                                                                              
+Religion: Any Protestant                 -0.005     0.123         -0.149      
+                                         (0.118)   (0.112)       (0.220)      
+                                                                              
+Big5: Openness                            0.021     0.014         0.029       
+                                         (0.031)   (0.028)       (0.051)      
+                                                                              
+North East                               -0.614    -0.895        2.756**      
+                                         (0.904)   (0.877)       (1.310)      
+                                                                              
+------------------------------------------------------------------------------
+Observations                              1,662     1,615          909        
+Log Likelihood                          -350.518  -422.105       -126.119     
+Akaike Inf. Crit.                        741.036   884.209       292.237      
+==============================================================================
+Note:                                              *p<0.1; **p<0.05; ***p<0.01
+
 ===============
 FALSE FALSE 541
 TRUE  FALSE 514
@@ -1235,6 +1358,144 @@ Residual deviance: 1710.1  on 1533  degrees of freedom
 AIC: 1750.1
 
 Number of Fisher Scoring iterations: 14
+
+
+Call:
+glm(formula = indyref_switch_yes_2_no ~ log_hh_inc + age + age_square + 
+    female + a_level_equiv + other_higher_ed + degree_equiv + 
+    is_ethnic_minority + has_children + is_partnered + conservative + 
+    libdem + labour + green + ukip + scot_nat + catholic + protestant + 
+    big5_openness, family = binomial(link = "probit"), data = besScotW3)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9171  -0.3911  -0.3005  -0.1679   3.1543  
+
+Coefficients:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)            -0.6141393  0.9039470  -0.679 0.496886    
+log_hh_inc             -0.0287926  0.0742589  -0.388 0.698214    
+age                    -0.0376586  0.0228829  -1.646 0.099824 .  
+age_square              0.0004043  0.0002291   1.765 0.077601 .  
+femaleTRUE             -0.1060074  0.1063332  -0.997 0.318796    
+a_level_equivTRUE      -0.3104959  0.1702508  -1.824 0.068189 .  
+other_higher_edTRUE     0.1141533  0.1871249   0.610 0.541837    
+degree_equivTRUE       -0.1579302  0.1305587  -1.210 0.226414    
+is_ethnic_minorityTRUE  0.1341233  0.3140379   0.427 0.669312    
+has_childrenTRUE        0.0774836  0.1401274   0.553 0.580297    
+is_partneredTRUE        0.1003614  0.1233480   0.814 0.415849    
+conservativeTRUE       -0.9059979  0.2934726  -3.087 0.002021 ** 
+libdemTRUE             -0.2235347  0.2913847  -0.767 0.442995    
+labourTRUE              0.0488936  0.1608451   0.304 0.761144    
+greenTRUE              -0.0796286  0.3429783  -0.232 0.816408    
+ukipTRUE                0.1358175  0.2852319   0.476 0.633957    
+scot_natTRUE            0.5869610  0.1557075   3.770 0.000163 ***
+catholicTRUE           -0.1023734  0.1833643  -0.558 0.576635    
+protestantTRUE         -0.0053552  0.1179400  -0.045 0.963783    
+big5_openness           0.0211542  0.0308861   0.685 0.493399    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 777.80  on 1661  degrees of freedom
+Residual deviance: 701.04  on 1642  degrees of freedom
+  (1800 observations deleted due to missingness)
+AIC: 741.04
+
+Number of Fisher Scoring iterations: 7
+
+
+Call:
+glm(formula = indyref_switch_no_2_yes ~ log_hh_inc + age + age_square + 
+    female + a_level_equiv + other_higher_ed + degree_equiv + 
+    is_ethnic_minority + has_children + is_partnered + conservative + 
+    libdem + labour + green + ukip + scot_nat + catholic + protestant + 
+    big5_openness, family = binomial(link = "probit"), data = besScotW3)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0330  -0.5220  -0.2471  -0.1698   3.1058  
+
+Coefficients:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)            -8.953e-01  8.769e-01  -1.021  0.30725    
+log_hh_inc              3.315e-02  7.085e-02   0.468  0.63980    
+age                    -2.590e-02  2.218e-02  -1.168  0.24289    
+age_square              1.901e-04  2.280e-04   0.834  0.40430    
+femaleTRUE              2.472e-02  9.788e-02   0.252  0.80066    
+a_level_equivTRUE      -2.803e-02  1.524e-01  -0.184  0.85407    
+other_higher_edTRUE    -7.277e-02  1.975e-01  -0.368  0.71251    
+degree_equivTRUE       -2.533e-02  1.240e-01  -0.204  0.83810    
+is_ethnic_minorityTRUE -4.579e+00  1.303e+02  -0.035  0.97196    
+has_childrenTRUE        6.437e-02  1.230e-01   0.523  0.60079    
+is_partneredTRUE        5.189e-02  1.136e-01   0.457  0.64782    
+conservativeTRUE       -1.807e-01  1.833e-01  -0.985  0.32442    
+libdemTRUE              7.222e-01  2.212e-01   3.265  0.00109 ** 
+labourTRUE              4.004e-01  1.366e-01   2.931  0.00338 ** 
+greenTRUE              -4.089e-01  2.704e-01  -1.512  0.13051    
+ukipTRUE                1.599e-01  2.680e-01   0.596  0.55087    
+scot_natTRUE           -8.939e-01  1.541e-01  -5.800 6.62e-09 ***
+catholicTRUE           -9.482e-02  1.709e-01  -0.555  0.57894    
+protestantTRUE          1.233e-01  1.122e-01   1.099  0.27174    
+big5_openness           1.400e-02  2.803e-02   0.500  0.61738    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 984.81  on 1614  degrees of freedom
+Residual deviance: 844.21  on 1595  degrees of freedom
+  (1847 observations deleted due to missingness)
+AIC: 884.21
+
+Number of Fisher Scoring iterations: 16
+
+
+Call:
+glm(formula = indyref_not_vote_post ~ log_hh_inc + age + age_square + 
+    female + a_level_equiv + other_higher_ed + degree_equiv + 
+    is_ethnic_minority + has_children + is_partnered + conservative + 
+    libdem + labour + green + ukip + scot_nat + catholic + protestant + 
+    big5_openness, family = binomial(link = "probit"), data = besScotW3)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9980  -0.2741  -0.1800  -0.1221   3.2827  
+
+Coefficients:
+                         Estimate Std. Error z value Pr(>|z|)    
+(Intercept)             2.756e+00  1.310e+00   2.105 0.035302 *  
+log_hh_inc             -2.134e-01  1.065e-01  -2.004 0.045109 *  
+age                    -7.181e-02  3.279e-02  -2.190 0.028529 *  
+age_square              6.832e-04  3.414e-04   2.001 0.045386 *  
+femaleTRUE             -2.351e-01  1.792e-01  -1.312 0.189607    
+a_level_equivTRUE       2.141e-01  2.418e-01   0.885 0.375889    
+other_higher_edTRUE    -3.860e-01  4.703e-01  -0.821 0.411864    
+degree_equivTRUE       -1.159e-02  2.180e-01  -0.053 0.957602    
+is_ethnic_minorityTRUE -4.019e-02  4.535e-01  -0.089 0.929378    
+has_childrenTRUE        1.622e-01  2.305e-01   0.704 0.481486    
+is_partneredTRUE       -1.685e-01  1.978e-01  -0.852 0.394451    
+conservativeTRUE       -9.997e-01  3.340e-01  -2.993 0.002762 ** 
+libdemTRUE             -4.973e+00  2.428e+02  -0.020 0.983660    
+labourTRUE             -8.897e-01  2.589e-01  -3.436 0.000591 ***
+greenTRUE              -4.941e+00  2.618e+02  -0.019 0.984939    
+ukipTRUE               -3.087e-01  3.661e-01  -0.843 0.399197    
+scot_natTRUE           -9.055e-01  2.157e-01  -4.197  2.7e-05 ***
+catholicTRUE            8.975e-02  2.812e-01   0.319 0.749611    
+protestantTRUE         -1.489e-01  2.199e-01  -0.677 0.498373    
+big5_openness           2.879e-02  5.087e-02   0.566 0.571456    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 315.67  on 908  degrees of freedom
+Residual deviance: 252.24  on 889  degrees of freedom
+  (2553 observations deleted due to missingness)
+AIC: 292.24
+
+Number of Fisher Scoring iterations: 17
 
 [1] "Scottish Sample; W3 Core"
 
@@ -4667,6 +4928,8 @@ scotland                         3,462       1.000             0.000            
 n_ireland                        3,462       0.000             0.000              0                  0         
 vote_leave_eu                    1,684       0.361             0.480              0                  1         
 vote_yes_scot                    3,334       0.472             0.499              0                  1         
+indyref_didnt_vote               3,000       0.006             0.079              0                  1         
+vote_no_scot                     3,334       0.528             0.499              0                  1         
 male                             3,462       0.503             0.500              0                  1         
 female                           3,462       0.497             0.500              0                  1         
 conservative_w3                  3,311       0.151             0.358              0                  1         
@@ -4703,6 +4966,27 @@ bornUK                           3,442       0.952             0.213            
 bornOutsideUK                    3,442       0.048             0.213              0                  1         
 bornEU                           3,442       0.016             0.124              0                  1         
 bornOutsideEU                    3,442       0.032             0.176              0                  1         
+yesW9                            1,582       0.499             0.500              0                  1         
+yesW7                            1,840       0.462             0.499              0                  1         
+yesW6                            2,573       0.495             0.500              0                  1         
+yesW4                            2,566       0.494             0.500              0                  1         
+noW9                             1,582       0.491             0.500              0                  1         
+noW7                             1,840       0.526             0.499              0                  1         
+noW6                             2,573       0.495             0.500              0                  1         
+noW4                             2,566       0.496             0.500              0                  1         
+notW9                            1,582       0.010             0.100              0                  1         
+notW7                            1,840       0.011             0.106              0                  1         
+notW6                            2,573       0.010             0.100              0                  1         
+notW4                            2,566       0.010             0.100              0                  1         
+dkW9                             1,582       0.010             0.100              0                  1         
+dkW7                             1,840       0.011             0.106              0                  1         
+dkW6                             2,573       0.010             0.100              0                  1         
+dkW4                             2,566       0.010             0.100              0                  1         
+indyref_dk_vote_post             1,218       0.044             0.206              0                  1         
+indyref_not_vote_post            1,218       0.044             0.206              0                  1         
+indyref_switch_yes_2_no          2,410       0.059             0.236              0                  1         
+indyref_switch_no_2_yes          2,305       0.094             0.291              0                  1         
+indyref_switch_yes_2_other       1,286       0.152             0.359              0                  1         
 conservative                     3,311       0.151             0.358              0                  1         
 labour                           3,311       0.235             0.424              0                  1         
 libdem                           3,311       0.042             0.201              0                  1         
@@ -8170,6 +8454,8 @@ scotland                         2,377       1.000             0.000            
 n_ireland                        2,377       0.000             0.000              0                  0         
 vote_leave_eu                    2,227       0.369             0.483              0                  1         
 vote_yes_scot                    1,705       0.434             0.496              0                  1         
+indyref_didnt_vote               1,816       0.004             0.066              0                  1         
+vote_no_scot                     1,705       0.566             0.496              0                  1         
 male                             2,377       0.503             0.500              0                  1         
 female                           2,377       0.497             0.500              0                  1         
 conservative_w3                  1,703       0.175             0.380              0                  1         
@@ -8206,6 +8492,27 @@ bornUK                           1,945       0.964             0.186            
 bornOutsideUK                    1,945       0.036             0.186              0                  1         
 bornEU                           1,945       0.013             0.113              0                  1         
 bornOutsideEU                    1,945       0.023             0.150              0                  1         
+yesW9                            2,061       0.497             0.500              0                  1         
+yesW7                            1,949       0.438             0.496              0                  1         
+yesW6                            1,825       0.468             0.499              0                  1         
+yesW4                            1,792       0.472             0.499              0                  1         
+noW9                             2,061       0.492             0.500              0                  1         
+noW7                             1,949       0.549             0.498              0                  1         
+noW6                             1,825       0.523             0.500              0                  1         
+noW4                             1,792       0.517             0.500              0                  1         
+notW9                            2,061       0.011             0.103              0                  1         
+notW7                            1,949       0.013             0.115              0                  1         
+notW6                            1,825       0.009             0.096              0                  1         
+notW4                            1,792       0.012             0.108              0                  1         
+dkW9                             2,061       0.011             0.103              0                  1         
+dkW7                             1,949       0.013             0.115              0                  1         
+dkW6                             1,825       0.009             0.096              0                  1         
+dkW4                             1,792       0.012             0.108              0                  1         
+indyref_dk_vote_post             1,336       0.033             0.179              0                  1         
+indyref_not_vote_post            1,336       0.033             0.179              0                  1         
+indyref_switch_yes_2_no          1,620       0.067             0.250              0                  1         
+indyref_switch_no_2_yes          1,494       0.112             0.316              0                  1         
+indyref_switch_yes_2_other       1,282       0.118             0.322              0                  1         
 conservative                     2,289       0.177             0.382              0                  1         
 labour                           2,289       0.225             0.417              0                  1         
 libdem                           2,289       0.055             0.227              0                  1         
@@ -11953,6 +12260,8 @@ scotland                         16,713       0.142             0.349           
 n_ireland                        16,713       0.000             0.000              0                  0         
 vote_leave_eu                    18,611       0.492             0.500              0                  1         
 vote_yes_scot                    1,707        0.434             0.496              0                  1         
+indyref_didnt_vote               1,817        0.004             0.066              0                  1         
+vote_no_scot                     1,707        0.566             0.496              0                  1         
 male                             20,009       0.479             0.500              0                  1         
 female                           20,009       0.521             0.500              0                  1         
 conservative_w3                  9,541        0.279             0.449              0                  1         
@@ -11989,6 +12298,27 @@ bornUK                           10,977       0.951             0.216           
 bornOutsideUK                    10,977       0.049             0.216              0                  1         
 bornEU                           10,977       0.021             0.143              0                  1         
 bornOutsideEU                    10,977       0.028             0.166              0                  1         
+yesW9                            2,259        0.500             0.500              0                  1         
+yesW7                            1,960        0.437             0.496              0                  1         
+yesW6                            1,832        0.468             0.499              0                  1         
+yesW4                            1,799        0.471             0.499              0                  1         
+noW9                             2,259        0.489             0.500              0                  1         
+noW7                             1,960        0.550             0.498              0                  1         
+noW6                             1,832        0.523             0.500              0                  1         
+noW4                             1,799        0.517             0.500              0                  1         
+notW9                            2,259        0.011             0.105              0                  1         
+notW7                            1,960        0.013             0.114              0                  1         
+notW6                            1,832        0.009             0.096              0                  1         
+notW4                            1,799        0.012             0.107              0                  1         
+dkW9                             2,259        0.011             0.105              0                  1         
+dkW7                             1,960        0.013             0.114              0                  1         
+dkW6                             1,832        0.009             0.096              0                  1         
+dkW4                             1,799        0.012             0.107              0                  1         
+indyref_dk_vote_post             1,343        0.035             0.184              0                  1         
+indyref_not_vote_post            1,343        0.035             0.184              0                  1         
+indyref_switch_yes_2_no          1,622        0.067             0.249              0                  1         
+indyref_switch_no_2_yes          1,498        0.112             0.316              0                  1         
+indyref_switch_yes_2_other       1,287        0.120             0.325              0                  1         
 conservative                     18,883       0.301             0.459              0                  1         
 labour                           18,883       0.306             0.461              0                  1         
 libdem                           18,883       0.078             0.268              0                  1         
