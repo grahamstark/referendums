@@ -33,6 +33,8 @@ rm(list = ls(all = TRUE));
 # the converted dataset
 #
 # local version: 
+sink( "outputs/regressions.article_2.log" );
+
 is_local = FALSE;
 setwd( "~/VirtualWorlds/projects/scotland/referendums/bes/")
 if( is_local ){
@@ -41,8 +43,10 @@ if( is_local ){
         load( "/mnt/data/bes/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 }
 
-                
-sink( "outputs/regressions.article_2.log" );
+#
+# everybody, inc. non-core
+#
+besScot <- bes[ which( bes$scotland ), ]
 
 stdLabels = c(         
     "Log of Household Gross Income (£p.a)",
@@ -64,34 +68,162 @@ stdLabels = c(
     "Religion: Catholic",
     "Religion: Any Protestant",
     "Big5: Openness",
-    "North East",
-    "North West of England",
-    "Yorkshire and Humberside",
-    "London",
-    "South of England",
-    "Wales",
-    "Scotland",
-    "Voted Yes in IndieRef"
+    "Lives in Scottish City",
+    "Lives in Highlands",
+    "Lives in Borders",
+    "Born England",
+    "Born in EU"
 )
 
 
-        # regression. Indieref first using the w3 scottish sample
-        # indieref 
-        #
-        probit.scotref_1 <- glm(
-            formula=vote_yes_scot~
-                log_hh_inc+ 
-                age+ 
-                age_square+ 
-                female+ 
-                a_level_equiv +
-                other_higher_ed + 
-                degree_equiv +
-                is_ethnic_minority+ 
-                has_children+ 
-                is_partnered,
-            family=binomial(link='probit'), 
-            data=besScotW3 );
+# regression. Indieref first using the w3 scottish sample
+# indieref 
+#
+probit.scotref_1 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered,
+        conservative_w3+
+        libdem_w3+
+        labour_w3+
+        green_w3+
+        ukip_w3+
+        scot_nat_w3+
+        catholic+
+        protestant+
+        big5_openness+
+        scottish_city,
+        scottish_highlands,
+        scottish_borders,
+        bornEngland,
+        bornEU,
+    family=binomial(link='probit'), 
+    data=besScot );
 
+probit.scotswitch_yes_no <- glm(
+    formula=indyref_switch_yes_2_no~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered,
+        conservative_w3+
+        libdem_w3+
+        labour_w3+
+        green_w3+
+        ukip_w3+
+        scot_nat_w3+
+        catholic+
+        protestant+
+        big5_openness+
+        scottish_city,
+        scottish_highlands,
+        scottish_borders,
+        bornEngland,
+        bornEU,
+    family=binomial(link='probit'), 
+    data=besScot );
+        
+probit.indyref_not_vote_post <-glm(
+    formula=indyref_not_vote_post ~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered,
+        conservative_w3+
+        libdem_w3+
+        labour_w3+
+        green_w3+
+        ukip_w3+
+        scot_nat_w3+
+        catholic+
+        protestant+
+        big5_openness+
+        scottish_city,
+        scottish_highlands,
+        scottish_borders,
+        bornEngland,
+        bornEU,
+    family=binomial(link='probit'), 
+    data=besScot );
+        
+probit.scotswitch_no_yes <- glm(
+    formula=indyref_switch_no_2_yes~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered,
+        conservative_w3+
+        libdem_w3+
+        labour_w3+
+        green_w3+
+        ukip_w3+
+        scot_nat_w3+
+        catholic+
+        protestant+
+        big5_openness+
+        scottish_city,
+        scottish_highlands,
+        scottish_borders,
+        bornEngland,
+        bornEU,
+    family=binomial(link='probit'), 
+    data=besScot );
 
+stargazer( 
+        probit.scotref_1,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
+        probit.indyref_not_vote_post,
+        covariate.labels = stdLabels, 
+        dep.var.labels = c("Vote Yes", "Yes-No","No-Yes", "Not Likely to vote" ),
+        type='html',
+        report = "vc*",
+        align=TRUE )
+   
+stargazer(         
+        probit.scotref_1,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
+        probit.indyref_not_vote_post,
+        covariate.labels = stdLabels, 
+        dep.var.labels = c("Yes->No","No->Yes", "Not Likely to vote" ),
+        type='text',
+        align=TRUE )
+        
+        
+print( summary( probit.scotref_1 ));
+print( summary( probit.scotswitch_yes_no ));
+print( summary( probit.scotswitch_no_yes ));
+print( summary( probit.indyref_not_vote_post ));
+        
+
+#
+# close output buffer
+#
 sink();
