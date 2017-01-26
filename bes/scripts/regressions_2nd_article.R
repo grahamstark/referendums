@@ -59,6 +59,7 @@ stdLabels = c(
     "Ethnic Minority",
     "Has Children",
     "Has a Partner",
+    "Homeowner",
     "Identifies Conservative", 
     "Identifies Libdem",
     "Identifies Labour",
@@ -71,7 +72,7 @@ stdLabels = c(
     "Lives in Scottish City",
     "Lives in Highlands",
     "Lives in Borders",
-    "Born England",
+    "Born in England",
     "Born in EU"
 )
 
@@ -91,6 +92,7 @@ probit.scotref_1 <- glm(
         is_ethnic_minority+ 
         has_children+ 
         is_partnered,
+        is_house_owner,
         conservative_w3+
         libdem_w3+
         labour_w3+
@@ -100,10 +102,40 @@ probit.scotref_1 <- glm(
         catholic+
         protestant+
         big5_openness+
-        scottish_city,
-        scottish_highlands,
-        scottish_borders,
-        bornEngland,
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +,
+        bornEngland + 
+        bornEU,
+    family=binomial(link='probit'), 
+    data=besScot );
+
+probit.scotref_1 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square+ 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered,
+        is_house_owner,
+        conservative_w9+
+        libdem_w9+
+        labour_w9+
+        green_w9+
+        ukip_w9+
+        scot_nat_w9+
+        catholic+
+        protestant+
+        big5_openness+
+        scottish_city+
+        scottish_highlands+
+        scottish_borders +,
+        bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
     data=besScot );
@@ -129,10 +161,10 @@ probit.scotswitch_yes_no <- glm(
         catholic+
         protestant+
         big5_openness+
-        scottish_city,
-        scottish_highlands,
-        scottish_borders,
-        bornEngland,
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +,
+        bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
     data=besScot );
@@ -158,10 +190,10 @@ probit.indyref_not_vote_post <-glm(
         catholic+
         protestant+
         big5_openness+
-        scottish_city,
-        scottish_highlands,
-        scottish_borders,
-        bornEngland,
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +,
+        bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
     data=besScot );
@@ -187,10 +219,10 @@ probit.scotswitch_no_yes <- glm(
         catholic+
         protestant+
         big5_openness+
-        scottish_city,
-        scottish_highlands,
-        scottish_borders,
-        bornEngland,
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +,
+        bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
     data=besScot );
