@@ -21,7 +21,8 @@
 require( foreign )
 require( Hmisc ) 
 require( plyr ) # rename
-# not used yet require( survey )
+# not used yet require( survey 
+        
 
 # TODO use optparse or something so we can pass file locations in 
 
@@ -31,22 +32,14 @@ rm(list = ls(all = TRUE));
 #
 #  identify 9999, 9998 everywhere as a missing value value
 #
-set_miss <- function ( v ){
-    if( is.factor( v )){
-        v[ ( as.numeric( v ) == 9999 ) ] <- NA
-        v[ ( as.numeric( v ) == 9998 ) ] <- NA
-        v[ ( as.numeric( v ) < 0 ) ] <- NA
-    } else {
-        v[ ( v == 9999 ) ] <- NA
-    }
-    return( v )
-}
-
 #
 # start an output file
 #
 setwd( "~/VirtualWorlds/projects/scotland/referendums/bes/")
 sink( "outputs/data_creation.R.log" );
+source( "scripts/utils.R" );        
+
+
 #
 #
 # note my R won't read the stata version
@@ -58,18 +51,13 @@ if( is_local ){
 } else {
   filename = "/mnt/data/bes/BES2015_W9_Panel_v1.0.sav"
 }
-bes_raw <- read.spss( 
+bes <- read.spss( 
          file <- filename,
          convert.dates <- TRUE,
          convert.factors <- TRUE,
          use.missings <- TRUE,
          warn.missing.labels <- TRUE );
 
-#
-# nuke all missing/dk values
-#
-bes = data.frame( lapply( bes_raw, set_miss ))         
-         
 print( "SPSS Loaded" )         
 #
 # region dummies
@@ -121,7 +109,14 @@ label( bes$vote_leave_eu) <- "EU Referendum: Voted Leave"
 
 bes$vote_yes_scot <- bes$scotReferendumVoteW3 == 1;
 # FIXME W3 (actual version) is missing
-bes$indyref_didnt_vote <- bes$scotReferendumTurnoutW2 == 2;
+
+# W2 coding frame:
+# Don't know 9999
+# Very likely that I will vote 5 
+# Fairly likely 4   
+# Neither likely nor unlikely 3 
+# Fairly unlikely 2 Very unlikely that I will vote 1 
+bes$indyref_didnt_vote <- bes$scotReferendumTurnoutW2 <= 3;
 
 label( bes$vote_yes_scot) <- "Scottish Referendum: Voted Yes"
 bes$vote_no_scot <- bes$scotReferendumVoteW3 == 0;
@@ -290,12 +285,12 @@ label(  bes$degree_equiv ) <- "Highest Education: Degree or Equivalent"
 
 # country of birth
 
-bes$bornEngland   = bes$countryOfBirth == 1;
-bes$bornScotland  = bes$countryOfBirth == 2;
-bes$bornUK        = bes$countryOfBirth <= 4;
-bes$bornOutsideUK = bes$countryOfBirth > 4;
-bes$bornEU        = bes$countryOfBirth == 8 | bes$countryOfBirth == 5;
-bes$bornOutsideEU = ! (bes$bornUK | bes$bornEU )
+bes$born_england   = bes$countryOfBirth == 1;
+bes$born_scotland  = bes$countryOfBirth == 2;
+bes$born_uk        = bes$countryOfBirth <= 4;
+bes$born_outside_uk = bes$countryOfBirth > 4;
+bes$born_eu        = bes$countryOfBirth == 8 | bes$countryOfBirth == 5;
+bes$born_outside_eu = ! (bes$born_uk | bes$born_eu )
 
 # intention waves 4,6,7,9 only
 bes$yesW9 <- bes$scotReferendumIntentionW9 == 1;

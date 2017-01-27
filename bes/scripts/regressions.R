@@ -26,6 +26,7 @@ require( ggplot2 )
 # clear the workspace
 rm(list = ls(all = TRUE));
 
+
 #
 # start an output file somewhere
 #
@@ -35,12 +36,19 @@ rm(list = ls(all = TRUE));
 # local version: 
 is_local = FALSE;
 setwd( "~/VirtualWorlds/projects/scotland/referendums/bes/")
+source( "scripts/utils.R" );
+
 if( is_local ){
         load( "data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 } else {
         load( "/mnt/data/bes/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 }
 
+#
+# nuke all missing/dk values
+#
+bes = data.frame( lapply( bes, set_miss ))         
+         
 print( "dataset loaded" )
 print( "age,case,prob_scotref,prob_brexit_scot,prob_brexit " )
 stdLabels = c(         
@@ -256,7 +264,7 @@ for( dtype in seq( 1 , 2, by = 1 )){
                 catholic+
                 protestant+
                 big5_openness+
-                bornEngland,        
+                born_england,        
             family=binomial(link='probit'), 
             data=besScotW3 );
         

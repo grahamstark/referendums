@@ -22,9 +22,13 @@ require( ggplot2 )
 # to install, for example, weights for 1st time, do: install.package( 'weights' ) 
 #
 
-
 # clear the workspace
 rm(list = ls(all = TRUE));
+
+#
+# nuke all missing/dk values
+#
+bes = data.frame( lapply( bes, set_miss ))    
 
 #
 # start an output file somewhere
@@ -37,11 +41,18 @@ sink( "outputs/regressions.article_2.log" );
 
 is_local = FALSE;
 setwd( "~/VirtualWorlds/projects/scotland/referendums/bes/")
+source( "scripts/utils.R" );
+
 if( is_local ){
         load( "data/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 } else {
         load( "/mnt/data/bes/BES2015_W9_Panel_v1.0_with_added_vars.RData", verbose=TRUE )
 }
+
+#
+# nuke all missing/dk values
+#
+bes = data.frame( lapply( bes, set_miss )) 
 
 #
 # everybody, inc. non-core
@@ -105,8 +116,8 @@ probit.scotref_1 <- glm(
         scottish_city +
         scottish_highlands +
         scottish_borders +
-        bornEngland + 
-        bornEU +
+        born_england + 
+        born_eu +
         is_house_owner,
     family=binomial(link='probit'), 
     data=bes );
@@ -135,8 +146,8 @@ probit.scotref_2 <- glm(
         scottish_city+
         scottish_highlands+
         scottish_borders +
-        bornEngland + 
-        bornEU,
+        born_england + 
+        born_eu,
     family = binomial(link='probit'), 
     data = besScot );
 
@@ -164,8 +175,8 @@ probit.scotswitch_yes_no <- glm(
         scottish_city +
         scottish_highlands +
         scottish_borders +
-        bornEngland + 
-        bornEU,
+        born_england + 
+        born_eu,
     family=binomial(link='probit'), 
     data=besScot );
         
@@ -193,8 +204,8 @@ probit.indyref_not_vote_post <-glm(
         scottish_city +
         scottish_highlands +
         scottish_borders +
-        bornEngland + 
-        bornEU,
+        born_england + 
+        born_eu,
     family=binomial(link='probit'), 
     data=besScot );
         
@@ -222,8 +233,8 @@ probit.scotswitch_no_yes <- glm(
         scottish_city +
         scottish_highlands +
         scottish_borders +
-        bornEngland + 
-        bornEU,
+        born_england + 
+        born_eu,
     family=binomial(link='probit'), 
     data=besScot );
 
