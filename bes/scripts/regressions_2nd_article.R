@@ -26,11 +26,6 @@ require( ggplot2 )
 rm(list = ls(all = TRUE));
 
 #
-# nuke all missing/dk values
-#
-bes = data.frame( lapply( bes, set_miss ))    
-
-#
 # start an output file somewhere
 #
 #

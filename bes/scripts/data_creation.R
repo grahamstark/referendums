@@ -97,8 +97,6 @@ label( bes$n_ireland) <- "Northern Ireland"
 bes$partyIdNW3 = factor( bes$partyIdW3 )
 bes$partyIdNW9 = factor( bes$partyIdW9 )
 
-summary( bes$scotReferendumTurnoutW1 )
-
 #
 # If you do vote in the referendum on Britain’s membership of the European Union, 
 # how do you think you will vote EULeave.. (actually, this is post-vote in W9)
@@ -116,6 +114,7 @@ bes$vote_yes_scot <- bes$scotReferendumVoteW3 == 1;
 # Fairly likely 4   
 # Neither likely nor unlikely 3 
 # Fairly unlikely 2 Very unlikely that I will vote 1 
+# obviously this is a misnomer
 bes$indyref_didnt_vote <- bes$scotReferendumTurnoutW2 <= 3;
 
 label( bes$vote_yes_scot) <- "Scottish Referendum: Voted Yes"
