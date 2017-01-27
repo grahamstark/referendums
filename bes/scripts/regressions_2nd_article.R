@@ -48,6 +48,8 @@ if( is_local ){
 #
 besScot <- bes[ which( bes$scotland ), ]
 
+# print( besScot )
+
 stdLabels = c(         
     "Log of Household Gross Income (£p.a)",
     "Age",
@@ -59,7 +61,6 @@ stdLabels = c(
     "Ethnic Minority",
     "Has Children",
     "Has a Partner",
-    "Homeowner",
     "Identifies Conservative", 
     "Identifies Libdem",
     "Identifies Labour",
@@ -73,14 +74,44 @@ stdLabels = c(
     "Lives in Highlands",
     "Lives in Borders",
     "Born in England",
-    "Born in EU"
-)
-
+    "Born in EU",
+    "Homeowner"    
+);
 
 # regression. Indieref first using the w3 scottish sample
 # indieref 
 #
 probit.scotref_1 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square + 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered +
+        conservative_w3 +
+        libdem_w3 +
+        labour_w3 +
+        green_w3 +
+        ukip_w3 +
+        scot_nat_w3 +
+        catholic +
+        protestant +
+        big5_openness +
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +
+        bornEngland + 
+        bornEU +
+        is_house_owner,
+    family=binomial(link='probit'), 
+    data=bes );
+
+probit.scotref_2 <- glm(
     formula=vote_yes_scot~
         log_hh_inc+ 
         age+ 
@@ -91,8 +122,7 @@ probit.scotref_1 <- glm(
         degree_equiv +
         is_ethnic_minority+ 
         has_children+ 
-        is_partnered,
-        is_house_owner,
+        is_partnered +
         conservative_w3+
         libdem_w3+
         labour_w3+
@@ -102,43 +132,13 @@ probit.scotref_1 <- glm(
         catholic+
         protestant+
         big5_openness+
-        scottish_city +
-        scottish_highlands +
-        scottish_borders +,
-        bornEngland + 
-        bornEU,
-    family=binomial(link='probit'), 
-    data=besScot );
-
-probit.scotref_1 <- glm(
-    formula=vote_yes_scot~
-        log_hh_inc+ 
-        age+ 
-        age_square+ 
-        female+ 
-        a_level_equiv +
-        other_higher_ed + 
-        degree_equiv +
-        is_ethnic_minority+ 
-        has_children+ 
-        is_partnered,
-        is_house_owner,
-        conservative_w9+
-        libdem_w9+
-        labour_w9+
-        green_w9+
-        ukip_w9+
-        scot_nat_w9+
-        catholic+
-        protestant+
-        big5_openness+
         scottish_city+
         scottish_highlands+
-        scottish_borders +,
+        scottish_borders +
         bornEngland + 
         bornEU,
-    family=binomial(link='probit'), 
-    data=besScot );
+    family = binomial(link='probit'), 
+    data = besScot );
 
 probit.scotswitch_yes_no <- glm(
     formula=indyref_switch_yes_2_no~
@@ -151,19 +151,19 @@ probit.scotswitch_yes_no <- glm(
         degree_equiv +
         is_ethnic_minority+ 
         has_children+ 
-        is_partnered,
-        conservative_w3+
-        libdem_w3+
-        labour_w3+
-        green_w3+
-        ukip_w3+
-        scot_nat_w3+
+        is_partnered +
+        conservative_w3 +
+        libdem_w3 +
+        labour_w3 +
+        green_w3 +
+        ukip_w3 +
+        scot_nat_w3 +
         catholic+
         protestant+
         big5_openness+
         scottish_city +
         scottish_highlands +
-        scottish_borders +,
+        scottish_borders +
         bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
@@ -180,19 +180,19 @@ probit.indyref_not_vote_post <-glm(
         degree_equiv +
         is_ethnic_minority+ 
         has_children+ 
-        is_partnered,
-        conservative_w3+
-        libdem_w3+
-        labour_w3+
-        green_w3+
-        ukip_w3+
-        scot_nat_w3+
+        is_partnered +
+        conservative_w3 +
+        libdem_w3 +
+        labour_w3 +
+        green_w3 +
+        ukip_w3 +
+        scot_nat_w3 +
         catholic+
         protestant+
         big5_openness+
         scottish_city +
         scottish_highlands +
-        scottish_borders +,
+        scottish_borders +
         bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
@@ -209,19 +209,19 @@ probit.scotswitch_no_yes <- glm(
         degree_equiv +
         is_ethnic_minority+ 
         has_children+ 
-        is_partnered,
-        conservative_w3+
-        libdem_w3+
-        labour_w3+
-        green_w3+
-        ukip_w3+
-        scot_nat_w3+
+        is_partnered +
+        conservative_w3 +
+        libdem_w3 +
+        labour_w3 +
+        green_w3 +
+        ukip_w3 +
+        scot_nat_w3 +
         catholic+
         protestant+
         big5_openness+
         scottish_city +
         scottish_highlands +
-        scottish_borders +,
+        scottish_borders +
         bornEngland + 
         bornEU,
     family=binomial(link='probit'), 
@@ -229,6 +229,7 @@ probit.scotswitch_no_yes <- glm(
 
 stargazer( 
         probit.scotref_1,
+        probit.scotref_2,
         probit.scotswitch_yes_no,
         probit.scotswitch_no_yes,
         probit.indyref_not_vote_post,
@@ -239,17 +240,19 @@ stargazer(
         align=TRUE )
    
 stargazer(         
+        probit.scotref_2,
         probit.scotref_1,
         probit.scotswitch_yes_no,
         probit.scotswitch_no_yes,
         probit.indyref_not_vote_post,
         covariate.labels = stdLabels, 
-        dep.var.labels = c("Yes->No","No->Yes", "Not Likely to vote" ),
+        dep.var.labels = c("Vote Yes", "Yes->No","No->Yes", "Not Likely to vote" ),
         type='text',
         align=TRUE )
         
         
 print( summary( probit.scotref_1 ));
+print( summary( probit.scotref_2 ));
 print( summary( probit.scotswitch_yes_no ));
 print( summary( probit.scotswitch_no_yes ));
 print( summary( probit.indyref_not_vote_post ));

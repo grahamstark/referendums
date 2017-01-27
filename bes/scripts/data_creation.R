@@ -351,11 +351,11 @@ bes$scottish_city =
 bes$scottish_urban = 
         bes$scottish_city |
         # Renfrewshire 
-        bes$profile_oslaua == 173 
+        bes$profile_oslaua == 173 |
         # East Renfrewshire 
-        bes$profile_oslaua == 160                     
+        bes$profile_oslaua == 160 |                    
         # North Lanarkshire 
-        bes$profile_oslaua == 170                     
+        bes$profile_oslaua == 170 |                    
         # Falkirk  
         bes$profile_oslaua == 162;  
 
