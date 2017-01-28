@@ -108,7 +108,7 @@ XPath.each( dict, "//table/tr" ){
         |tr|
         row += 1
         newRow = REXML::Element.new( "tr" )
-        if ( row <= 6 ) then
+        if ( row <= 5 ) then
                 XPath.each( tr, "td" ){
                         |td|
                         newTH = REXML::Element.new( "td" )
@@ -124,7 +124,7 @@ XPath.each( dict, "//table/tr" ){
                 }
                 thead.add_element( newRow )               
         else
-                if ( row % 2 ) == 0 then
+                if ( row % 2 ) == 1 then
                         col = 0
                         XPath.each( tr, "td" ){
                                |cell|

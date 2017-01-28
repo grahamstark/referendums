@@ -57,7 +57,7 @@ bes <- read.spss(
          convert.factors <- TRUE,
          use.missings <- TRUE,
          warn.missing.labels <- TRUE );
-
+bes = data.frame( lapply( bes, set_miss )) 
 print( "SPSS Loaded" )         
 #
 # region dummies

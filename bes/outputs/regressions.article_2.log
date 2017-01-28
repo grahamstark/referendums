@@ -5,61 +5,62 @@ Loading objects:
 <tr><td></td><td colspan="5" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td colspan="2">Vote Yes</td><td>Yes-No</td><td>No-Yes</td><td>Not Likely to vote</td></tr>
 <tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr>
-<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.056</td><td>-0.130<sup>***</sup></td><td>-0.107<sup>*</sup></td><td>-0.014</td><td>-0.124</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.057</td><td>-0.130<sup>***</sup></td><td>-0.107<sup>*</sup></td><td>-0.014</td><td>-0.124</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Age</td><td>0.046<sup>***</sup></td><td>0.044<sup>***</sup></td><td>-0.046<sup>**</sup></td><td>-0.040<sup>**</sup></td><td>-0.074<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Age Squared</td><td>-0.0005<sup>***</sup></td><td>-0.0005<sup>***</sup></td><td>0.0005<sup>**</sup></td><td>0.0003<sup>**</sup></td><td>0.001<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Female</td><td>-0.194<sup>***</sup></td><td>-0.172<sup>***</sup></td><td>-0.151<sup>*</sup></td><td>0.044</td><td>-0.237<sup>*</sup></td></tr>
+<tr><td style="text-align:left">Female</td><td>-0.193<sup>***</sup></td><td>-0.172<sup>***</sup></td><td>-0.151<sup>*</sup></td><td>0.044</td><td>-0.237<sup>*</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>0.001</td><td>-0.003</td><td>-0.354<sup>**</sup></td><td>-0.099</td><td>0.244</td></tr>
+<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>-0.001</td><td>-0.003</td><td>-0.354<sup>**</sup></td><td>-0.099</td><td>0.244</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.094</td><td>0.066</td><td>0.067</td><td>-0.020</td><td>-0.119</td></tr>
+<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.092</td><td>0.066</td><td>0.067</td><td>-0.020</td><td>-0.119</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>0.155<sup>*</sup></td><td>0.142<sup>*</sup></td><td>-0.212<sup>**</sup></td><td>-0.057</td><td>-0.147</td></tr>
+<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>0.149<sup>*</sup></td><td>0.142<sup>*</sup></td><td>-0.212<sup>**</sup></td><td>-0.057</td><td>-0.147</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Ethnic Minority</td><td>0.536<sup>**</sup></td><td>0.351<sup>**</sup></td><td>0.204</td><td>-4.348</td><td>-0.251</td></tr>
+<tr><td style="text-align:left">Ethnic Minority</td><td>0.537<sup>**</sup></td><td>0.351<sup>**</sup></td><td>0.204</td><td>-4.348</td><td>-0.251</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Has Children</td><td>0.086</td><td>0.100</td><td>0.078</td><td>0.043</td><td>-0.008</td></tr>
+<tr><td style="text-align:left">Has Children</td><td>0.079</td><td>0.100</td><td>0.078</td><td>0.043</td><td>-0.008</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Has a Partner</td><td>-0.008</td><td>-0.009</td><td>0.259<sup>**</sup></td><td>0.007</td><td>-0.081</td></tr>
+<tr><td style="text-align:left">Has a Partner</td><td>-0.010</td><td>-0.009</td><td>0.259<sup>**</sup></td><td>0.007</td><td>-0.081</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Identifies Conservative</td><td>-1.331<sup>***</sup></td><td>-1.283<sup>***</sup></td><td>-0.478<sup>***</sup></td><td>-0.278<sup>*</sup></td><td>-1.007<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Identifies Libdem</td><td>-0.984<sup>***</sup></td><td>-0.838<sup>***</sup></td><td>-0.225</td><td>0.691<sup>***</sup></td><td>-4.705</td></tr>
+<tr><td style="text-align:left">Identifies Libdem</td><td>-0.985<sup>***</sup></td><td>-0.838<sup>***</sup></td><td>-0.225</td><td>0.691<sup>***</sup></td><td>-4.705</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Identifies Labour</td><td>-0.465<sup>***</sup></td><td>-0.485<sup>***</sup></td><td>0.076</td><td>0.392<sup>***</sup></td><td>-0.829<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Identifies Green</td><td>1.176<sup>***</sup></td><td>0.923<sup>***</sup></td><td>-0.187</td><td>-0.444<sup>**</sup></td><td>-0.773<sup>*</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Identifies UKIP</td><td>-0.683<sup>***</sup></td><td>-0.564<sup>***</sup></td><td>0.276</td><td>-0.135</td><td>-0.430</td></tr>
+<tr><td style="text-align:left">Identifies UKIP</td><td>-0.720<sup>***</sup></td><td>-0.564<sup>***</sup></td><td>0.276</td><td>-0.135</td><td>-0.430</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Identifies SNP</td><td>1.951<sup>***</sup></td><td>1.978<sup>***</sup></td><td>0.605<sup>***</sup></td><td>-0.836<sup>***</sup></td><td>-0.735<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Religion: Catholic</td><td>0.088</td><td>0.097</td><td>-0.030</td><td>0.128</td><td>0.141</td></tr>
+<tr><td style="text-align:left">Religion: Catholic</td><td>0.090</td><td>0.097</td><td>-0.030</td><td>0.128</td><td>0.141</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Religion: Any Protestant</td><td>-0.262<sup>***</sup></td><td>-0.312<sup>***</sup></td><td>-0.063</td><td>0.092</td><td>-0.260</td></tr>
+<tr><td style="text-align:left">Religion: Any Protestant</td><td>-0.259<sup>***</sup></td><td>-0.312<sup>***</sup></td><td>-0.063</td><td>0.092</td><td>-0.260</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left">Big5: Openness</td><td>0.073<sup>***</sup></td><td>0.072<sup>***</sup></td><td>0.027</td><td>-0.007</td><td>0.036</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Lives in Scottish City</td><td>0.011</td><td>0.029</td><td>-0.007</td><td>-0.025</td><td>-0.049</td></tr>
+<tr><td style="text-align:left">Lives in Scottish City</td><td>0.013</td><td>0.029</td><td>-0.007</td><td>-0.025</td><td>-0.049</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Lives in Highlands</td><td>-0.011</td><td>-0.068</td><td>-0.011</td><td>0.047</td><td>-0.101</td></tr>
+<tr><td style="text-align:left">Lives in Highlands</td><td>-0.008</td><td>-0.068</td><td>-0.011</td><td>0.047</td><td>-0.101</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Lives in Borders</td><td>-0.055</td><td>-0.096</td><td>0.109</td><td>0.081</td><td>-0.099</td></tr>
+<tr><td style="text-align:left">Lives in Borders</td><td>-0.053</td><td>-0.096</td><td>0.109</td><td>0.081</td><td>-0.099</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Born in England</td><td>-0.255<sup>***</sup></td><td>-0.292<sup>***</sup></td><td>-0.195<sup>*</sup></td><td>0.155<sup>*</sup></td><td>0.061</td></tr>
+<tr><td style="text-align:left">Born in England</td><td>-0.251<sup>***</sup></td><td>-0.292<sup>***</sup></td><td>-0.195<sup>*</sup></td><td>0.155<sup>*</sup></td><td>0.061</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Born in EU</td><td>0.067</td><td>0.012</td><td>-0.096</td><td>-0.004</td><td>1.028<sup>***</sup></td></tr>
+<tr><td style="text-align:left">Born in EU</td><td>0.070</td><td>0.012</td><td>-0.096</td><td>-0.004</td><td>1.028<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Homeowner</td><td>-0.150<sup>*</sup></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Homeowner</td><td>-0.141<sup>*</sup></td><td></td><td></td><td></td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>-0.933</td><td>-0.109</td><td>0.337</td><td>-0.030</td><td>1.619</td></tr>
+<tr><td style="text-align:left">Constant</td><td>-0.917</td><td>-0.109</td><td>0.337</td><td>-0.030</td><td>1.619</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>2,571</td><td>3,627</td><td>2,761</td><td>2,704</td><td>1,735</td></tr>
-<tr><td style="text-align:left">Log Likelihood</td><td>-941.025</td><td>-1,368.572</td><td>-534.787</td><td>-704.830</td><td>-211.503</td></tr>
-<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>1,934.049</td><td>2,787.145</td><td>1,119.573</td><td>1,459.660</td><td>473.005</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>2,569</td><td>3,627</td><td>2,761</td><td>2,704</td><td>1,735</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-939.760</td><td>-1,368.572</td><td>-534.787</td><td>-704.830</td><td>-211.503</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>1,931.521</td><td>2,787.145</td><td>1,119.573</td><td>1,459.660</td><td>473.005</td></tr>
 <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="5" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
 
@@ -69,7 +70,7 @@ Loading objects:
                                               Vote Yes         Yes->No   No->Yes  Not Likely to vote
                                            (1)        (2)        (3)       (4)           (5)        
 ----------------------------------------------------------------------------------------------------
-Log of Household Gross Income (£p.a)    -0.130***    -0.056    -0.107*   -0.014         -0.124      
+Log of Household Gross Income (£p.a)    -0.130***    -0.057    -0.107*   -0.014         -0.124      
                                          (0.039)    (0.050)    (0.060)   (0.055)       (0.084)      
                                                                                                     
 Age                                      0.044***   0.046***  -0.046**  -0.040**      -0.074***     
@@ -78,31 +79,31 @@ Age                                      0.044***   0.046***  -0.046**  -0.040**
 Age Squared                             -0.0005*** -0.0005*** 0.0005**  0.0003**       0.001***     
                                          (0.0001)   (0.0002)  (0.0002)  (0.0002)       (0.0003)     
                                                                                                     
-Female                                  -0.172***  -0.194***   -0.151*    0.044        -0.237*      
+Female                                  -0.172***  -0.193***   -0.151*    0.044        -0.237*      
                                          (0.056)    (0.068)    (0.088)   (0.076)       (0.139)      
                                                                                                     
-Highest Education: A Level/Higher Grade   -0.003     0.001    -0.354**   -0.099         0.244       
+Highest Education: A Level/Higher Grade   -0.003     -0.001   -0.354**   -0.099         0.244       
                                          (0.092)    (0.111)    (0.142)   (0.125)       (0.188)      
                                                                                                     
-Highest Education: Non-Degree Further     0.066      0.094      0.067    -0.020         -0.119      
+Highest Education: Non-Degree Further     0.066      0.092      0.067    -0.020         -0.119      
                                          (0.112)    (0.135)    (0.151)   (0.150)       (0.293)      
                                                                                                     
-Highest Education: Degree or Equivalent   0.142*     0.155*   -0.212**   -0.057         -0.147      
+Highest Education: Degree or Equivalent   0.142*     0.149*   -0.212**   -0.057         -0.147      
                                          (0.074)    (0.088)    (0.105)   (0.098)       (0.171)      
                                                                                                     
-Ethnic Minority                          0.351**    0.536**     0.204    -4.348         -0.251      
+Ethnic Minority                          0.351**    0.537**     0.204    -4.348         -0.251      
                                          (0.167)    (0.210)    (0.240)  (61.914)       (0.393)      
                                                                                                     
-Has Children                              0.100      0.086      0.078     0.043         -0.008      
+Has Children                              0.100      0.079      0.078     0.043         -0.008      
                                          (0.070)    (0.087)    (0.111)   (0.098)       (0.181)      
                                                                                                     
-Has a Partner                             -0.009     -0.008    0.259**    0.007         -0.081      
+Has a Partner                             -0.009     -0.010    0.259**    0.007         -0.081      
                                          (0.066)    (0.080)    (0.104)   (0.089)       (0.150)      
                                                                                                     
 Identifies Conservative                 -1.283***  -1.331***  -0.478***  -0.278*      -1.007***     
                                          (0.111)    (0.132)    (0.185)   (0.144)       (0.281)      
                                                                                                     
-Identifies Libdem                       -0.838***  -0.984***   -0.225   0.691***        -4.705      
+Identifies Libdem                       -0.838***  -0.985***   -0.225   0.691***        -4.705      
                                          (0.132)    (0.163)    (0.238)   (0.154)      (155.625)     
                                                                                                     
 Identifies Labour                       -0.485***  -0.465***    0.076   0.392***      -0.829***     
@@ -111,48 +112,109 @@ Identifies Labour                       -0.485***  -0.465***    0.076   0.392***
 Identifies Green                         0.923***   1.176***   -0.187   -0.444**       -0.773*      
                                          (0.129)    (0.175)    (0.313)   (0.212)       (0.426)      
                                                                                                     
-Identifies UKIP                         -0.564***  -0.683***    0.276    -0.135         -0.430      
-                                         (0.160)    (0.194)    (0.222)   (0.235)       (0.322)      
+Identifies UKIP                         -0.564***  -0.720***    0.276    -0.135         -0.430      
+                                         (0.160)    (0.199)    (0.222)   (0.235)       (0.322)      
                                                                                                     
 Identifies SNP                           1.978***   1.951***  0.605***  -0.836***     -0.735***     
                                          (0.086)    (0.101)    (0.123)   (0.119)       (0.170)      
                                                                                                     
-Religion: Catholic                        0.097      0.088     -0.030     0.128         0.141       
+Religion: Catholic                        0.097      0.090     -0.030     0.128         0.141       
                                          (0.095)    (0.118)    (0.150)   (0.130)       (0.221)      
                                                                                                     
-Religion: Any Protestant                -0.312***  -0.262***   -0.063     0.092         -0.260      
+Religion: Any Protestant                -0.312***  -0.259***   -0.063     0.092         -0.260      
                                          (0.065)    (0.077)    (0.096)   (0.088)       (0.175)      
                                                                                                     
 Big5: Openness                           0.072***   0.073***    0.027    -0.007         0.036       
                                          (0.016)    (0.020)    (0.025)   (0.022)       (0.038)      
                                                                                                     
-Lives in Scottish City                    0.029      0.011     -0.007    -0.025         -0.049      
+Lives in Scottish City                    0.029      0.013     -0.007    -0.025         -0.049      
                                          (0.063)    (0.076)    (0.096)   (0.087)       (0.149)      
                                                                                                     
-Lives in Highlands                        -0.068     -0.011    -0.011     0.047         -0.101      
+Lives in Highlands                        -0.068     -0.008    -0.011     0.047         -0.101      
                                          (0.067)    (0.080)    (0.101)   (0.091)       (0.163)      
                                                                                                     
-Lives in Borders                          -0.096     -0.055     0.109     0.081         -0.099      
-                                         (0.124)    (0.142)    (0.173)   (0.158)       (0.299)      
+Lives in Borders                          -0.096     -0.053     0.109     0.081         -0.099      
+                                         (0.124)    (0.143)    (0.173)   (0.158)       (0.299)      
                                                                                                     
-Born in England                         -0.292***  -0.255***   -0.195*   0.155*         0.061       
+Born in England                         -0.292***  -0.251***   -0.195*   0.155*         0.061       
                                          (0.071)    (0.083)    (0.116)   (0.093)       (0.171)      
                                                                                                     
-Born in EU                                0.012      0.067     -0.096    -0.004        1.028***     
+Born in EU                                0.012      0.070     -0.096    -0.004        1.028***     
                                          (0.209)    (0.272)    (0.360)   (0.323)       (0.319)      
                                                                                                     
-Homeowner                                           -0.150*                                         
+Homeowner                                           -0.141*                                         
                                                     (0.085)                                         
                                                                                                     
-Constant                                  -0.109     -0.933     0.337    -0.030         1.619       
+Constant                                  -0.109     -0.917     0.337    -0.030         1.619       
                                          (0.485)    (0.633)    (0.739)   (0.672)       (1.038)      
                                                                                                     
 ----------------------------------------------------------------------------------------------------
-Observations                              3,627      2,571      2,761     2,704         1,735       
-Log Likelihood                          -1,368.572  -941.025  -534.787  -704.830       -211.503     
-Akaike Inf. Crit.                       2,787.145  1,934.049  1,119.573 1,459.660      473.005      
+Observations                              3,627      2,569      2,761     2,704         1,735       
+Log Likelihood                          -1,368.572  -939.760  -534.787  -704.830       -211.503     
+Akaike Inf. Crit.                       2,787.145  1,931.521  1,119.573 1,459.660      473.005      
 ====================================================================================================
 Note:                                                                    *p<0.1; **p<0.05; ***p<0.01
+
+<table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="4"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Vote Yes</td><td>Yes->No</td><td>No->Yes</td><td>Not Likely to vote</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left">Log of Household Gross Income (£p.a)</td><td>-0.130<sup>***</sup></td><td>-0.107<sup>*</sup></td><td>-0.014</td><td>-0.124</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age</td><td>0.044<sup>***</sup></td><td>-0.046<sup>**</sup></td><td>-0.040<sup>**</sup></td><td>-0.074<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Age Squared</td><td>-0.0005<sup>***</sup></td><td>0.0005<sup>**</sup></td><td>0.0003<sup>**</sup></td><td>0.001<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Female</td><td>-0.172<sup>***</sup></td><td>-0.151<sup>*</sup></td><td>0.044</td><td>-0.237<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: A Level/Higher Grade</td><td>-0.003</td><td>-0.354<sup>**</sup></td><td>-0.099</td><td>0.244</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Non-Degree Further</td><td>0.066</td><td>0.067</td><td>-0.020</td><td>-0.119</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Highest Education: Degree or Equivalent</td><td>0.142<sup>*</sup></td><td>-0.212<sup>**</sup></td><td>-0.057</td><td>-0.147</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Ethnic Minority</td><td>0.351<sup>**</sup></td><td>0.204</td><td>-4.348</td><td>-0.251</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has Children</td><td>0.100</td><td>0.078</td><td>0.043</td><td>-0.008</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Has a Partner</td><td>-0.009</td><td>0.259<sup>**</sup></td><td>0.007</td><td>-0.081</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Conservative</td><td>-1.283<sup>***</sup></td><td>-0.478<sup>***</sup></td><td>-0.278<sup>*</sup></td><td>-1.007<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Libdem</td><td>-0.838<sup>***</sup></td><td>-0.225</td><td>0.691<sup>***</sup></td><td>-4.705</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Labour</td><td>-0.485<sup>***</sup></td><td>0.076</td><td>0.392<sup>***</sup></td><td>-0.829<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies Green</td><td>0.923<sup>***</sup></td><td>-0.187</td><td>-0.444<sup>**</sup></td><td>-0.773<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies UKIP</td><td>-0.564<sup>***</sup></td><td>0.276</td><td>-0.135</td><td>-0.430</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Identifies SNP</td><td>1.978<sup>***</sup></td><td>0.605<sup>***</sup></td><td>-0.836<sup>***</sup></td><td>-0.735<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Catholic</td><td>0.097</td><td>-0.030</td><td>0.128</td><td>0.141</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Religion: Any Protestant</td><td>-0.312<sup>***</sup></td><td>-0.063</td><td>0.092</td><td>-0.260</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Big5: Openness</td><td>0.072<sup>***</sup></td><td>0.027</td><td>-0.007</td><td>0.036</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Lives in Scottish City</td><td>0.029</td><td>-0.007</td><td>-0.025</td><td>-0.049</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Lives in Highlands</td><td>-0.068</td><td>-0.011</td><td>0.047</td><td>-0.101</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Lives in Borders</td><td>-0.096</td><td>0.109</td><td>0.081</td><td>-0.099</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Born in England</td><td>-0.292<sup>***</sup></td><td>-0.195<sup>*</sup></td><td>0.155<sup>*</sup></td><td>0.061</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Born in EU</td><td>0.012</td><td>-0.096</td><td>-0.004</td><td>1.028<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Homeowner</td><td>-0.109</td><td>0.337</td><td>-0.030</td><td>1.619</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>3,627</td><td>2,761</td><td>2,704</td><td>1,735</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-1,368.572</td><td>-534.787</td><td>-704.830</td><td>-211.503</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>2,787.145</td><td>1,119.573</td><td>1,459.660</td><td>473.005</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="4" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
 
 Call:
 glm(formula = vote_yes_scot ~ log_hh_inc + age + age_square + 
@@ -161,49 +223,49 @@ glm(formula = vote_yes_scot ~ log_hh_inc + age + age_square +
     libdem_w3 + labour_w3 + green_w3 + ukip_w3 + scot_nat_w3 + 
     catholic + protestant + big5_openness + scottish_city + scottish_highlands + 
     scottish_borders + born_england + born_eu + is_house_owner, 
-    family = binomial(link = "probit"), data = bes)
+    family = binomial(link = "probit"), data = besScot)
 
 Deviance Residuals: 
     Min       1Q   Median       3Q      Max  
--2.8413  -0.6452  -0.2113   0.3498   3.0392  
+-2.8384  -0.6451  -0.2122   0.3483   3.0366  
 
 Coefficients:
                          Estimate Std. Error z value Pr(>|z|)    
-(Intercept)            -0.9326356  0.6333157  -1.473 0.140853    
-log_hh_inc             -0.0562343  0.0500812  -1.123 0.261496    
-age                     0.0460777  0.0162601   2.834 0.004600 ** 
-age_square             -0.0004834  0.0001635  -2.957 0.003106 ** 
-femaleTRUE             -0.1943005  0.0679113  -2.861 0.004222 ** 
-a_level_equivTRUE       0.0012985  0.1105994   0.012 0.990633    
-other_higher_edTRUE     0.0936079  0.1350797   0.693 0.488321    
-degree_equivTRUE        0.1548361  0.0883617   1.752 0.079722 .  
-is_ethnic_minorityTRUE  0.5359846  0.2095937   2.557 0.010550 *  
-has_childrenTRUE        0.0858638  0.0865848   0.992 0.321357    
-is_partneredTRUE       -0.0084649  0.0804241  -0.105 0.916174    
-conservative_w3TRUE    -1.3314331  0.1322638 -10.066  < 2e-16 ***
-libdem_w3TRUE          -0.9841367  0.1626542  -6.050 1.44e-09 ***
-labour_w3TRUE          -0.4652942  0.0850925  -5.468 4.55e-08 ***
-green_w3TRUE            1.1755249  0.1752738   6.707 1.99e-11 ***
-ukip_w3TRUE            -0.6827481  0.1940380  -3.519 0.000434 ***
-scot_nat_w3TRUE         1.9508928  0.1007014  19.373  < 2e-16 ***
-catholicTRUE            0.0877990  0.1184562   0.741 0.458576    
-protestantTRUE         -0.2619842  0.0770646  -3.400 0.000675 ***
-big5_openness           0.0731656  0.0195885   3.735 0.000188 ***
-scottish_cityTRUE       0.0111423  0.0755184   0.148 0.882702    
-scottish_highlandsTRUE -0.0105620  0.0802608  -0.132 0.895304    
-scottish_bordersTRUE   -0.0550154  0.1424767  -0.386 0.699396    
-born_englandTRUE       -0.2547832  0.0832875  -3.059 0.002220 ** 
-born_euTRUE             0.0673096  0.2716257   0.248 0.804287    
-is_house_ownerTRUE     -0.1495129  0.0852811  -1.753 0.079572 .  
+(Intercept)            -0.9166978  0.6334835  -1.447 0.147876    
+log_hh_inc             -0.0569283  0.0500906  -1.137 0.255744    
+age                     0.0457629  0.0162625   2.814 0.004893 ** 
+age_square             -0.0004820  0.0001635  -2.948 0.003196 ** 
+femaleTRUE             -0.1931941  0.0679328  -2.844 0.004457 ** 
+a_level_equivTRUE      -0.0010666  0.1106295  -0.010 0.992307    
+other_higher_edTRUE     0.0921483  0.1352189   0.681 0.495571    
+degree_equivTRUE        0.1487375  0.0884600   1.681 0.092683 .  
+is_ethnic_minorityTRUE  0.5369349  0.2095481   2.562 0.010397 *  
+has_childrenTRUE        0.0793668  0.0867071   0.915 0.360011    
+is_partneredTRUE       -0.0103075  0.0804387  -0.128 0.898038    
+conservative_w3TRUE    -1.3310166  0.1322237 -10.066  < 2e-16 ***
+libdem_w3TRUE          -0.9845515  0.1626328  -6.054 1.41e-09 ***
+labour_w3TRUE          -0.4649795  0.0850717  -5.466 4.61e-08 ***
+green_w3TRUE            1.1763454  0.1752217   6.713 1.90e-11 ***
+ukip_w3TRUE            -0.7195433  0.1987708  -3.620 0.000295 ***
+scot_nat_w3TRUE         1.9512494  0.1006770  19.381  < 2e-16 ***
+catholicTRUE            0.0904052  0.1184743   0.763 0.445417    
+protestantTRUE         -0.2589170  0.0771108  -3.358 0.000786 ***
+big5_openness           0.0731134  0.0195916   3.732 0.000190 ***
+scottish_cityTRUE       0.0130067  0.0755454   0.172 0.863303    
+scottish_highlandsTRUE -0.0076940  0.0803132  -0.096 0.923680    
+scottish_bordersTRUE   -0.0532403  0.1425297  -0.374 0.708748    
+born_englandTRUE       -0.2507206  0.0833597  -3.008 0.002632 ** 
+born_euTRUE             0.0702588  0.2716299   0.259 0.795900    
+is_house_ownerTRUE     -0.1412848  0.0854788  -1.653 0.098359 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
-    Null deviance: 3543.7  on 2570  degrees of freedom
-Residual deviance: 1882.0  on 2545  degrees of freedom
-  (54923 observations deleted due to missingness)
-AIC: 1934
+    Null deviance: 3541.0  on 2568  degrees of freedom
+Residual deviance: 1879.5  on 2543  degrees of freedom
+  (5717 observations deleted due to missingness)
+AIC: 1931.5
 
 Number of Fisher Scoring iterations: 6
 

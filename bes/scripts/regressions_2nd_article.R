@@ -115,7 +115,7 @@ probit.scotref_1 <- glm(
         born_eu +
         is_house_owner,
     family=binomial(link='probit'), 
-    data=bes );
+    data=besScot );
 
 probit.scotref_2 <- glm(
     formula=vote_yes_scot~
@@ -256,6 +256,16 @@ stargazer(
         type='text',
         align=TRUE )
         
+stargazer(         
+        probit.scotref_2,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
+        probit.indyref_not_vote_post,
+        covariate.labels = stdLabels, 
+        dep.var.labels = c("Vote Yes", "Yes->No","No->Yes", "Not Likely to vote" ),
+        type='html',
+        report = "vc*",
+        align=TRUE )
         
 print( summary( probit.scotref_1 ));
 print( summary( probit.scotref_2 ));
