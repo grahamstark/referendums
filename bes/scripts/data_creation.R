@@ -57,7 +57,7 @@ bes <- read.spss(
          convert.factors <- TRUE,
          use.missings <- TRUE,
          warn.missing.labels <- TRUE );
-bes = data.frame( lapply( bes, set_miss )) 
+
 print( "SPSS Loaded" )         
 #
 # region dummies
@@ -188,7 +188,7 @@ label( bes$catholic) <- "Religion: Catholic"
 bes$protestant <- bes$profile_religion == 2 | ( bes$profile_religion>= 4 & bes$profile_religion <= 9 ); 
 label( bes$catholic) <- "Religion: Any Protestant Church"
 
-bes$other_religion <- bes$profile_religion >= 10;
+bes$other_religion <- bes$profile_religion >= 10 & bes$profile_religion < 9999;
 label( bes$other_religion) <- "Religion: Any Non Christian"
 
 print( "Religions and parties created" )
@@ -312,12 +312,31 @@ bes$dkW7 <- bes$scotReferendumIntentionW7 == 9999;
 bes$dkW6 <- bes$scotReferendumIntentionW6 == 9999;
 bes$dkW4 <- bes$scotReferendumIntentionW4 == 9999;
 
-bes$indyref_dk_vote_post <- ( bes$dkW9 | bes$dkW7 | bes$dkW6 | bes$dkW4 )
-bes$indyref_not_vote_post <- ( bes$notW9 | bes$notW7 | bes$notW6 | bes$notW4 )
+#
+# if ever indicated dk or no, even if changed mind back
+#
+bes$indyref_dk_vote_post_any_period <- ( bes$dkW9 | bes$dkW7 | bes$dkW6 | bes$dkW4 )
+bes$indyref_not_vote_post_any_period <- ( bes$notW9 | bes$notW7 | bes$notW6 | bes$notW4 )
 
-bes$indyref_switch_yes_2_no <- bes$vote_yes_scot & ( bes$noW9 | bes$noW7 | bes$noW6 | bes$noW4 )
-bes$indyref_switch_no_2_yes <- bes$vote_no_scot & ( bes$yesW9 | bes$yesW7 | bes$yesW6 | bes$yesW4 )
+#
+# dk/ no vote in latest data only
+#
+bes$indyref_dk_vote_post <- ( bes$dkW9 )
+bes$indyref_not_vote_post <- ( bes$notW9 )
+
+#
+# switch in latest data
+#
+bes$indyref_switch_yes_2_no <- bes$vote_yes_scot & ( bes$noW9 )
+bes$indyref_switch_no_2_yes <- bes$vote_no_scot & ( bes$yesW9  )
 bes$indyref_switch_yes_2_other <- bes$indyref_switch_yes_2_no | bes$indyref_dk_vote_post | bes$indyref_not_vote_post;
+
+#
+# switch in any period, even if now back again
+#
+bes$indyref_switch_yes_2_no_any_period <- bes$vote_yes_scot & ( bes$noW9 | bes$noW7 | bes$noW6 | bes$noW4 )
+bes$indyref_switch_no_2_yes_any_period <- bes$vote_no_scot & ( bes$yesW9 | bes$yesW7 | bes$yesW6 | bes$yesW4 )
+bes$indyref_switch_yes_2_other_any_period <- bes$indyref_switch_yes_2_no | bes$indyref_dk_vote_post | bes$indyref_not_vote_post;
 
 print( "yes 2 no" ); summary( bes$indyref_switch_yes_2_no )
 print( "yes 2 any other" ); summary( bes$indyref_switch_yes_2_other )
@@ -330,7 +349,7 @@ bes$glasgow = bes$profile_oslaua == 164;
 bes$dundee  = bes$profile_oslaua == 156;
 bes$edinburgh = bes$profile_oslaua == 161;
 #
-# Scottish Councils
+# Scottish Councils, crudely classified
 #
 bes$scottish_city =  
         # Glasgow City
@@ -341,7 +360,9 @@ bes$scottish_city =
         bes$profile_oslaua == 156 |
         # Aberdeen City                     
         bes$profile_oslaua == 148;  
-           
+#
+# especially dodgy ...
+#
 bes$scottish_urban = 
         bes$scottish_city |
         # Renfrewshire 
@@ -381,6 +402,26 @@ bes$scottish_borders =
         # Scottish Borders (B) 
         bes$profile_oslaua == 152;                  
                
+#
+# attitudes to EU, with DK set to midpoint,or null, and with < 5 (want less integration) dummy, waves 3 and 6 (last with question)
+# should europe integrate?
+#
+bes$eesEUIntegrationSelfW3_dk5 <- ifelse( bes$eesEUIntegrationSelfW3 == 9999, 5, bes$eesEUIntegrationSelfW3 )
+bes$eesEUIntegrationSelfW3_dknull <- ifelse( bes$eesEUIntegrationSelfW3 == 9999, NA, bes$eesEUIntegrationSelfW3 )
+bes$eesEUIntegrationSelfW3_dummy <- bes$eesEUIntegrationSelfW3 < 5
+
+bes$eesEUIntegrationSelfW6_dk5 <- ifelse( bes$eesEUIntegrationSelfW6 == 9999, 5, bes$eesEUIntegrationSelfW6 )
+bes$eesEUIntegrationSelfW6_dknull <- ifelse( bes$eesEUIntegrationSelfW6 == 9999, NA, bes$eesEUIntegrationSelfW6 )
+bes$eesEUIntegrationSelfW6_dummy <- bes$eesEUIntegrationSelfW6 < 5
+
+bes$EUIntegrationSelfW3_dk5 <- ifelse( bes$EUIntegrationSelfW3 == 9999, 5, bes$EUIntegrationSelfW3 )
+bes$EUIntegrationSelfW3_dknull <- ifelse( bes$EUIntegrationSelfW3 == 9999, NA, bes$EUIntegrationSelfW3 )
+bes$EUIntegrationSelfW3_dummy <- bes$EUIntegrationSelfW3 < 5
+
+bes$EUIntegrationSelfW9_dk5 <- ifelse( bes$EUIntegrationSelfW9 == 9999, 5, bes$EUIntegrationSelfW9 )
+bes$EUIntegrationSelfW9_dknull <- ifelse( bes$EUIntegrationSelfW9 == 9999, NA, bes$EUIntegrationSelfW9 )
+bes$EUIntegrationSelfW9_dummy <- bes$EUIntegrationSelfW9 < 5
+
 
 if( is_local ){
   save( bes, file="data/BES2015_W9_Panel_v1.0_with_added_vars.RData" )
