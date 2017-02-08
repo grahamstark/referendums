@@ -198,6 +198,67 @@ probit.scotref_4 <- glm(
     family=binomial(link='probit'), 
     data=besScot );
 
+probit.scotref_5 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square + 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered +
+        conservative +
+        libdem +
+        labour +
+        green +
+        ukip +
+        scot_nat +
+        catholic +
+        protestant +
+        leftRightW3 +
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +
+        born_england + 
+        born_eu +
+        EUIntegrationSelf_dk5,
+    family=binomial(link='probit'), 
+    data=besScot );
+
+probit.scotref_6 <- glm(
+    formula=vote_yes_scot~
+        log_hh_inc+ 
+        age+ 
+        age_square + 
+        female+ 
+        a_level_equiv +
+        other_higher_ed + 
+        degree_equiv +
+        is_ethnic_minority+ 
+        has_children+ 
+        is_partnered +
+        conservative +
+        libdem +
+        labour +
+        green +
+        ukip +
+        scot_nat +
+        catholic +
+        protestant +
+        al_scaleW1W2W3W4W5 +
+        scottish_city +
+        scottish_highlands +
+        scottish_borders +
+        born_england + 
+        born_eu +
+        EUIntegrationSelf_dk5,
+    family=binomial(link='probit'), 
+    data=besScot );
+    
+    
 probit.scotswitch_yes_no <- glm(
     formula=indyref_switch_yes_2_no~
         log_hh_inc+ 
@@ -237,7 +298,7 @@ probit.indyref_not_vote_post <-glm(
         EUIntegrationSelf_dk5,
     family=binomial(link='probit'), 
     data=besScot );
-
+# 
 #
 # use minimal regressors since we were getting warning messages
 #
@@ -369,23 +430,6 @@ probit.scotref_w9_4 <- glm(
     family=binomial(link='probit'), 
     data=besScot );
 
-
-stargazer( 
-        probit.scotref_2,
-        probit.scotref_3,
-        probit.scotref_4,
-        probit.scotref_w9_2,
-        probit.scotref_w9_3,
-        probit.scotref_w9_4,
-        probit.scotswitch_yes_no,
-        probit.scotswitch_no_yes,
-        probit.indyref_not_vote_post,
-        covariate.labels = stdLabels, 
-        dep.var.labels = c("Indyref Vote Yes", "Current Vote Yes", "Yes-No","No-Yes", "Not Likely to vote" ),
-        type='html',
-        report = "vc*",
-        align=TRUE )
-   
 stargazer(         
         probit.scotref_2,
         probit.scotref_3,
@@ -400,17 +444,73 @@ stargazer(
         dep.var.labels = c("Indyref Vote Yes", "Current Vote Yes", "Yes->No","No->Yes", "Not Likely to vote" ),
         type='text',
         align=TRUE )
-        
-stargazer(         
+
+stargazer( 
         probit.scotref_2,
-        probit.scotswitch_yes_no,
-        probit.scotswitch_no_yes,
+        probit.scotref_3,
+        probit.scotref_4,
         probit.scotref_w9_2,
         probit.scotref_w9_3,
         probit.scotref_w9_4,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
+        probit.indyref_not_vote_post,
+        covariate.labels = stdLabels, 
+        dep.var.labels = c("Indyref Vote Yes", "Current Vote Yes", "Yes 2 No","No 2 Yes", "Not Likely to vote" ),
+        type='html',
+        report = "vc*",
+        align=TRUE )
+   
+#
+# just remove vote eu from labels
+#
+stdLabels = c(         
+    "Log of Household Gross Income (£p.a)",
+    "Age",
+    "Age Squared",
+    "Female",
+    "Highest Education: A Level/Higher Grade",
+    "Highest Education: Non-Degree Further",
+    "Highest Education: Degree or Equivalent",
+    "Ethnic Minority",
+    "Has Children",
+    "Has a Partner",
+    "Identifies Conservative", 
+    "Identifies Libdem",
+    "Identifies Labour",
+    "Identifies Green",
+    "Identifies UKIP",
+    "Identifies SNP",
+    "Religion: Catholic",
+    "Religion: Any Protestant",
+    "Big5: Openness",
+    "Lives in Scottish City",
+    "Lives in Highlands",
+    "Lives in Borders",
+    "Born in England",
+    "Born in EU",
+    "Integration with Europe (Lower=would prefer more)"
+);
+        
+stargazer(         
+        probit.scotref_4,
+        probit.scotref_w9_4,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
         probit.indyref_not_vote_post,
         covariate.labels = stdLabels, 
         dep.var.labels = c("Indyref Vote Yes", "Current Vote Yes", "Yes->No","No->Yes", "Not Likely to vote" ),
+        type='text',
+        align=TRUE )
+        
+stargazer(         
+        probit.scotref_4,
+        probit.scotref_w9_4,
+        probit.scotswitch_yes_no,
+        probit.scotswitch_no_yes,
+        probit.indyref_not_vote_post,
+        covariate.labels = stdLabels, 
+        dep.var.labels = c("Indyref Vote Yes", "Current Vote Yes", "Yes 2 No","No 2 Yes", "Not Likely to vote" ),
         type='html',
         report = "vc*",
         align=TRUE )
@@ -418,12 +518,15 @@ stargazer(
 print( summary( probit.scotref_2 ));
 print( summary( probit.scotref_3 ));
 print( summary( probit.scotref_4 ));
+print( summary( probit.scotref_5 ));
+print( summary( probit.scotref_6 ));
 print( summary( probit.scotswitch_yes_no ));
 print( summary( probit.scotswitch_no_yes ));
 print( summary( probit.indyref_not_vote_post ));
 print( summary( probit.scotref_w9_2 ));
 print( summary( probit.scotref_w9_3 ));
 print( summary( probit.scotref_w9_4 ));
+
 #
 # close output buffer
 #

@@ -116,6 +116,7 @@ bes$vote_yes_scot <- bes$scotReferendumVoteW3 == 1;
 # Fairly unlikely 2 Very unlikely that I will vote 1 
 # obviously this is a misnomer
 bes$indyref_didnt_vote <- bes$scotReferendumTurnoutW2 <= 3;
+bes$indyref_did_vote <- ! bes$indyref_didnt_vote;
 
 label( bes$vote_yes_scot) <- "Scottish Referendum: Voted Yes"
 bes$vote_no_scot <- bes$scotReferendumVoteW3 == 0;
